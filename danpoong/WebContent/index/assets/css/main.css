@@ -447,7 +447,29 @@
 		color: #616f77 !important;
 		opacity: 1.0;
 	}
-
+/* 알비스 대화 채팅효과 */
+	@-webkit-keyframes typing {
+		from{
+			width: 0
+		}
+		to{
+			width: 20em
+		}
+	}
+	
+	#speak {
+		width: 20em;
+		white-space: nowrap;
+		overflow: hidden;
+		-webkit-animation: typing 2s steps(30, end);
+	}
+	#speak2 {
+		width: 20em;
+		white-space: nowrap;
+		overflow: hidden;
+		-webkit-animation: typing 2s steps(60, end);
+		
+	}
 /* Icon */
 
 	.icon {
