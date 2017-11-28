@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+td {
+	border: gray 2px;
+	width: 300px;
+	height: 60px;
+}
+
+input {
+	background-color: transparent;
+	border: 0px solid;
+	height: 30px;
+	width: 250px;
+	color: #CCC;
+}
+
+.error {
+	color: red;
+	font-size: small;
+}
+
+.row_group {
+	background-color: black;
+	border: solid brown 1px;
+	width: 300px;
+	margin: auto;
+	margin-top: 5%;
+	opacity: 0.8;
+	
+}
+.row_group2 {
+	background-color: black;
+	border: solid brown 1px;
+	width: 300px;
+	margin: auto;
+	margin-top: 2%;
+	opacity: 0.8;
+}
+.join_row {
+	height: 50px;
+	margin-top: 5%;
+	border-bottom: solid brown 1px;
+}
+body {
+	background-image: url("images/bar4.jpg");
+	background-size: cover;
+}
+.finish {
+	border: solid brown 1px;
+	background-color: brown;
+}
+.finish_row {
+	margin-top: 3%;
+}
+#speak {
+	text-align: center;
+}
+@-webkit-keyframes typing {
+		from{
+			width: 0em
+		}
+		to{
+			width: 20em;
+		}
+	}
+	#speak {
+		width: 20em;
+		white-space: nowrap;
+		overflow: hidden;
+		-webkit-animation: typing 2s steps(30, end);
+	}
+.speak {
+	text_align: center;
+	margin-top: 5%;
+}
+</style>
+</head>
+<body>
+<form action="">
+<div class="speak" align="center">
+<h1 style="color: white" id="speak" >
+			처음이신가요? 당신에 대해 알고싶군요.
+		</h1>
+		</div>
+		
+	<div class="row_group">
+		<div class="join_row" >
+			<input class="login" id="id" type="text" placeholder="아이디" style="font-size: medium;" required>
+			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
+		</div>
+		<div class="join_row">
+			<input class="login" type="password" placeholder="비밀번호" style="font-size: medium;" required>
+			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
+		</div>
+		<div class="join_row">
+			<input class="login" type="password" placeholder="비밀번호확인" style="font-size: medium;" required>
+			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
+		</div>
+	</div>
+	
+	<div class="row_group2">
+		<div class="join_row">
+			<input class="login" type="text" placeholder="닉네임" style="font-size: medium;" required>
+			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
+		</div>
+		<div class="join_row">
+			<input class="login" type="password" placeholder="나이" style="font-size: medium;" required>
+			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
+		</div>
+		<div class="join_row">
+			<input class="login" type="password" placeholder="지역" style="font-size: medium;" required>
+			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
+		</div>
+	</div>
+	<div class="finish_row" style="text-align: center;">
+		<input class="finish" style="border: solid silver 1px;" type="submit" value="가입">
+	</div>
+</form>
+</body>
+</html>

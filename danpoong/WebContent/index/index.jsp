@@ -16,10 +16,6 @@
 	<link rel="stylesheet" href="assets/css/noscript.css" />
 </noscript>
 <style type="text/css">
-/* .select {
-			display: inline-block;
-		
-		} */
 table {
 	margin: auto;
 }
