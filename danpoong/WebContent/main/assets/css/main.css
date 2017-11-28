@@ -1989,7 +1989,8 @@
 
 					#nav > ul > li > a {
 						border-radius: 5px;
-						color: #5d5d5d;
+ 						color: #5d5d5d;
+					/* 	color: white; */
 						text-decoration: none;
 						padding: 0.6em 1.2em 0.6em 1.2em;
 						-moz-transition: background-color .25s ease-in-out;

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	background-image: url("images/bar4.jpg");
+	background-size: cover;
+}
+
+.LoginArea {
+	margin: auto;
+	margin-top: 6%;
+	background-color: black;
+	opacity: 0.8;
+	width: 40em;
+	height: 25em;
+	border: solid red 2px;
+}
+
+#speak {
+	text-align: center;
+}
+
+@-webkit-keyframes typing {from { width:0em
+	
+}
+
+to {
+	width: 20em;
+}
+
+}
+#speak {
+	width: 20em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 2s steps(30, end);
+}
+
+#speak {
+	text_align: center;
+	margin-top: 5%;
+}
+
+.loginStr {
+	text-align: center;
+	margin-top: 8%;
+}
+
+.IdPw {
+	text-align: center;
+}
+
+input {
+	width: 230px;
+	height: 30px;
+}
+
+.idDiv {
+	margin-top: 5%;
+}
+
+.pwDiv {
+	margin-top: 10%;
+}
+
+.subDiv {
+	margin-top: 10%;
+}
+
+/* .submitButton {
+	background-color: rgb(150, 7, 7);
+	height: 35px;
+} */
+
+input[type="submit"], input[type="reset"], input[type="button"], button,
+	.button {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s
+		ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s
+		ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s
+		ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s
+		ease-in-out, color 0.2s ease-in-out;
+	display: inline-block;
+	height: 2.75em;
+	line-height: 2.75em;
+	padding: 0 1.5em;
+	background-color: transparent;
+	border-radius: 4px;
+	border: solid 1px #c8cccf;
+	color: white !important;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover,
+	button:hover, .button:hover {
+	border-color: #ff7496;
+	color: #ff7496 !important;
+}
+
+input[type="submit"].icon, input[type="reset"].icon, input[type="button"].icon,
+	button.icon, .button.icon {
+	padding-left: 1.35em;
+}
+
+input[type="submit"].icon:before, input[type="reset"].icon:before, input[type="button"].icon:before,
+	button.icon:before, .button.icon:before {
+	margin-right: 0.5em;
+}
+
+input[type="submit"].fit, input[type="reset"].fit, input[type="button"].fit,
+	button.fit, .button.fit {
+	display: block;
+	width: 100%;
+	margin: 0 0 0.75em 0;
+}
+
+input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"].disabled,
+	input[type="reset"]:disabled, input[type="button"].disabled, input[type="button"]:disabled,
+	button.disabled, button:disabled, .button.disabled, .button:disabled {
+	-moz-pointer-events: none;
+	-webkit-pointer-events: none;
+	-ms-pointer-events: none;
+	pointer-events: none;
+	opacity: 0.5;
+}
+</style>
+</head>
+<body>
+	<div align="center">
+		<h1 id="speak" style="color: white;">또 뵙네요. 키핑하신 술 확인해드릴까요?</h1>
+	</div>
+
+
+	<div class="LoginArea">
+		<div class="loginStr">
+			<h1 style="color: white">로그인</h1>
+		</div>
+		<div class="IdPw">
+			<div class="idDiv">
+				<label for="id" style="color: white; font-size: 30px">ID
+					&nbsp</label> <input type="text" id="id">
+			</div>
+			<div class="pwDiv">
+				<label for="pw" style="color: white; font-size: 30px">PW
+					&nbsp</label> <input type="password" id="pw">
+			</div>
+			<div class="subDiv">
+				<input class="submitButton" type="submit" style="font-size: 20px;" value="submit">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
