@@ -164,7 +164,16 @@
 	}
 
 /* Grid */
-
+	.row2{
+	margin-left: 460px;
+	margin-right: 460px;
+	}
+	
+	.row3{
+	margin-left: 460px;
+	margin-right: 460px;
+	}
+	
 	.row {
 		border-bottom: solid 1px transparent;
 		-moz-box-sizing: border-box;
@@ -1655,30 +1664,50 @@
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
-		background-position: center center;
+		background-image: url("images/alvis1000.jpg");
+		background-size: cover;
+		
+		/* background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
-		text-align: center;
+		text-align: center; */
 	}
 
 		#banner header {
 			background-color: #252122;
 			background-color: rgba(34, 30, 31, 0.98);
+			margin-left: 300px;
+			margin-bottom: 120px;
 		}
 
-			#banner header h2 {
-				color: #fff;
-				font-weight: 700;
-			}
+@-webkit-keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 16.5em
+    }
+}
+@-webkit-keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        
+    }
+}
 
-			#banner header p {
-				color: #d52349;
-				padding: 0;
-				font-style: normal;
-				margin: 0;
-			}
-
+	#banner header h3 {
+    	width: auto;
+   		 white-space: nowrap;
+   		 overflow: hidden;
+   		
+   		-webkit-animation: typing 2.3s steps(31, end);		
+   		color: white;
+   		
+   		}
+				
+		
 /* Wrappers */
 
 	#header-wrapper {
@@ -1747,6 +1776,28 @@
 	#intro {
 		text-align: center;
 	}
+
+	ul,li{list-style:none;}
+	#slide{height:300px;position:relative;overflow:hidden;}
+	#slide ul{width:400%;height:100%;transition:1s;}
+	#slide ul:after{content:"";display:block;clear:both;}
+	#slide li{float:left;width:25%;height:100%;}
+	#slide li:nth-child(1){background:#faa;}
+	#slide li:nth-child(2){background:#ffa;}
+	#slide li:nth-child(3){background:#faF;}
+	#slide li:nth-child(4){background:#aaf;}
+	#slide input{display:none;}
+	#slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
+	#slide .pos{text-align:center;position:absolute;bottom:10px;left:0;width:100%;text-align:center;}
+	#pos1:checked~ul{margin-left:0%;}
+	#pos2:checked~ul{margin-left:-100%;}
+	#pos3:checked~ul{margin-left:-200%;}
+	#pos4:checked~ul{margin-left:-300%;}
+	#pos1:checked~.pos>label:nth-child(1){background:#666;}
+	#pos2:checked~.pos>label:nth-child(2){background:#666;}
+	#pos3:checked~.pos>label:nth-child(3){background:#666;}
+	#pos4:checked~.pos>label:nth-child(4){background:#666;}
+
 
 /* Copyright */
 
