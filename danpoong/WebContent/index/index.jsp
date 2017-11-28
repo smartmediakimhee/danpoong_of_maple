@@ -71,7 +71,7 @@ td {
 	<div id="wrapper">
 
 		<!-- Main -->
-		<section id="main" style="background-color: black;"> <header>
+		<section id="main" style="background-color: black;"> <!-- dddd -->
 		<h1 style="color: white" id="speak">
 			어서오세요, 알비스의 바입니다.<br>당신의 나이를 알려주세요
 		</h1>
@@ -271,7 +271,8 @@ td {
 						</footer> --> </section>
 
 
-		<!-- Footer -->
+		<!-- Footer       -->
+		
 		<footer id="footer">
 		<ul class="copyright">
 			<li></li>
