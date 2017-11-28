@@ -101,7 +101,7 @@ td {
 								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
 							</div>
 							<div class="field">
-								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+								<input type="che	ckbox" id="human" name="human" /><label for="human">I'm a human</label>
 							</div>
 							<div class="field">
 								<label>But are you a robot?</label>
