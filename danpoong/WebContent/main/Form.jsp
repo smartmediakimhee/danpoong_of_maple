@@ -239,7 +239,7 @@ input[type="text"]:focus, input[type="text"]:hover {
 <body>
 	<div class="cardBoard">
 		<center>
-			<form action="" method="post">
+			<form action="UserTypeService" method="post">
 				<div class="titleBoard">
 					<h1>설문지 Title</h1>
 					<p>* 필수항목</p>
@@ -342,17 +342,17 @@ input[type="text"]:focus, input[type="text"]:hover {
 							<legend>* Atmosphere</legend>
 							<table align="left">
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="atmosphere" value="1">
+									<td>&nbsp&nbsp<input type="radio" name="atm" value="1">
 									</td>
 									<td>&nbsp&nbsp기쁜상황일 때 주로 마신다</td>
 								</tr><tr><td>&nbsp</td></tr>
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="atmosphere" value="3">
+									<td>&nbsp&nbsp<input type="radio" name="atm" value="3">
 									</td>
 									<td>&nbsp&nbsp슬픈상황일 때 주로 마신다</td>
 								</tr><tr><td>&nbsp</td></tr>
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="atmosphere" value="2">
+									<td>&nbsp&nbsp<input type="radio" name="atm" value="2">
 									</td>
 									<td>&nbsp&nbsp상관없음</td>
 								
