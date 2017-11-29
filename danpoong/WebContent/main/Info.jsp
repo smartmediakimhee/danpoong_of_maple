@@ -8,9 +8,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css1/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style type="text/css">
+		img {
+			width: 10px;
+			height: 350px;
+		}
+		/* #header-wrapper {
+			background-image: url("images/header_background/headerBack4.jpg");
+		} */
+		/* .carousel {
+			background-image: url("images/stack/stack4.jpg");
+			background-size: cover;
+			height: 700px;
+		} */
+		.carousel {
+			border-top: solid brown 5px;
+		}
+		#main-wrapper {
+			margin-left: 22%;
+			margin-right: 22%;
+			
+		}
+		</style>
 	</head>
-	<body class="left-sidebar">
+	<body class="left-sidebar" style="background-color: white;">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -52,13 +75,967 @@
 					</div>
 				</div>
 
-			<!-- Main -->
-				<div id="main-wrapper">
-					<div class="container">
+	<!-- Main -->
+		<div id="main-wrapper">
+				
+				
+		<!-- Soju -->
+		<section class="carousel">
+			<div class="reel">
+			
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+				</article>
+				
+
+			</div>
+
+		</section>
+		
+		<!-- Beer -->
+		<section class="carousel">
+			<div class="reel">
+			
+				<article>
+					<a href="#" class="image featured"><img src="images/beer/01_0001.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">카스 프레쉬</a>
+						</h3>
+					</header>
+					<p> 카스 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/beer/01_0002.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">카스 라이트</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/beer/01_0003.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">카스 레드</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/beer/01_0004.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">프리미어 오비 필스너</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/beer/01_0005.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">프리미어 오비 바이젠</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/beer/01_0006.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">카프리</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/beer/01_0007.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">버드와이저</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/beer/01_0008.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">호가든</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/beer/01_0009.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">버드 아이스</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/beer/01_0010.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">벡스</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/beer/01_0011.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">스텔라</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/beer/01_0012.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">레페</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+
+			</div>
+
+		</section>
+		
+		<!-- 막걸리 -->
+		<section class="carousel">
+			<div class="reel">
+			
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+
+			</div>
+
+		</section>
+		
+		<!-- 전통주 -->
+		<section class="carousel">
+			<div class="reel">
+			
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+
+			</div>
+
+		</section>
+		
+		<!-- whisky -->
+		<section class="carousel">
+			<div class="reel">
+			
+				<article>
+					<a href="#" class="image featured"><img src="images/whisky/03_0001.jpg"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#">Fermentum sagittis proin</a>
+						</h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit
+						magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/whisky/03_0002.jpg"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#">Sed quis rhoncus placerat</a>
+						</h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit
+						magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/whisky/03_0003.jpg"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#">Ultrices urna sit lobortis</a>
+						</h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit
+						magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/whisky/03_0004.jpg"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#">Varius magnis sollicitudin</a>
+						</h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit
+						magna.</p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/whisky/03_0005.jpg"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#">Varius magnis sollicitudin</a>
+						</h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit
+						magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/whisky/03_0006.jpg"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#">Fermentum sagittis proin</a>
+						</h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit
+						magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/whisky/03_0007.jpg"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#">Sed quis rhoncus placerat</a>
+						</h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit
+						magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/whisky/03_0008.jpg"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#">Ultrices urna sit lobortis</a>
+						</h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit
+						magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/whisky/03_0009.jpg"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#">Varius magnis sollicitudin</a>
+						</h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit
+						magna.</p>
+				</article>
+
+			</div>
+
+		</section>
+		
+		<!-- 와인 -->
+		<section class="carousel">
+			<div class="reel">
+			
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+
+			</div>
+
+		</section>
+		
+		<!-- 꼬낙 브랜디 -->
+		<section class="carousel">
+			<div class="reel">
+			
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+				<article>
+					<a href="#" class="image featured"><img src="images/soju/soju.png"
+						alt="" /></a>
+					<header>
+						<h3>
+							<a href="#" style="color: white;">참이슬 프레쉬</a>
+						</h3>
+					</header>
+					<p> 참이슬 프레쉬 입니다. </p>
+				</article>
+				
+
+			</div>
+
+		</section>
+					
+					
+					
+					<!-- <div class="container">
 						<div class="row">
 							<div class="4u 12u(mobile)">
 
-								<!-- Sidebar -->
+								Sidebar
 									<section class="box">
 										<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
 										<header>
@@ -88,7 +1065,7 @@
 							</div>
 							<div class="8u 12u(mobile) important(mobile)">
 
-								<!-- Content -->
+								Content
 									<article class="box post">
 										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 										<header>
@@ -143,7 +1120,7 @@
 
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
 			<!-- Footer -->
@@ -290,6 +1267,14 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js1/jquery.min.js"></script>
+			<script src="assets/js1/jquery.dropotron.min.js"></script>
+			<script src="assets/js1/jquery.scrolly.min.js"></script>
+			<script src="assets/js1/jquery.onvisible.min.js"></script>
+			<script src="assets/js1/skel.min.js"></script>
+			<script src="assets/js1/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js1/main.js"></script>
 
 	</body>
 </html>

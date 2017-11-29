@@ -138,10 +138,10 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 </style>
 </head>
 <body>
+<form action="main.jsp">
 	<div align="center">
 		<h1 id="speak" style="color: white;">또 뵙네요. 키핑하신 술 확인해드릴까요?</h1>
 	</div>
-
 
 	<div class="LoginArea">
 		<div class="loginStr">
@@ -150,16 +150,17 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 		<div class="IdPw">
 			<div class="idDiv">
 				<label for="id" style="color: white; font-size: 30px">ID
-					&nbsp</label> <input type="text" id="id">
+					&nbsp</label> <input type="text" id="id" required>
 			</div>
 			<div class="pwDiv">
 				<label for="pw" style="color: white; font-size: 30px">PW
-					&nbsp</label> <input type="password" id="pw">
+					&nbsp</label> <input type="password" id="pw" required>
 			</div>
 			<div class="subDiv">
 				<input class="submitButton" type="submit" style="font-size: 20px;" value="submit">
 			</div>
 		</div>
 	</div>
+</form>
 </body>
 </html>
