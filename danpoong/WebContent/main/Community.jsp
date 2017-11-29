@@ -9,8 +9,119 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style type="text/css">
+		#container {
+	width: 300px;
+	height: 26px;
+	margin-top: 3%;
+	margin-left: 70%;
+	display: inline-block;
+}
+
+
+.button-1 {
+	width: 70px;
+	height: 25px;
+	border: 1px solid #34495e;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-left: 10%;
+	margin-bottom: 80%;
+	display: inline-block;
+}
+
+.button-1 a {
+	font-family: arial;
+	font-size: 16px;
+	color: #34495e;
+	text-decoration: none;
+	line-height: 25px;
+	transition: all .5s ease;
+	z-index: 2;
+	position: relative;
+}
+
+.eff-1 {
+	width: 70px;
+	height: 25px;
+	top: -2px;
+	right: -70px;
+	background: #34495e;
+	position: absolute;
+	transition: all .5s ease;
+	z-index: 1;
+}
+
+.button-1:hover .eff-1 {
+	right: 0;
+}
+
+.button-1:hover a {
+	color: #fff;
+}
+
+.button-4 {
+	width: 70px;
+	height: 25px;
+	border: 1px solid #34495e;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-left: 1%;
+	display: inline-block;
+}
+
+.button-4 a {
+	font-family: arial;
+	font-size: 16px;
+	color: #34495e;
+	text-decoration: none;
+	line-height: 25px;
+	transition: all .5s ease;
+	z-index: 2;
+	position: relative;
+}
+
+.eff-4 {
+	width: 70px;
+	height: 50px;
+	left: -70px;
+	background: #34495e;
+	position: absolute;
+	transition: all .5s ease;
+	z-index: 1;
+}
+
+.button-4:hover .eff-4 {
+	left: 0;
+}
+
+.button-4:hover a {
+	color: #fff;
+}
+
+		</style>
 	</head>
-	<body class="right-sidebar">
+	<body class="right-sidebar" style="background-color: white;" >
+		<div id="container">
+		<div class="button-1">
+			<div class="eff-1"></div>
+			<a href="Login.html"> 로그인 </a>
+		</div>
+		<div class="button-4">
+			<div class="eff-4"></div>
+			<a href="JoinForm.html"> 회원가입 </a>
+		</div>
+
+	</div>
+	
 		<div id="page-wrapper">
 
 			<!-- Header -->

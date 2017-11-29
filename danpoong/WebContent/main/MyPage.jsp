@@ -9,8 +9,124 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+		<style type="text/css">
+		
+		#pw{
+		display: inline-block;
+		}
+		
+		
+		#container {
+	width: 300px;
+	height: 26px;
+	margin-top: 3%;
+	margin-left: 70%;
+	display: inline-block;
+}
+
+
+.button-1 {
+	width: 70px;
+	height: 25px;
+	border: 1px solid #34495e;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-left: 10%;
+	margin-bottom: 80%;
+	display: inline-block;
+}
+
+.button-1 a {
+	font-family: arial;
+	font-size: 16px;
+	color: #34495e;
+	text-decoration: none;
+	line-height: 25px;
+	transition: all .5s ease;
+	z-index: 2;
+	position: relative;
+}
+
+.eff-1 {
+	width: 70px;
+	height: 25px;
+	top: -2px;
+	right: -70px;
+	background: #34495e;
+	position: absolute;
+	transition: all .5s ease;
+	z-index: 1;
+}
+
+.button-1:hover .eff-1 {
+	right: 0;
+}
+
+.button-1:hover a {
+	color: #fff;
+}
+
+.button-4 {
+	width: 70px;
+	height: 25px;
+	border: 1px solid #34495e;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-left: 1%;
+	display: inline-block;
+}
+
+.button-4 a {
+	font-family: arial;
+	font-size: 16px;
+	color: #34495e;
+	text-decoration: none;
+	line-height: 25px;
+	transition: all .5s ease;
+	z-index: 2;
+	position: relative;
+}
+
+.eff-4 {
+	width: 70px;
+	height: 50px;
+	left: -70px;
+	background: #34495e;
+	position: absolute;
+	transition: all .5s ease;
+	z-index: 1;
+}
+
+.button-4:hover .eff-4 {
+	left: 0;
+}
+
+.button-4:hover a {
+	color: #fff;
+}
+		</style>
 	</head>
-	<body class="no-sidebar">
+	<body class="no-sidebar" style="background-color: white;">
+	<div id="container">
+		<div class="button-1">
+			<div class="eff-1"></div>
+			<a href="Login.html"> 로그인 </a>
+		</div>
+		<div class="button-4">
+			<div class="eff-4"></div>
+			<a href="JoinForm.html"> 회원가입 </a>
+		</div>
+
+	</div>
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -50,73 +166,19 @@
 							</nav>
 
 					</div>
+				<div id="main-wrapper" style="margin-left: 22%; margin-right: 22%;">
+					<div style="border : 2px solid black;height: 70px;" >
+						<div id = "pw" style="height: 70px;width: 300px; border: 1px solid blue;">패스워드를 입력해주세요</div>
+						<div id = "pw" style="height: 70px;width: 30px; border: 1px solid blue;"></div>
+						<div id = "pw" style="height: 70px;width: 500px; border: 1px solid blue;"><input type="text" name= "" style="width: 500px;height: 70px;"></div>
+					</div>
+					
+				</div>
+				
 				</div>
 
 			<!-- Main -->
-				<div id="main-wrapper">
-					<div class="container">
-
-						<!-- Content -->
-							<article class="box post">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<header>
-									<h2>No Sidebar</h2>
-									<p>Lorem ipsum dolor sit amet feugiat</p>
-								</header>
-								<p>
-									Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
-									hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
-									Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.
-									Pellentesque tempus nulla non urna eleifend ut ultrices nisi faucibus.
-									Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
-									hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
-									Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.
-								</p>
-								<p>
-									Praesent a dolor leo. Duis in felis in tortor lobortis volutpat et pretium tellus. Vestibulum ac ante nisl,
-									a elementum odio. Duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-									placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-									eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-									elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor.
-								</p>
-								<section>
-									<header>
-										<h3>Something else</h3>
-									</header>
-									<p>
-										Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-										placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-										sit amet nullam consequat feugiat dolore tempus.
-										Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-										placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor.
-									</p>
-									<p>
-										Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-										sit amet nullam consequat feugiat dolore tempus.
-									</p>
-								</section>
-								<section>
-									<header>
-										<h3>So in conclusion ...</h3>
-									</header>
-									<p>
-										Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-										sit amet nullam consequat feugiat dolore tempus. Elementum odio duis semper risus et lectus commodo fringilla.
-										Maecenas sagittis convallis justo vel mattis.
-									</p>
-								</section>
-							</article>
-
-					</div>
-				</div>
+				
 
 			<!-- Footer -->
 				<div id="footer-wrapper">

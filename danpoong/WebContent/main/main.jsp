@@ -259,11 +259,11 @@ h3 {
 	<div id="container">
 		<div class="button-1">
 			<div class="eff-1"></div>
-			<a href="#"> 로그인 </a>
+			<a href="Login.html"> 로그인 </a>
 		</div>
 		<div class="button-4">
 			<div class="eff-4"></div>
-			<a href="#"> 회원가입 </a>
+			<a href="JoinForm.html"> 회원가입 </a>
 		</div>
 
 	</div>
@@ -297,7 +297,7 @@ h3 {
 					<a href="index.html" style="display: inline-block;">알비스의 BAR입니다</a>
 				</h1>
 				<!-- ddddddd -->
-				<!-- Nav -->s
+				<!-- Nav -->
 				<nav id="nav">
 				<ul>
 					<li class="current"><a href="index.html">MAIN</a></li>
