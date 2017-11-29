@@ -13,39 +13,260 @@
 
 
 <style type="text/css">
-
-
-.main_common{
-    display: inline-block;
-
-    border: 1px solid blue;
+.main_common {
+	display: inline-block;
+	border: 1px solid blue;
 }
 
-	*{margin:0;padding:0;}
-	ul,li{list-style:none;}
-	#slide{height:300px;position:relative;overflow:hidden; margin-left: 22%; margin-right: 22%;}
-	#slide ul{width:400%;height:100%;transition:1s;}
-	#slide ul:after{content:"";display:block;clear:both;}
-	#slide li{float:left;width:25%;height:100%;}
-	#slide input{display:none;}
-	#slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
-	#slide .pos{text-align:center;position:absolute;bottom:10px;left:0;width:100%;text-align:center;}
-	#pos1:checked~ul{margin-left:0%;}
-	#pos2:checked~ul{margin-left:-100%;}
-	#pos3:checked~ul{margin-left:-200%;}
-	#pos4:checked~ul{margin-left:-300%;}
-	#pos1:checked~.pos>label:nth-child(1){background:#666;}
-	#pos2:checked~.pos>label:nth-child(2){background:#666;}
-	#pos3:checked~.pos>label:nth-child(3){background:#666;}
-	#pos4:checked~.pos>label:nth-child(4){background:#666;}
+* {
+	margin: 0;
+	padding: 0;
+}
 
+ul, li {
+	list-style: none;
+}
 
+#slide {
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+	margin-left: 22%;
+	margin-right: 22%;
+}
 
+#slide ul {
+	width: 400%;
+	height: 100%;
+	transition: 1s;
+}
+
+#slide ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#slide li {
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+
+#slide input {
+	display: none;
+}
+
+#slide label {
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #666;
+	background: #fff;
+	transition: 0.3s;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#slide .pos {
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+#pos1:checked ~ul {
+	margin-left: 0%;
+}
+
+#pos2:checked ~ul {
+	margin-left: -25%;
+}
+
+#pos3:checked ~ul {
+	margin-left: -50%;
+}
+
+#pos4:checked ~ul {
+	margin-left: -75%;
+}
+
+#pos1:checked ~.pos>label:nth-child(1) {
+	background: #666;
+}
+
+#pos2:checked ~.pos>label:nth-child(2) {
+	background: #666;
+}
+
+#pos3:checked ~.pos>label:nth-child(3) {
+	background: #666;
+}
+
+#pos4:checked ~.pos>label:nth-child(4) {
+	background: #666;
+}
+
+#recommandline {
+	margin-left: 22%;
+	margin-right: 22%;
+}
+
+#reviewline {
+	margin-left: 22%;
+	margin-right: 22%;
+}
+
+h3 {
+	display: inline-block;
+}
+
+#review {
+	display: inline-block;
+	background-image: url("images/review2.jpg"); /* 이미지크기499/252  */
+}
+
+#review2 {
+	display: inline-block;
+	background-image: url("images/reviewsec3.jpg");
+}
+
+#review3 {
+	display: inline-block;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+
+#review4 {
+	display: inline-block;
+	text-overflow: ellipsis;
+	text-align: center;
+	display: inline-block;
+}
+
+/* 로그인 로그아웃 버튼 */
+#container {
+	width: 300px;
+	height: 26px;
+	margin-top: 3%;
+	margin-left: 70%;
+	display: inline-block;
+}
+
+.button-1 {
+	width: 70px;
+	height: 25px;
+	border: 1px solid #34495e;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-left: 10%;
+	margin-bottom: 80%;
+	display: inline-block;
+}
+
+.button-1 a {
+	font-family: arial;
+	font-size: 16px;
+	color: #34495e;
+	text-decoration: none;
+	line-height: 25px;
+	transition: all .5s ease;
+	z-index: 2;
+	position: relative;
+}
+
+.eff-1 {
+	width: 70px;
+	height: 25px;
+	top: -2px;
+	right: -70px;
+	background: #34495e;
+	position: absolute;
+	transition: all .5s ease;
+	z-index: 1;
+}
+
+.button-1:hover .eff-1 {
+	right: 0;
+}
+
+.button-1:hover a {
+	color: #fff;
+}
+
+.button-4 {
+	width: 70px;
+	height: 25px;
+	border: 1px solid #34495e;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-left: 1%;
+	display: inline-block;
+}
+
+.button-4 a {
+	font-family: arial;
+	font-size: 16px;
+	color: #34495e;
+	text-decoration: none;
+	line-height: 25px;
+	transition: all .5s ease;
+	z-index: 2;
+	position: relative;
+}
+
+.eff-4 {
+	width: 70px;
+	height: 50px;
+	left: -70px;
+	background: #34495e;
+	position: absolute;
+	transition: all .5s ease;
+	z-index: 1;
+}
+
+.button-4:hover .eff-4 {
+	left: 0;
+}
+
+.button-4:hover a {
+	color: #fff;
+}
 </style>
 
 
 </head>
-<body class="homepage">
+
+
+<body class="homepage" style="background-color: white;">
+
+
+
+
+
+
+	<div id="container">
+		<div class="button-1">
+			<div class="eff-1"></div>
+			<a href="#"> 로그인 </a>
+		</div>
+		<div class="button-4">
+			<div class="eff-4"></div>
+			<a href="#"> 회원가입 </a>
+		</div>
+
+	</div>
 
 
 
@@ -53,16 +274,30 @@
 
 	<div id="page-wrapper">
 
+
+
 		<!-- Header -->
 		<div id="header-wrapper">
+
+			<!-- 스크롤 고정 div -->
+			<div
+				style="position: fixed; right: 100px; bottom: 500px; height: 70px; width: 70px; border: 3px solid black;">
+			</div>
+
 			<div id="header">
+
+
+
+
+
+
 
 				<!-- Logo -->
 				<h1>
-					<a href="index.html">알비스의 BAR입니다</a>
+					<a href="index.html" style="display: inline-block;">알비스의 BAR입니다</a>
 				</h1>
 				<!-- ddddddd -->
-				<!-- Nav -->
+				<!-- Nav -->s
 				<nav id="nav">
 				<ul>
 					<li class="current"><a href="index.html">MAIN</a></li>
@@ -87,55 +322,49 @@
 				<div class="row2">
 					<header class="major">
 
-					<h2>당신을 위한 술 추천</h2>
+					<h2>A recommendation for you</h2>
 					</header>
 
 					<div class="row">
 						<div class="4u 12u(mobile)">
-							<section class="box"> <a href="#"
-								class="image featured"><img src="images/HI1.jpg" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/HI1.jpg"
+								alt="" /></a>
 							<header>
 							<h3>하이네켄</h3>
 							</header>
 							<h5>당신의 취향과 딱 맞는 술입니다. 분명 마음에 드실 겁니다!</h5>
 
-							<br>
-							도수 %%%<br>
-							가격 %%%<br>
-							평점 @@@ <footer> <a href="#" class="button alt">Find
-								out more</a> </footer> </section>
+							<br> 도수 %%%<br> 가격 %%%<br> 평점 @@@
+							<footer> <a href="#" class="button alt">Find out
+								more</a> </footer>
 						</div>
 						<div class="4u 12u(mobile)">
-							<section class="box"> <a href="#"
-								class="image featured"><img src="images/ICE1.jpg" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/ICE1.jpg"
+								alt="" /></a>
 							<header>
 							<h3>오크에이지드</h3>
 							</header>
 							<h5>이번에 새로 나온 술입니다. 맛이 기대가 됩니다!</h5>
-							<br>
-							도수 %%%<br>
-							가격 %%%<br>
-							평점 @@@ <footer> <a href="#" class="button alt">Find
-								out more</a> </footer> </section>
+							<br> <br> 도수 %%%<br> 가격 %%%<br> 평점 @@@
+							<footer> <a href="#" class="button alt">Find out
+								more</a> </footer>
 						</div>
 						<div class="4u 12u(mobile)">
-							<section class="box"> <a href="#"
-								class="image featured"><img src="images/bodka1.jpg" alt="" /></a>
+							<a href="#" class="image featured"><img
+								src="images/bodka1.jpg" alt="" /></a>
 							<header>
 							<h3>스톨리치나야</h3>
 							</header>
 							<h5>당신이 즐기는 술은 아니지만 새로운 도전을 위한 당신에게 추천드립니다.</h5>
-							<br>
-							도수 %%%<br>
-							가격 %%%<br>
-							평점 @@@ <footer> <a href="#" class="button alt">Find
-								out more</a> </footer> </section>
+							<br> 도수 %%%<br> 가격 %%%<br> 평점 @@@
+							<footer> <a href="#" class="button alt">Find out
+								more</a> </footer>
 						</div>
 
 
 
 					</div>
-					</section>
+
 
 				</div>
 			</div>
@@ -149,346 +378,330 @@
 
 
 			<!-- 술 순위 -->
-			
-			
+			<br> <br>
+
+			<div id="recommandline">
+				<header class="major">
+
+				<h2>Order of drinking</h2>
+				</header>
+			</div>
+
+			<div id="slide">
+				<input type="radio" name="pos" id="pos1" checked> <input
+					type="radio" name="pos" id="pos2"> <input type="radio"
+					name="pos" id="pos3"> <input type="radio" name="pos"
+					id="pos4">
+				<ul>
+					<li
+						style="background-color: white; opacity: 0.6; border-bottom: 3px solid #670000; border-top: 3px solid #670000">
+
+						<table>
+							<tr>
+								<td>
+									<table>
+										<br>
+										<tr align="right">
+											<td align="center"><h3 style="color: black;">소주</h3></td>
+										</tr>
+										<tr align="right">
+											<td align="center"><h5>&nbsp</h5></td>
+										</tr>
+										<tr align="right">
+											<td align="center">1위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">2위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">3위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">4위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">5위술</td>
+										</tr>
+									</table>
+								</td>
+								<td>
+									<table>
+										<br>
+										<tr align="right">
+											<td align="center"><h3 style="color: black;">맥주</h3></td>
+										</tr>
+										<tr align="right">
+											<td align="center"><h5>&nbsp</h5></td>
+										</tr>
+										<tr align="right">
+											<td align="center">1위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">2위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">3위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">4위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">5위술</td>
+										</tr>
+									</table>
+								</td>
+								<td>
+									<table>
+										<br>
+										<tr align="right">
+											<td align="center"><h3 style="color: black;">막걸리</h3></td>
+										</tr>
+										<tr align="right">
+											<td align="center"><h5>&nbsp</h5></td>
+										</tr>
+										<tr align="right">
+											<td align="center">1위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">2위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">3위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">4위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">5위술</td>
+										</tr>
+									</table>
+								</td>
+								<td>
+									<table>
+										<br>
+										<tr align="right">
+											<td align="center"><h3 style="color: black;">양주</h3></td>
+										</tr>
+										<tr align="right">
+											<td align="center"><h5>&nbsp</h5></td>
+										</tr>
+										<tr align="right">
+											<td align="center">1위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">2위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">3위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">4위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">5위술</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
 
 
 
-<div id="slide">
-	<input type="radio" name="pos" id="pos1" checked>
-	<input type="radio" name="pos" id="pos2">
-	<input type="radio" name="pos" id="pos3">
-	<input type="radio" name="pos" id="pos4">
-	<ul>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
-	<p class="pos">
-		<label for="pos1"></label>
-		<label for="pos2"></label>
-		<label for="pos3"></label>
-		<label for="pos4"></label>
-	</p>
-</div>
-			
-			
-			
-			<div class="row4" align="center";>
 
-				<div class="main_1 main_common">
-					<section class="box">
-					<h2 align=center>소주 차트</h2>
-					<br>
-					<br>
-					<table>
-						<tr align="center">
-							<td>1위소주</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>2위소주</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>3위소주</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>4위소주</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>5위소주</td>
-						</tr>
-					</table>
-				</div>
+					</li>
+					<li
+						style="background-color: white; opacity: 0.6; border-bottom: 3px solid #670000; border-right: 3px solid #670000; border-top: 3px solid #670000;">
 
-				<div class="main_2 main_common">
-					<section class="box">
-					<h2 align=center>맥주 차트</h2>
-					<br>
-					<br>
-					<table>
-						<tr align="center">
-							<td>1위맥주</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>2위맥주</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>3위맥주</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>4위맥주</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>5위맥주</td>
-						</tr>
-					</table>
-				</div>
+						<table>
+							<tr>
 
-				<div class="main_3 main_common">
-					<section class="box">
-					<h2 align=center>양주 차트</h2>
-					<br>
-					<br>
-					<table>
-						<tr align="center">
-							<td>1위양주</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>2위양주</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>3위양주</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>4위양주</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>5위양주</td>
-						</tr>
-					</table>
-				</div>
+								<td>
+									<table>
+										<br>
+										<tr align="right">
+											<td align="center"><h3 style="color: black;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
+												<h3 style="color: black;">보드카</h3></td>
+										</tr>
+										<tr align="right">
+											<td align="center"><h5>&nbsp</h5></td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5위술</td>
+										</tr>
+									</table>
+								</td>
 
-				<div class="main_4 main_common">
-					<section class="box">
-					<h2 align=center>와인 차트</h2>
-					<br>
-					<br>
-					<table>
-						<tr align="center">
-							<td>1위와인</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>2위와인</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>3위와인</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>4위와인</td>
-						</tr>
-						<tr>
-							<td>&nbsp</td>
-						</tr>
-						<tr align="center">
-							<td>5위와인</td>
-						</tr>
-					</table>
-				</div>
+								<td>
+									<table>
+										<br>
+										<tr align="right">
+											<td align="center"><h3 style="color: black;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
+												<h3 style="color: black;">전통주</h3></td>
+										</tr>
+										<tr align="right">
+											<td align="center"><h5>&nbsp</h5></td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5위술</td>
+										</tr>
+									</table>
+								</td>
+								<td>
+									<table>
+										<br>
+										<tr align="right">
+											<td align="center"><h3 style="color: black;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
+												<h3 style="color: black;">와인</h3></td>
+										</tr>
+										<tr align="right">
+											<td align="center"><h5>&nbsp</h5></td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4위술</td>
+										</tr>
+										<tr align="right">
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5위술</td>
+										</tr>
+									</table>
+								</td>
+								<td>
+									<table>
+										<br>
+										<tr align="right">
+											<td align="center"><h3 style="color: black;">암것도
+													넣지마</h3></td>
+										</tr>
+										<tr align="right">
+											<td align="center"><h5>&nbsp</h5></td>
+										</tr>
+										<tr align="right">
+											<td align="center">암것도 넣지마</td>
+										</tr>
+										<tr align="right">
+											<td align="center">암것도 넣지마</td>
+										</tr>
+										<tr align="right">
+											<td align="center">암것도 넣지마</td>
+										</tr>
+										<tr align="right">
+											<td align="center">암것도 넣지마</td>
+										</tr>
+										<tr align="right">
+											<td align="center">암것도 넣지마</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
 
+					</li>
 
-
+				</ul>
+				<p class="pos">
+					<label for="pos1"></label> <label for="pos2"></label> <label
+						for="pos3"></label> <label for="pos4"></label>
+				</p>
 			</div>
 
 
-		</div>
 
+			<br> <br>
+			<div id="reviewline">
+				<header class="major">
 
+				<h2>Top Review</h2>
+				</header>
+			</div>
 
-		<!-- Footer -->
-		<div id="footer-wrapper">
-			<section id="footer" class="container">
-			<div class="row">
-				<div class="8u 12u(mobile)">
-					<section> <header>
-					<h2>Blandit nisl adipiscing</h2>
-					</header>
-					<ul class="dates">
-						<li><span class="date">Jan <strong>27</strong></span>
-							<h3>
-								<a href="#">Lorem dolor sit amet veroeros</a>
-							</h3>
-							<p>Ipsum dolor sit amet veroeros consequat blandit ipsum
-								phasellus lorem consequat etiam.</p></li>
-						<li><span class="date">Jan <strong>23</strong></span>
-							<h3>
-								<a href="#">Ipsum sed blandit nisl consequat</a>
-							</h3>
-							<p>Blandit phasellus lorem ipsum dolor tempor sapien tortor
-								hendrerit adipiscing feugiat lorem.</p></li>
-						<li><span class="date">Jan <strong>15</strong></span>
-							<h3>
-								<a href="#">Magna tempus lorem feugiat</a>
-							</h3>
-							<p>Dolore consequat sed phasellus lorem sed etiam nullam
-								dolor etiam sed amet sit consequat.</p></li>
-						<li><span class="date">Jan <strong>12</strong></span>
-							<h3>
-								<a href="#">Dolore tempus ipsum feugiat nulla</a>
-							</h3>
-							<p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor
-								sit amet nullam consequat.</p></li>
-						<li><span class="date">Jan <strong>10</strong></span>
-							<h3>
-								<a href="#">Blandit tempus aliquam?</a>
-							</h3>
-							<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem
-								ipsum dolor sit amet dolore.</p></li>
-					</ul>
-					</section>
+			<div
+				style="height: 600px; width: 1190px; border-bottom: 1px solid #791212; border-top: 1px solid #791212; margin-left: 22%">
+				<div
+					style="height: 250px; width: 500px; border: 1px solid #EAEAEA; margin-left: 0.1%; margin-top: 2%;"
+					id="review";></div>
+
+				<div
+					style="height: 250px; width: 500px; border: 1px solid #EAEAEA; margin-left: 15.1%; margin-top: 2%;"
+					id="review2";>
+					<section id="reimage2"> </section>
 				</div>
-				<div class="4u 12u(mobile)">
-					<section> <header>
-					<h2>What's this all about?</h2>
-					</header> <a href="#" class="image featured"><img src="images/pic10.jpg"
-						alt="" /></a>
-					<p>
-						This is <strong>Dopetrope</strong> a free, fully responsive HTML5
-						site template by <a href="http://twitter.com/ajlkn">AJ</a> for <a
-							href="http://html5up.net/">HTML5 UP</a> It's released for free
-						under the <a href="http://html5up.net/license/">Creative
-							Commons Attribution</a> license so feel free to use it for any
-						personal or commercial project &ndash; just don't forget to credit
-						us!
+
+				<div
+					style="height: 250px; width: 500px; border: 1px solid #EAEAEA; margin-left: 0.1%; margin-top: 2%;"
+					id="review3";>
+					<h3>혼술하기 딱 좋은 술</h3>
+					<br> <br>
+					<p align="left">
+						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용</p>
+				</div>
+
+
+				<div
+					style="height: 250px; width: 500px; border: 1px solid #EAEAEA; margin-left: 15.1%; margin-top: 2%;"
+					id="review4">
+					<h3>친구들이랑 마셨어요</h3>
+					<br> <br>
+					<p align="left">
+						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용
+
+						<!-- 168글자 가능 -->
+
 					</p>
-					<footer> <a href="#" class="button">Find out more</a> </footer> </section>
 				</div>
 			</div>
-			<div class="row">
-				<div class="4u 12u(mobile)">
-					<section> <header>
-					<h2>Tempus consequat</h2>
-					</header>
-					<ul class="divided">
-						<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-						<li><a href="#">Sed et blandit consequat sed tlorem
-								blandit</a></li>
-						<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-						<li><a href="#">Hendrerit tortor vitae mattis tempor
-								sapien</a></li>
-						<li><a href="#">Sem feugiat sapien id suscipit magna
-								felis nec</a></li>
-						<li><a href="#">Elit class aptent taciti sociosqu ad
-								litora</a></li>
-					</ul>
-					</section>
-				</div>
-				<div class="4u 12u(mobile)">
-					<section> <header>
-					<h2>Ipsum et phasellus</h2>
-					</header>
-					<ul class="divided">
-						<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-						<li><a href="#">Sed et blandit consequat sed tlorem
-								blandit</a></li>
-						<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-						<li><a href="#">Hendrerit tortor vitae mattis tempor
-								sapien</a></li>
-						<li><a href="#">Sem feugiat sapien id suscipit magna
-								felis nec</a></li>
-						<li><a href="#">Elit class aptent taciti sociosqu ad
-								litora</a></li>
-					</ul>
-					</section>
-				</div>
-				<div class="4u 12u(mobile)">
-					<section> <header>
-					<h2>Vitae tempor lorem</h2>
-					</header>
-					<ul class="social">
-						<li><a class="icon fa-facebook" href="#"><span
-								class="label">Facebook</span></a></li>
-						<li><a class="icon fa-twitter" href="#"><span
-								class="label">Twitter</span></a></li>
-						<li><a class="icon fa-dribbble" href="#"><span
-								class="label">Dribbble</span></a></li>
-						<li><a class="icon fa-linkedin" href="#"><span
-								class="label">LinkedIn</span></a></li>
-						<li><a class="icon fa-google-plus" href="#"><span
-								class="label">Google+</span></a></li>
-					</ul>
-					<ul class="contact">
-						<li>
-							<h3>Address</h3>
-							<p>
-								Untitled Incorporated<br /> 1234 Somewhere Road Suite<br />
-								Nashville, TN 00000-0000
-							</p>
-						</li>
-						<li>
-							<h3>Mail</h3>
-							<p>
-								<a href="#">someone@untitled.tld</a>
-							</p>
-						</li>
-						<li>
-							<h3>Phone</h3>
-							<p>(800) 000-0000</p>
-						</li>
-					</ul>
-					</section>
-				</div>
-			</div>
-			<div class="row">
-				<div class="12u">
 
-					<!-- Copyright -->
-					<div id="copyright">
-						<ul class="links">
-							<li>&copy; Untitled. All rights reserved.</li>
-							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
 
-				</div>
-			</div>
-			</section>
-		</div>
 
-	</div>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/skel-viewport.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="assets/js/main.js"></script>
+
+
+			<!-- Footer -->
+
+
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 </body>
 </html>
