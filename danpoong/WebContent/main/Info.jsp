@@ -356,17 +356,18 @@ img {
 			<!-- Soju -->
 			<section class="carousel">
 			<div class="reel">
-				
-				<div style="height: 400px; width: 200px; display: inline-block;  margin-top: 100px; ">
-				
+
+				<div
+					style="height: 400px; width: 200px; display: inline-block; margin-top: 100px;">
+
 					<button type="button" class="btn btn-info btn-lg"
 						data-toggle="modal" data-target="#myModal"
-						style="height: 300px; width: 130px; background-image: url('images/02_0002.png'); background-repeat: no-repeat; background-size: cover; border: 3px solid black;"></button>		
-				
+						style="height: 300px; width: 130px; background-image: url('images/02_0002.png'); background-repeat: no-repeat; background-size: cover; border: 3px solid black;"></button>
+
 				</div>
-				
-				
-				
+
+
+
 				<!-- <article> <a href="#" class="image featured"><img
 					src="images/soju/soju.png" alt="" /></a> <header>
 				<h3>
@@ -1399,281 +1400,288 @@ img {
 
 
 
-<div class="modal fade" id="myModal" role="dialog">
-			<div class="modal-dialog">
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
 
-				<!-- Modal content-->
-
-
-
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						술이름
-					</div>
-
-
-					<div class="modal-body"></div>
-
-
-					<div style="border: 3px solid black; height: 400px; width: 60%;"
-						id="border1"></div>
-					<div style="border: 3px solid black; height: 400px; width: 38%;"
-						id="border2">
-						<table align="center">
-							<td>&nbsp</td>
-							<tr align="center" style="border-bottom: 1px solid black;">
-								<td style="width: 100px;"><h3>이름</h3></td>
-								<td style="width: 100px;"><h3>%%%</h3></td>
-							</tr>
-							<tr>
-								<td><h5>&nbsp</h5></td>
-							</tr>
-							<tr align="center" style="border-bottom: 1px solid black">
-								<td style="width: 100px;"><h3>도수</h3></td>
-								<td style="width: 100px;"><h3>%%%</h3></td>
-							</tr>
-							<tr>
-								<td><h5>&nbsp</h5></td>
-							</tr>
-							<tr align="center" style="border-bottom: 1px solid black">
-								<td style="width: 100px;"><h3>가격</h3></td>
-								<td style="width: 100px;"><h3>%%%</h3></td>
-							</tr>
-							<tr>
-								<td><h5>&nbsp</h5></td>
-							</tr>
-							<tr align="center" style="border-bottom: 1px solid black">
-								<td style="width: 100px;"><h3>기타</h3></td>
-								<td style="width: 100px;"><h3>%%%</h3></td>
-							</tr>
-						</table>
-					</div>
-					<div style="border: 6px solid black; height: 300px; width: 100%;"
-						id="border3">
+			<!-- Modal content-->
 
 
 
-						<!-- 댓글란 -->
-						<div style="width: 100%; height: 45px; border: 1px solid black;">
-							<div
-								style="width: 15%; height: 30px; border: 1px solid red; margin: 5px;"
-								id="star1"></div>
-							<div
-								style="width: 26%; height: 30px; border: 1px solid green; margin: 5px;"
-								id="star2">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					술이름
+				</div>
 
-								<span class="star-input"> <span class="input"> <input
-										type="radio" name="star-input" id="p1" value="1"><label
-										for="p1">1</label> <input type="radio" name="star-input"
-										id="p2" value="2"><label for="p2">2</label> <input
-										type="radio" name="star-input" id="p3" value="3"><label
-										for="p3">3</label> <input type="radio" name="star-input"
-										id="p4" value="4"><label for="p4">4</label> <input
-										type="radio" name="star-input" id="p5" value="5"><label
-										for="p5">5</label> <input type="radio" name="star-input"
-										id="p6" value="6"><label for="p6">6</label> <input
-										type="radio" name="star-input" id="p7" value="7"><label
-										for="p7">7</label> <input type="radio" name="star-input"
-										id="p8" value="8"><label for="p8">8</label> <input
-										type="radio" name="star-input" id="p9" value="9"><label
-										for="p9">9</label> <input type="radio" name="star-input"
-										id="p10" value="10"><label for="p10">10</label>
-								</span> <output for="star-input"> <b>0</b>점</output>
-								</span>
-								<script type="text/javascript">
-									var starRating = function() {
-										var $star = $(".star-input"), $result = $star
-												.find("output>b");
-										$(document)
-												.on(
-														"focusin",
-														".star-input>.input",
-														function() {
-															$(this).addClass(
-																	"focus");
-														})
-												.on(
-														"focusout",
-														".star-input>.input",
-														function() {
-															var $this = $(this);
-															setTimeout(
-																	function() {
-																		if ($this
-																				.find(":focus").length === 0) {
-																			$this
-																					.removeClass("focus");
-																		}
-																	}, 100);
-														})
-												.on(
-														"change",
-														".star-input :radio",
-														function() {
-															$result
-																	.text($(
-																			this)
-																			.next()
-																			.text());
-														})
-												.on(
-														"mouseover",
-														".star-input label",
-														function() {
-															$result
-																	.text($(
-																			this)
-																			.text());
-														})
-												.on(
-														"mouseleave",
-														".star-input>.input",
-														function() {
-															var $checked = $star
-																	.find(":checked");
-															if ($checked.length === 0) {
-																$result
-																		.text("0");
-															} else {
-																$result
-																		.text($checked
-																				.next()
-																				.text());
-															}
-														});
-									};
-									starRating();
-								</script>
 
-							</div>
+				<div class="modal-body"></div>
 
-							<div
-								style="width: 51%; height: 30px; border: 1px solid green; margin: 5px; display: inline-block;"
-								id="star3"></div>
 
-						</div>
+				<div style="border: 3px solid black; height: 400px; width: 60%;"
+					id="border1"></div>
+				<div style="border: 3px solid black; height: 400px; width: 38%;"
+					id="border2">
+					<table align="center">
+						<td>&nbsp</td>
+						<tr align="center" style="border-bottom: 1px solid black;">
+							<td style="width: 100px;"><h3>이름</h3></td>
+							<td style="width: 100px;"><h3>%%%</h3></td>
+						</tr>
+						<tr>
+							<td><h5>&nbsp</h5></td>
+						</tr>
+						<tr align="center" style="border-bottom: 1px solid black">
+							<td style="width: 100px;"><h3>도수</h3></td>
+							<td style="width: 100px;"><h3>%%%</h3></td>
+						</tr>
+						<tr>
+							<td><h5>&nbsp</h5></td>
+						</tr>
+						<tr align="center" style="border-bottom: 1px solid black">
+							<td style="width: 100px;"><h3>가격</h3></td>
+							<td style="width: 100px;"><h3>%%%</h3></td>
+						</tr>
+						<tr>
+							<td><h5>&nbsp</h5></td>
+						</tr>
+						<tr align="center" style="border-bottom: 1px solid black">
+							<td style="width: 100px;"><h3>기타</h3></td>
+							<td style="width: 100px;"><h3>%%%</h3></td>
+						</tr>
+					</table>
+				</div>
+				<div style="border: 6px solid black; height: 300px; width: 100%;"
+					id="border3">
 
 
 
-						<!-- 내가 쓰는 댓글란 -->
-
-				<div style="width: 100%; height: 45px; border-top: 2px solid gray; margin-top: 33.5%;">
+					<!-- 댓글란 -->
+					<div style="width: 100%; height: 45px; border: 1px solid black;">
 						<div
-							style="width: 100%; height: 45px; border: 1px solid black;">
-							<div
-								style="width: 15%; height: 30px; border: 1px solid red; margin: 5px;"
-								id="star1"></div>
-							<div
-								style="width: 26%; height: 30px; border: 1px solid green; margin: 5px;"
-								id="star2">
+							style="width: 15%; height: 30px; border: 1px solid red; margin: 5px;"
+							id="star1"></div>
+						<div
+							style="width: 26%; height: 30px; border: 1px solid green; margin: 5px;"
+							id="star2">
 
-								<span class="star-input"> <span class="input"> <input
-										type="radio" name="star-input" id="p1" value="1"><label
-										for="p1">1</label> <input type="radio" name="star-input"
-										id="p2" value="2"><label for="p2">2</label> <input
-										type="radio" name="star-input" id="p3" value="3"><label
-										for="p3">3</label> <input type="radio" name="star-input"
-										id="p4" value="4"><label for="p4">4</label> <input
-										type="radio" name="star-input" id="p5" value="5"><label
-										for="p5">5</label> <input type="radio" name="star-input"
-										id="p6" value="6"><label for="p6">6</label> <input
-										type="radio" name="star-input" id="p7" value="7"><label
-										for="p7">7</label> <input type="radio" name="star-input"
-										id="p8" value="8"><label for="p8">8</label> <input
-										type="radio" name="star-input" id="p9" value="9"><label
-										for="p9">9</label> <input type="radio" name="star-input"
-										id="p10" value="10"><label for="p10">10</label>
-								</span> <output for="star-input"> <b>0</b>점</output>
-								</span>
-								<script type="text/javascript">
-									var starRating = function() {
-										var $star = $(".star-input"), $result = $star
-												.find("output>b");
-										$(document)
-												.on(
-														"focusin",
-														".star-input>.input",
-														function() {
-															$(this).addClass(
-																	"focus");
-														})
-												.on(
-														"focusout",
-														".star-input>.input",
-														function() {
-															var $this = $(this);
-															setTimeout(
-																	function() {
-																		if ($this
-																				.find(":focus").length === 0) {
-																			$this
-																					.removeClass("focus");
-																		}
-																	}, 100);
-														})
-												.on(
-														"change",
-														".star-input :radio",
-														function() {
+							<span class="star-input"> <span class="input"> <input
+									type="radio" name="star-input" id="p1" value="1"><label
+									for="p1">1</label> <input type="radio" name="star-input"
+									id="p2" value="2"><label for="p2">2</label> <input
+									type="radio" name="star-input" id="p3" value="3"><label
+									for="p3">3</label> <input type="radio" name="star-input"
+									id="p4" value="4"><label for="p4">4</label> <input
+									type="radio" name="star-input" id="p5" value="5"><label
+									for="p5">5</label> <input type="radio" name="star-input"
+									id="p6" value="6"><label for="p6">6</label> <input
+									type="radio" name="star-input" id="p7" value="7"><label
+									for="p7">7</label> <input type="radio" name="star-input"
+									id="p8" value="8"><label for="p8">8</label> <input
+									type="radio" name="star-input" id="p9" value="9"><label
+									for="p9">9</label> <input type="radio" name="star-input"
+									id="p10" value="10"><label for="p10">10</label>
+							</span> <output for="star-input"> <b>0</b>점</output>
+							</span>
+							<script type="text/javascript">
+								var starRating = function() {
+									var $star = $(".star-input"), $result = $star
+											.find("output>b");
+									$(document)
+											.on(
+													"focusin",
+													".star-input>.input",
+													function() {
+														$(this).addClass(
+																"focus");
+													})
+											.on(
+													"focusout",
+													".star-input>.input",
+													function() {
+														var $this = $(this);
+														setTimeout(
+																function() {
+																	if ($this
+																			.find(":focus").length === 0) {
+																		$this
+																				.removeClass("focus");
+																	}
+																}, 100);
+													})
+											.on(
+													"change",
+													".star-input :radio",
+													function() {
+														$result.text($(this)
+																.next().text());
+													})
+											.on(
+													"mouseover",
+													".star-input label",
+													function() {
+														$result.text($(this)
+																.text());
+													})
+											.on(
+													"mouseleave",
+													".star-input>.input",
+													function() {
+														var $checked = $star
+																.find(":checked");
+														if ($checked.length === 0) {
+															$result.text("0");
+														} else {
 															$result
-																	.text($(
-																			this)
+																	.text($checked
 																			.next()
 																			.text());
-														})
-												.on(
-														"mouseover",
-														".star-input label",
-														function() {
-															$result
-																	.text($(
-																			this)
-																			.text());
-														})
-												.on(
-														"mouseleave",
-														".star-input>.input",
-														function() {
-															var $checked = $star
-																	.find(":checked");
-															if ($checked.length === 0) {
-																$result
-																		.text("0");
-															} else {
-																$result
-																		.text($checked
-																				.next()
-																				.text());
-															}
-														});
-									};
-									starRating();
-								</script>
-
-							</div>
-
-							<div
-								style="width: 51%; height: 30px; border: 1px solid green; margin: 5px; display: inline-block;"
-								id="star3">
-								<input type = "text" style="width: 100%; height: 29px; border: 1px solid green;">
-								</div>
+														}
+													});
+								};
+								starRating();
+							</script>
 
 						</div>
-				</div>
 
-
-
+						<div
+							style="width: 51%; height: 30px; border: 1px solid green; margin: 5px; display: inline-block;"
+							id="star3"></div>
 
 					</div>
 
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: black;">Close</button>
+
+
+					<!-- 내가 쓰는 댓글란 -->
+
+					<div
+						style="width: 100%; height: 45px; border-top: 2px solid gray; margin-top: 33.5%;">
+						<div style="width: 100%; height: 45px; border: 1px solid pink;">
+							<table>
+								<tr>
+									<td style="width: 100px; height: 30px;">
+										<div
+											style="width: 100%; height: 30px; border: 1px solid red; margin: 5px;"
+											id="star1"></div>
+									</td>
+									<td style="width: 150px; height: 30px;">
+										<div
+											style="width: 100%; height: 30px; border: 1px solid pink; margin-left: 10px;"
+											id="star2">
+
+											<span class="star-input" style="vertical-align:text-bottom; line-height: 2.7;"> <span class="input">
+													<input type="radio" name="star-input" id="p1" value="1"><label
+													for="p1">1</label> <input type="radio" name="star-input"
+													id="p2" value="2"><label for="p2">2</label> <input
+													type="radio" name="star-input" id="p3" value="3"><label
+													for="p3">3</label> <input type="radio" name="star-input"
+													id="p4" value="4"><label for="p4">4</label> <input
+													type="radio" name="star-input" id="p5" value="5"><label
+													for="p5">5</label> <input type="radio" name="star-input"
+													id="p6" value="6"><label for="p6">6</label> <input
+													type="radio" name="star-input" id="p7" value="7"><label
+													for="p7">7</label> <input type="radio" name="star-input"
+													id="p8" value="8"><label for="p8">8</label> <input
+													type="radio" name="star-input" id="p9" value="9"><label
+													for="p9">9</label> <input type="radio" name="star-input"
+													id="p10" value="10"><label for="p10">10</label>
+											</span> <output for="star-input"> <b>0</b>점</output>
+											</span>
+											<script type="text/javascript">
+												var starRating = function() {
+													var $star = $(".star-input"), $result = $star
+															.find("output>b");
+													$(document)
+															.on(
+																	"focusin",
+																	".star-input>.input",
+																	function() {
+																		$(this)
+																				.addClass(
+																						"focus");
+																	})
+															.on(
+																	"focusout",
+																	".star-input>.input",
+																	function() {
+																		var $this = $(this);
+																		setTimeout(
+																				function() {
+																					if ($this
+																							.find(":focus").length === 0) {
+																						$this
+																								.removeClass("focus");
+																					}
+																				},
+																				100);
+																	})
+															.on(
+																	"change",
+																	".star-input :radio",
+																	function() {
+																		$result
+																				.text($(
+																						this)
+																						.next()
+																						.text());
+																	})
+															.on(
+																	"mouseover",
+																	".star-input label",
+																	function() {
+																		$result
+																				.text($(
+																						this)
+																						.text());
+																	})
+															.on(
+																	"mouseleave",
+																	".star-input>.input",
+																	function() {
+																		var $checked = $star
+																				.find(":checked");
+																		if ($checked.length === 0) {
+																			$result
+																					.text("0");
+																		} else {
+																			$result
+																					.text($checked
+																							.next()
+																							.text());
+																		}
+																	});
+												};
+												starRating();
+											</script>
+
+										</div>
+									</td>
+									<td style="width: 300px; height: 30px;">
+										<div
+											style="width: 51%; height: 30px; border: 1px solid green; margin: 5px; display: inline-block;"
+											id="star3">
+											<input type="text"
+												style="width: 100%; height: 29px; border: 1px solid green;">
+										</div>
+									</td>
+								</tr>
+							</table>
+
+						</div>
 					</div>
+
+
+
+
 				</div>
 
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"
+						style="background-color: black;">Close</button>
+				</div>
 			</div>
+
 		</div>
+	</div>
 
 
 
