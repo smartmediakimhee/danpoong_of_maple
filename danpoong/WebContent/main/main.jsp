@@ -11,6 +11,11 @@
 <link rel="stylesheet" href="assets/css/main.css" />
 <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
+	rel="stylesheet">
+
 
 <style type="text/css">
 .main_common {
@@ -18,10 +23,28 @@
 	border: 1px solid blue;
 }
 
+body {
+	font-family: 'Indie Flower', cursive;
+}
+
+.korean{
+font-family: 'Nanum Brush Script', cursive;
+}
+/* 
+font-family: 'Nanum Brush Script', cursive; */
+
+
+
+#fixed {
+	font-family: 'Indie Flower', cursive;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 }
+
+
 
 ul, li {
 	list-style: none;
@@ -259,15 +282,14 @@ h3 {
 	<div id="container">
 		<div class="button-1">
 			<div class="eff-1"></div>
-			<a href="Login.html"> 로그인 </a>
+			<a href="Login.html"> LOGIN </a>
 		</div>
 		<div class="button-4">
 			<div class="eff-4"></div>
-			<a href="JoinForm.html"> 회원가입 </a>
+			<a href="JoinForm.html"> JOIN </a>
 		</div>
 
 	</div>
-
 
 
 
@@ -276,12 +298,18 @@ h3 {
 
 
 
+
 		<!-- Header -->
 		<div id="header-wrapper">
 
+
+
 			<!-- 스크롤 고정 div -->
 			<div
-				style="position: fixed; right: 100px; bottom: 500px; height: 70px; width: 70px; border: 3px solid black;">
+				style="position: fixed; right: 100px; bottom: 500px; height: 70px; width: 170px;"">
+				<button style="height: 70px; width: 170px; background-color: white;">
+					<h5 style="color: black;"id= "fixed">find out more</h5>
+				</button>
 			</div>
 
 			<div id="header">
@@ -289,12 +317,9 @@ h3 {
 
 
 
-
-
-
 				<!-- Logo -->
 				<h1>
-					<a href="index.html" style="display: inline-block;">알비스의 BAR입니다</a>
+					<a href="main.jsp" style="display: inline-block;">ALVIS'S BAR</a>
 				</h1>
 				<!-- ddddddd -->
 				<!-- Nav -->
@@ -311,7 +336,7 @@ h3 {
 				<!-- Banner -->
 				<div class="row3">
 					<section id="banner"> <header>
-					<h3>어서오세요 손님! 무엇을 도와드릴까요?</h3>
+					<h3>WELCOME! WHAT DO YOU WANT?</h3>
 
 					</header> </section>
 				</div>
@@ -330,11 +355,11 @@ h3 {
 							<a href="#" class="image featured"><img src="images/HI1.jpg"
 								alt="" /></a>
 							<header>
-							<h3>하이네켄</h3>
+							<h3 class = "korean">하이네켄</h3>
 							</header>
-							<h5>당신의 취향과 딱 맞는 술입니다. 분명 마음에 드실 겁니다!</h5>
-
-							<br> 도수 %%%<br> 가격 %%%<br> 평점 @@@
+							<h5 class = "korean">당신의 취향과 딱 맞는 술입니다. 분명 마음에 드실 겁니다!</h5>
+							<br>
+							<br>alcohol %%%<br>price %%%<br>score @@@
 							<footer> <a href="#" class="button alt">Find out
 								more</a> </footer>
 						</div>
@@ -342,10 +367,10 @@ h3 {
 							<a href="#" class="image featured"><img src="images/ICE1.jpg"
 								alt="" /></a>
 							<header>
-							<h3>오크에이지드</h3>
+							<h3 class = "korean">오크에이지드</h3>
 							</header>
-							<h5>이번에 새로 나온 술입니다. 맛이 기대가 됩니다!</h5>
-							<br> <br> 도수 %%%<br> 가격 %%%<br> 평점 @@@
+							<h5 class = "korean">이번에 새로 나온 술입니다. 맛이 기대가 됩니다!</h5>
+							<br> <br> alcohol %%%<br> price %%%<br> score @@@
 							<footer> <a href="#" class="button alt">Find out
 								more</a> </footer>
 						</div>
@@ -353,10 +378,10 @@ h3 {
 							<a href="#" class="image featured"><img
 								src="images/bodka1.jpg" alt="" /></a>
 							<header>
-							<h3>스톨리치나야</h3>
+							<h3 class = "korean">스톨리치나야</h3>
 							</header>
-							<h5>당신이 즐기는 술은 아니지만 새로운 도전을 위한 당신에게 추천드립니다.</h5>
-							<br> 도수 %%%<br> 가격 %%%<br> 평점 @@@
+							<h5 class = "korean">당신이 즐기는 술은 아니지만 새로운 도전을 위한 당신에게 추천드립니다.</h5>
+							<br> alcohol %%%<br> price %%%<br> score @@@
 							<footer> <a href="#" class="button alt">Find out
 								more</a> </footer>
 						</div>
@@ -394,7 +419,7 @@ h3 {
 					id="pos4">
 				<ul>
 					<li
-						style="background-color: white; opacity: 0.6; border-bottom: 3px solid #670000; border-top: 3px solid #670000">
+						style="background-color: white; opacity: 0.6; border-bottom: 3px solid black; border-top: 3px solid black">
 
 						<table>
 							<tr>
@@ -402,25 +427,25 @@ h3 {
 									<table>
 										<br>
 										<tr align="right">
-											<td align="center"><h3 style="color: black;">소주</h3></td>
+											<td align="center"><h3 style="color: black;" class = "korean">소주</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">1위술</td>
+											<td align="center">1ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">2위술</td>
+											<td align="center">2ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">3위술</td>
+											<td align="center">3ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">4위술</td>
+											<td align="center">4ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">5위술</td>
+											<td align="center">5ST</td>
 										</tr>
 									</table>
 								</td>
@@ -428,26 +453,26 @@ h3 {
 									<table>
 										<br>
 										<tr align="right">
-											<td align="center"><h3 style="color: black;">맥주</h3></td>
+											<td align="center"><h3 style="color: black;" class = "korean">맥주</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">1위술</td>
+											<td align="center">1ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">2위술</td>
+											<td align="center">2ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">3위술</td>
+											<td align="center">3ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">4위술</td>
+											<td align="center">4ST</td>
 										</tr>
 										<!-- dsdsd -->
 										<tr align="right">
-											<td align="center">5위술</td>
+											<td align="center">5ST</td>
 										</tr>
 									</table>
 								</td>
@@ -455,25 +480,25 @@ h3 {
 									<table>
 										<br>
 										<tr align="right">
-											<td align="center"><h3 style="color: black;">막걸리</h3></td>
+											<td align="center"><h3 style="color: black;" class = "korean">막걸리</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">1위술</td>
+											<td align="center">1ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">2위술</td>
+											<td align="center">2ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">3위술</td>
+											<td align="center">3ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">4위술</td>
+											<td align="center">4ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">5위술</td>
+											<td align="center">5ST</td>
 										</tr>
 									</table>
 								</td>
@@ -481,25 +506,25 @@ h3 {
 									<table>
 										<br>
 										<tr align="right">
-											<td align="center"><h3 style="color: black;">양주</h3></td>
+											<td align="center"><h3 style="color: black;" class = "korean">양주</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">1위술</td>
+											<td align="center">1ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">2위술</td>
+											<td align="center">2ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">3위술</td>
+											<td align="center">3ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">4위술</td>
+											<td align="center">4ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">5위술</td>
+											<td align="center">5ST</td>
 										</tr>
 									</table>
 								</td>
@@ -521,25 +546,25 @@ h3 {
 										<br>
 										<tr align="right">
 											<td align="center"><h3 style="color: black;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
-												<h3 style="color: black;">보드카</h3></td>
+												<h3 style="color: black;" class = "korean">보드카</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5ST</td>
 										</tr>
 									</table>
 								</td>
@@ -549,25 +574,25 @@ h3 {
 										<br>
 										<tr align="right">
 											<td align="center"><h3 style="color: black;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
-												<h3 style="color: black;">전통주</h3></td>
+												<h3 style="color: black;" class = "korean">전통주</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5ST</td>
 										</tr>
 									</table>
 								</td>
@@ -576,25 +601,25 @@ h3 {
 										<br>
 										<tr align="right">
 											<td align="center"><h3 style="color: black;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
-												<h3 style="color: black;">와인</h3></td>
+												<h3 style="color: black;"class = "korean">와인</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4ST</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5위술</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5ST</td>
 										</tr>
 									</table>
 								</td>
@@ -648,23 +673,21 @@ h3 {
 			</div>
 
 			<div
-				style="height: 600px; width: 1070px;  margin-left: 22%; margin-right: 22%; ">
+				style="height: 600px; width: 1070px; margin-left: 22%; margin-right: 22%;">
 				<div
 					style="height: 250px; width: 430px; border: 1px solid #EAEAEA; margin-left: 2%; margin-top: 2%;"
 					id="review";></div>
 
 				<div
 					style="height: 250px; width: 430px; border: 1px solid #EAEAEA; margin-left: 15.1%; margin-top: 2%;"
-					id="review2";>
-					
-				</div>
+					id="review2";></div>
 
 				<div
 					style="height: 250px; width: 430px; border: 1px solid #EAEAEA; margin-left: 2%; margin-top: 2%;"
 					id="review3";>
-					<h3>혼술하기 딱 좋은 술</h3>
+					<h3 class = "korean">혼술하기 딱 좋은 술</h3>
 					<br> <br>
-					<p align="left">
+					<p align="left" class = "korean">
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</p>
@@ -674,9 +697,9 @@ h3 {
 				<div
 					style="height: 250px; width: 430px; border: 1px solid #EAEAEA; margin-left: 15.1%; margin-top: 2%;"
 					id="review4">
-					<h3>친구들이랑 마셨어요</h3>
+					<h3 class = "korean">친구들이랑 마셨어요</h3>
 					<br> <br>
-					<p align="left">
+					<p align="left" class = "korean">
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
