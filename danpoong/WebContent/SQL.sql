@@ -43,6 +43,10 @@ create table analysis(
   type varchar2(10)
 );
 
+insert into MEMBER values('1', '1', 'doggle', '0', 26, '´ë±¸');
+select * from MEMBER;
+drop table member;
+
 insert into analysis values(1,5,5,1,1,'01');
 insert into analysis values(3,3,3,5,5,'02');
 insert into analysis values(5,3,3,5,5,'03');

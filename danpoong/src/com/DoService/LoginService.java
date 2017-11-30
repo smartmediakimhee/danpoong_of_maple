@@ -33,7 +33,7 @@ public class LoginService extends HttpServlet {
 				} else {
 					response.setContentType("text/html; charset=euc-kr");
 					PrintWriter out = response.getWriter();
-					out.print("비밀번호나 아이디를 다시 확인하세요");
+					response.sendRedirect("main/Login.html");
 				}
 				
 			} catch (Exception e) {

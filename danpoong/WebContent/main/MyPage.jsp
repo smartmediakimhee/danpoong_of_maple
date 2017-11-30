@@ -163,7 +163,7 @@
 						<table>
 							<tr>
 								<td align="left">비밀번호를 입력해주세요</td>
-								<td align="right"><input type="text" ></td>
+								<td align="right"><input type="password" ></td>
 							</tr>
 						</table>
 					</div>

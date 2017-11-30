@@ -64,7 +64,26 @@ public class DoDAO {
 			result = 2;
 		}
 		
+		close();
 		return result;
+	}
+
+	public int Join(String id, String pw, String nick, int age, String location) throws Exception {
+		
+		getConnection();
+		
+		String sql = "insert into member(member_id, member_pw, nickname, age, address) values(?,?,?,?,?)";
+		pst = conn.prepareStatement(sql);
+		
+		pst.setString(1,  id);
+		pst.setString(2,  pw);
+		pst.setString(3,  nick);
+		pst.setInt(4,  age);
+		pst.setString(5,  location);
+		
+		int cnt = pst.executeUpdate();
+		
+		return cnt;
 	}
 
 }
