@@ -748,8 +748,8 @@ figure.snip12007 img {
 figure.snip12007 figcaption {
   position: absolute;
   top: 45%;
-  left: 7%;
-  right: 7%;
+  left: 27%;
+  right: 27%;
   bottom: 45%;
   border: 1px solid white;
   border-width: 1px 1px 0;
