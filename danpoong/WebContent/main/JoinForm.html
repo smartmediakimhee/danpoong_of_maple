@@ -80,7 +80,7 @@ body {
 </style>
 </head>
 <body>
-<form action="main.jsp">
+<form action="JoinService">
 <div class="speak" align="center">
 <h1 style="color: white" id="speak" >
 			처음이신가요? 당신에 대해 알고싶군요.
@@ -89,36 +89,40 @@ body {
 		
 	<div class="row_group">
 		<div class="join_row" >
-			<input class="login" id="id" type="text" placeholder="아이디" style="font-size: medium;" required>
+			<input class="login" id="id" name="id" type="text" placeholder="아이디" style="font-size: medium;" required>
 			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
 		</div>
 		<div class="join_row">
-			<input class="login" type="password" placeholder="비밀번호" style="font-size: medium;" required>
+			<input class="login" name="pw" type="password" placeholder="비밀번호" style="font-size: medium;" required>
 			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
 		</div>
 		<div class="join_row">
-			<input class="login" type="password" placeholder="비밀번호확인" style="font-size: medium;" required>
+			<input class="login" name="pw2" type="password" placeholder="비밀번호확인" style="font-size: medium;" required>
 			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
 		</div>
 	</div>
 	
 	<div class="row_group2">
 		<div class="join_row">
-			<input class="login" type="text" placeholder="닉네임" style="font-size: medium;" required>
+			<input class="login" name="nick" type="text" placeholder="닉네임" style="font-size: medium;" required>
 			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
 		</div>
 		<div class="join_row">
-			<input class="login" type="password" placeholder="나이" style="font-size: medium;" required>
+			<input class="login" name="age" type="text" placeholder="나이" style="font-size: medium;" required>
 			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
 		</div>
 		<div class="join_row">
-			<input class="login" type="password" placeholder="지역" style="font-size: medium;" required>
+			<input class="login" name="location" type="text" placeholder="지역" style="font-size: medium;" required>
 			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
 		</div>
 	</div>
 	<div class="finish_row" style="text-align: center;">
-		<input class="finish" style="border: solid silver 1px;" type="submit" value="가입">
+		<input class="finish" style="border: solid silver 1px;" type="submit" value="가입" onclick="passwordCheck()">
 	</div>
 </form>
+<script type="text/javascript">
+var password = document.getElementById("pw");
+var password2 = document.getElementById("pw2");
+</script>
 </body>
 </html>

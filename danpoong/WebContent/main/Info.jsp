@@ -131,14 +131,26 @@
 		</style>
 	</head>
 	<body class="left-sidebar" style="background-color: white;">
+	<script type="text/javascript">
+	function win() {
+		window.open("Login.html","", "channelmode, width=700, height=500,"
+				+"left=600, top=300, status=1");
+		
+	}
+	function win1() {
+		window.open("JoinForm.html","", "channelmode, width=1000, height=700,"
+				+"left=600, top=300, status=1");
+		
+	}
+	</script>
 	<div id="container">
 		<div class="button-1">
 			<div class="eff-1"></div>
-			<a href="Login.html"> 로그인 </a>
+			<a href="#" onclick="win()"> 로그인 </a>
 		</div>
 		<div class="button-4">
 			<div class="eff-4"></div>
-			<a href="JoinForm.html"> 회원가입 </a>
+			<a href="#" onclick="win1()"> 회원가입 </a>
 		</div>
 
 	</div>
