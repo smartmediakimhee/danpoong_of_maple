@@ -5,18 +5,19 @@
 <title>Insert title here</title>
 <style type="text/css">
 body {
-	background-image: url("images/bar4.jpg");
+	/* background-image: url("images/bar4.jpg"); */
+	background-color: white;
 	background-size: cover;
 }
 
 .LoginArea {
 	margin: auto;
 	margin-top: 6%;
-	background-color: black;
+	/* background-color: black; */
 	opacity: 0.8;
 	width: 40em;
 	height: 25em;
-	border: solid red 2px;
+	border: solid black 2px;
 }
 
 #speak {
@@ -40,6 +41,7 @@ to {
 }
 
 #speak {
+	font-family: 'Indie Flower', cursive;
 	text_align: center;
 	margin-top: 5%;
 }
@@ -51,6 +53,8 @@ to {
 
 .IdPw {
 	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	color: black;
 }
 
 input {
@@ -96,7 +100,8 @@ input[type="submit"], input[type="reset"], input[type="button"], button,
 	background-color: transparent;
 	border-radius: 4px;
 	border: solid 1px #c8cccf;
-	color: white !important;
+	font-family: 'Indie Flower', cursive;
+	color: black !important;
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
@@ -136,28 +141,29 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 	opacity: 0.5;
 }
 </style>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 </head>
 <body>
 <form action="../LoginService">
 	<div align="center">
-		<h1 id="speak" style="color: white;">또 뵙네요. 키핑하신 술 확인해드릴까요?</h1>
+		<h1 id="speak" style="color: black;">또 뵙네요. 키핑하신 술 확인해드릴까요?</h1>
 	</div>
 
 	<div class="LoginArea">
 		<div class="loginStr">
-			<h1 style="color: white">로그인</h1>
+			<h1 style="color: black; font-family: 'Indie Flower', cursive;">L o g i n</h1>
 		</div>
 		<div class="IdPw">
 			<div class="idDiv">
-				<label for="id" style="color: white; font-size: 30px">ID
+				<label for="id" style="color: black; font-size: 30px">ID
 					&nbsp</label> <input type="text" name="id" id="id" required>
 			</div>
 			<div class="pwDiv">
-				<label for="pw" style="color: white; font-size: 30px">PW
+				<label for="pw" style="color: black; font-size: 30px">PW
 					&nbsp</label> <input type="password" name="pw" id="pw" required>
 			</div>
 			<div class="subDiv">
-				<input class="submitButton" type="submit" style="font-size: 20px;" value="submit">
+				<input class="submitButton" type="submit" style="font-size: 20px; color: black;" value="submit">
 			</div>
 		</div>
 	</div>

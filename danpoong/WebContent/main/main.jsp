@@ -230,7 +230,7 @@ h3 {
 	width: 70px;
 	height: 50px;
 	left: -70px;
-	background: #34495e;
+	background: #.34495e;
 	position: absolute;
 	transition: all .5s ease;
 	z-index: 1;

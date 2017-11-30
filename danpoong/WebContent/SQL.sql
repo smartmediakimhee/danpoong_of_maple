@@ -47,6 +47,8 @@ insert into MEMBER values('1', '1', 'doggle', '0', 26, '´ë±¸');
 select * from MEMBER;
 drop table member;
 
+update member set member_pw=123, nickname=123, age=123, address=123 where member_id=2;
+
 insert into analysis values(1,5,5,1,1,'01');
 insert into analysis values(3,3,3,5,5,'02');
 insert into analysis values(5,3,3,5,5,'03');

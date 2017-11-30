@@ -83,6 +83,24 @@ public class DoDAO {
 		
 		int cnt = pst.executeUpdate();
 		
+		close();
+		return cnt;
+	}
+
+	public int Update(String pw, String nick, int age, String location, String id) throws Exception {
+		getConnection();
+		
+		String sql = "update member set member_pw=?, nickname=?, age=?, address=? where member_id=?";
+		pst=conn.prepareStatement(sql);
+		
+		pst.setString(1, pw);
+		pst.setString(2, nick);
+		pst.setInt(3, age);
+		pst.setString(4, location);
+		pst.setString(5, id);
+		
+		int cnt = pst.executeUpdate();
+		close();
 		return cnt;
 	}
 

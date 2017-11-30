@@ -31,9 +31,8 @@ public class LoginService extends HttpServlet {
 					
 					response.sendRedirect("main/main.jsp");
 				} else {
-					response.setContentType("text/html; charset=euc-kr");
 					PrintWriter out = response.getWriter();
-					response.sendRedirect("main/Login.html");
+					out.print("로그인실패");
 				}
 				
 			} catch (Exception e) {
