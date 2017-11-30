@@ -1169,7 +1169,7 @@ h3 {
 </figure><figure class="snip12004">
   <img src="images/whisky1.jpg" alt="sq-sample32" />
   <figcaption>
-    <p>That's the difference between me and the rest of the world! Happiness isn't good enough for me! I demand euphoria! </p>
+    <p>스코틀랜드에서 유래한 대표적인</p>
     <div class="heading">
       <h2>위스키</h2>
     </div>
