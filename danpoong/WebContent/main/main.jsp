@@ -648,38 +648,38 @@ h3 {
 			</div>
 
 			<div
-				style="height: 600px; width: 1190px; border-bottom: ; border-top: ; margin-left: 22%">
+				style="height: 600px; width: 1070px;  margin-left: 22%; margin-right: 22%; ">
 				<div
-					style="height: 250px; width: 500px; border: 1px solid #EAEAEA; margin-left: 0.1%; margin-top: 2%;"
+					style="height: 250px; width: 430px; border: 1px solid #EAEAEA; margin-left: 2%; margin-top: 2%;"
 					id="review";></div>
 
 				<div
-					style="height: 250px; width: 500px; border: 1px solid #EAEAEA; margin-left: 15.1%; margin-top: 2%;"
+					style="height: 250px; width: 430px; border: 1px solid #EAEAEA; margin-left: 15.1%; margin-top: 2%;"
 					id="review2";>
-					<section id="reimage2"> </section>
+					
 				</div>
 
 				<div
-					style="height: 250px; width: 500px; border: 1px solid #EAEAEA; margin-left: 0.1%; margin-top: 2%;"
+					style="height: 250px; width: 430px; border: 1px solid #EAEAEA; margin-left: 2%; margin-top: 2%;"
 					id="review3";>
 					<h3>혼술하기 딱 좋은 술</h3>
 					<br> <br>
 					<p align="left">
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
-						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용</p>
+						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</p>
 				</div>
 
 
 				<div
-					style="height: 250px; width: 500px; border: 1px solid #EAEAEA; margin-left: 15.1%; margin-top: 2%;"
+					style="height: 250px; width: 430px; border: 1px solid #EAEAEA; margin-left: 15.1%; margin-top: 2%;"
 					id="review4">
 					<h3>친구들이랑 마셨어요</h3>
 					<br> <br>
 					<p align="left">
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
-						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용
+						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
 
 						<!-- 168글자 가능 -->
 
