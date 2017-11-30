@@ -35,7 +35,6 @@ img {
 .carousel {
 	border-top: solid brown 5px;
 	height: 500px;
-	/* background-color: #550000; */
 	background-color: white;
 }
 
@@ -281,10 +280,30 @@ img {
 #star3 {
 	display: inline-block;
 }
+#border3{
+	position: relative;
+}
 
-.btn-lg{
-background-size: cover;
-background-repeat: no-repeat;
+ul#myReviews{
+	border:1px solid black;
+	width:100%;
+	padding:5px 0px 5px 0px !important;
+	position: absolute; bottom: 0px;
+}
+ul>li.item{float: left; height: 30px; margin-left: 5px;}
+li.item:FIRST-CHILD {
+	width: 15%;
+	border:1px solid red;
+}
+li.item:FIRST-CHILD + li.item{
+	width:25%;
+	margin-left:10px;
+	margin-right:5px;
+	border:1px solid pink;
+}
+li.item:LAST-CHILD{
+	width:55%;
+	border:1px solid green;
 }
 </style>
 </head>
@@ -367,25 +386,57 @@ background-repeat: no-repeat;
 				<div
 					style="height: 400px; width: 200px; display: inline-block; margin-top: 100px;">
 
-					<button type="button" class="btn btn-info btn-lg" id = "image"
+					<button type="button" class="btn btn-info btn-lg"
 						data-toggle="modal" data-target="#myModal"
-						style="height: 300px; width: 130px; background-image: url('images/soju/02_0003.png');  border: 3px solid black;"></button>
+						style="height: 300px; width: 130px; background-image: url('images/soju/112.png'); background-repeat: no-repeat;  background-color: white; border: 1px solid white;"></button>
 
 				</div>
 				
 				<div
 					style="height: 400px; width: 200px; display: inline-block; margin-top: 100px;">
 
-					<button type="button" class="btn btn-info btn-lg" id = "image"
+					<button type="button" class="btn btn-info btn-lg"
 						data-toggle="modal" data-target="#myModal"
-						style="height: 300px; width: 130px; background-image: url('images/soju/02_0010.JPG'); border: 3px solid white;"></button>
+						style="height: 300px; width: 130px; background-image: url('images/soju/1001.png'); background-repeat: no-repeat;  background-color: white; border: 1px solid white;"></button>
 
 				</div>
-
-
 				
-				
+				<div
+					style="height: 400px; width: 200px; display: inline-block; margin-top: 100px;">
 
+					<button type="button" class="btn btn-info btn-lg"
+						data-toggle="modal" data-target="#myModal"
+						style="height: 300px; width: 130px; background-image: url('images/soju/1002.png'); background-repeat: no-repeat;  background-color: white; border: 1px solid white;"></button>
+
+				</div>
+				
+				<div
+					style="height: 400px; width: 200px; display: inline-block; margin-top: 100px;">
+
+					<button type="button" class="btn btn-info btn-lg"
+						data-toggle="modal" data-target="#myModal"
+						style="height: 300px; width: 130px; background-image: url('images/soju/1003.png'); background-repeat: no-repeat;  background-color: white; border: 1px solid white;"></button>
+
+				</div>
+				
+				<div
+					style="height: 400px; width: 200px; display: inline-block; margin-top: 100px;">
+
+					<button type="button" class="btn btn-info btn-lg"
+						data-toggle="modal" data-target="#myModal"
+						style="height: 300px; width: 130px; background-image: url('images/soju/1004.png'); background-repeat: no-repeat;  background-color: white; border: 1px solid white;"></button>
+
+				</div>
+				
+				<div
+					style="height: 400px; width: 200px; display: inline-block; margin-top: 100px;">
+
+					<button type="button" class="btn btn-info btn-lg"
+						data-toggle="modal" data-target="#myModal"
+						style="height: 300px; width: 130px; background-image: url('images/soju/1005.png'); background-repeat: no-repeat;  background-color: white; border: 1px solid white;"></button>
+
+				</div>
+			
 				<!-- <article> <a href="#" class="image featured"><img
 					src="images/soju/soju.png" alt="" /></a> <header>
 				<h3>
@@ -1570,8 +1621,91 @@ background-repeat: no-repeat;
 
 
 					<!-- 내가 쓰는 댓글란 -->
+					
+					<div>
+						<ul id="myReviews" style="margin: 0px; padding: 0px; list-style-type: none;">
+							<li class="item">1</li>
+							<li class="item">	<span class="star-input"> <span class="input"> <input
+									type="radio" name="star-input" id="p1" value="1"><label
+									for="p1">1</label> <input type="radio" name="star-input"
+									id="p2" value="2"><label for="p2">2</label> <input
+									type="radio" name="star-input" id="p3" value="3"><label
+									for="p3">3</label> <input type="radio" name="star-input"
+									id="p4" value="4"><label for="p4">4</label> <input
+									type="radio" name="star-input" id="p5" value="5"><label
+									for="p5">5</label> <input type="radio" name="star-input"
+									id="p6" value="6"><label for="p6">6</label> <input
+									type="radio" name="star-input" id="p7" value="7"><label
+									for="p7">7</label> <input type="radio" name="star-input"
+									id="p8" value="8"><label for="p8">8</label> <input
+									type="radio" name="star-input" id="p9" value="9"><label
+									for="p9">9</label> <input type="radio" name="star-input"
+									id="p10" value="10"><label for="p10">10</label>
+							</span> <output for="star-input"> <b>0</b>점</output>
+							</span>
+							<script type="text/javascript">
+								var starRating = function() {
+									var $star = $(".star-input"), $result = $star
+											.find("output>b");
+									$(document)
+											.on(
+													"focusin",
+													".star-input>.input",
+													function() {
+														$(this).addClass(
+																"focus");
+													})
+											.on(
+													"focusout",
+													".star-input>.input",
+													function() {
+														var $this = $(this);
+														setTimeout(
+																function() {
+																	if ($this
+																			.find(":focus").length === 0) {
+																		$this
+																				.removeClass("focus");
+																	}
+																}, 100);
+													})
+											.on(
+													"change",
+													".star-input :radio",
+													function() {
+														$result.text($(this)
+																.next().text());
+													})
+											.on(
+													"mouseover",
+													".star-input label",
+													function() {
+														$result.text($(this)
+																.text());
+													})
+											.on(
+													"mouseleave",
+													".star-input>.input",
+													function() {
+														var $checked = $star
+																.find(":checked");
+														if ($checked.length === 0) {
+															$result.text("0");
+														} else {
+															$result
+																	.text($checked
+																			.next()
+																			.text());
+														}
+													});
+								};
+								starRating();
+							</script></li>
+							<li class="item">3</li>
+						</ul>
+					</div>
 
-					<div
+<!-- 					<div
 						style="width: 100%; height: 45px; border-top: 2px solid gray; margin-top: 33.5%;">
 						<div style="width: 100%; height: 45px; border: 1px solid pink;">
 							<table>
@@ -1685,7 +1819,7 @@ background-repeat: no-repeat;
 							</table>
 
 						</div>
-					</div>
+					</div> -->
 
 
 
