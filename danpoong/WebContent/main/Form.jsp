@@ -239,7 +239,7 @@ input[type="text"]:focus, input[type="text"]:hover {
 <body>
 	<div class="cardBoard">
 		<center>
-			<form action="UserTypeService" method="post">
+			<form action="UserType" method="post">
 				<div class="titleBoard">
 					<h1>설문지 Title</h1>
 					<p>* 필수항목</p>
@@ -249,23 +249,30 @@ input[type="text"]:focus, input[type="text"]:hover {
 						<fieldset>
 							<legend>* Alcohol</legend>
 							<table align="left">
-								<tr >
-									<td>&nbsp&nbsp<input type="radio" name="alcohol" value="1">
-									</td>
-									<td>&nbsp&nbsp낮음</td>
-								</tr>
-								<tr><td>&nbsp</td></tr>
 								<tr>
-								
-									<td>&nbsp&nbsp<input type="radio" name="alcohol" value="2">
+									<td><input type="radio" name="alcohol" value="1">
 									</td>
-									<td>&nbsp&nbsp보통</td>
+									<td>매우낮음</td>
 								</tr>
-								<tr><td>&nbsp</td></tr>
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="alcohol" value="3">
+									<td><input type="radio" name="alcohol" value="3.5">
 									</td>
-									<td>&nbsp&nbsp높음</td>
+									<td>낮음</td>
+								</tr>
+								<tr>
+									<td><input type="radio" name="alcohol" value="5.5">
+									</td>
+									<td>보통</td>
+								</tr>
+								<tr>
+									<td><input type="radio" name="alcohol" value="7.5">
+									</td>
+									<td>높음</td>
+								</tr>
+								<tr>
+									<td><input type="radio" name="alcohol" value="10">
+									</td>
+									<td>매우높음</td>
 								</tr>
 							</table>
 						</fieldset>
@@ -275,21 +282,30 @@ input[type="text"]:focus, input[type="text"]:hover {
 							<legend>* Flavor</legend>
 							<table align="left">
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="flavor" value="1">
+									<td><input type="radio" name="flavor" value="1">
 									</td>
-									<td>&nbsp&nbsp상큼한 과일향</td>
+									<td>매우낮음</td>
 								</tr>
-								<tr><td>&nbsp</td></tr>
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="flavor" value="3">
+									<td><input type="radio" name="flavor" value="3.5">
 									</td>
-									<td>&nbsp&nbsp고소한 곡물향</td>
-								</tr><tr><td>&nbsp</td></tr>
+									<td>낮음</td>
+								</tr>
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="flavor" value="2">
+									<td><input type="radio" name="flavor" value="5.5">
 									</td>
-									<td>&nbsp&nbsp상관없음</td>
-								
+									<td>보통</td>
+								</tr>
+								<tr>
+									<td><input type="radio" name="flavor" value="7.5">
+									</td>
+									<td>높음</td>
+								</tr>
+								<tr>
+									<td><input type="radio" name="flavor" value="10">
+									</td>
+									<td>매우높음</td>
+								</tr>
 							</table>
 						</fieldset>
 					</div>
@@ -298,19 +314,29 @@ input[type="text"]:focus, input[type="text"]:hover {
 							<legend>* Taste</legend>
 							<table align="left">
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="taste" value="1">
+									<td><input type="radio" name="taste" value="1">
 									</td>
-									<td>&nbsp&nbsp달달한 맛</td>
-								</tr><tr><td>&nbsp</td></tr>
+									<td>매우 단맛</td>
+								</tr>
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="taste" value="3">
+									<td><input type="radio" name="taste" value="3.5">
 									</td>
-									<td>&nbsp&nbsp씁슬한 맛</td>
-								</tr><tr><td>&nbsp</td></tr>
+									<td>단맛</td>
+								</tr>
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="taste" value="2">
+									<td><input type="radio" name="taste" value="5.5">
 									</td>
-									<td>&nbsp&nbsp상관없음</td>
+									<td>보통</td>
+								</tr>
+								<tr>
+									<td><input type="radio" name="taste" value="7.5">
+									</td>
+									<td>쓴맛</td>
+								</tr>
+								<tr>
+									<td><input type="radio" name="taste" value="10">
+									</td>
+									<td>매우쓴맛</td>
 								</tr>
 							</table>
 						</fieldset>
@@ -320,20 +346,30 @@ input[type="text"]:focus, input[type="text"]:hover {
 							<legend>* Feel</legend>
 							<table align="left">
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="feel" value="1">
+									<td><input type="radio" name="feel" value="1">
 									</td>
-									<td>&nbsp&nbsp짜릿한 탄산</td>
-								</tr><tr><td>&nbsp</td></tr>
+									<td>무탄산</td>
+								</tr>
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="feel" value="3">
+									<td><input type="radio" name="feel" value="3.5">
 									</td>
-									<td>&nbsp&nbsp짜릿함은 싫다 무탄산</td>
-								</tr><tr><td>&nbsp</td></tr>
+									<td>약간탄산</td>
+								</tr>
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="feel" value="2">
+									<td><input type="radio" name="feel" value="5.5">
 									</td>
-									<td>&nbsp&nbsp술이면 다 좋다 상관없음</td>
-								
+									<td>상관없음</td>
+								</tr>
+								<tr>
+									<td><input type="radio" name="feel" value="7.5">
+									</td>
+									<td>보통</td>
+								</tr>
+								<tr>
+									<td><input type="radio" name="feel" value="10">
+									</td>
+									<td>탄산</td>
+								</tr>
 							</table>
 						</fieldset>
 					</div>
@@ -342,30 +378,36 @@ input[type="text"]:focus, input[type="text"]:hover {
 							<legend>* Atmosphere</legend>
 							<table align="left">
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="atm" value="1">
+									<td><input type="radio" name="atm" value="1">
 									</td>
-									<td>&nbsp&nbsp기쁜상황일 때 주로 마신다</td>
-								</tr><tr><td>&nbsp</td></tr>
+									<td>기쁜상황일 때 주로 마신다</td>
+								</tr>
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="atm" value="3">
+									<td><input type="radio" name="atm" value="3.5">
 									</td>
-									<td>&nbsp&nbsp슬픈상황일 때 주로 마신다</td>
-								</tr><tr><td>&nbsp</td></tr>
+									<td>대체로 기쁜상황일 때 주로 마신다</td>
+								</tr>
 								<tr>
-									<td>&nbsp&nbsp<input type="radio" name="atm" value="2">
+									<td><input type="radio" name="atm" value="5.5">
 									</td>
-									<td>&nbsp&nbsp상관없음</td>
-								
+									<td>상관없음</td>
+								</tr>
+								<tr>
+									<td><input type="radio" name="atm" value="7.5">
+									</td>
+									<td>대체로 슬픈상황일 때 주로 마신다</td>
+								</tr>
+								<tr>
+									<td><input type="radio" name="atm" value="10">
+									</td>
+									<td>슬픈상황일 때 주로 마신다.</td>
+								</tr>
 							</table>
 						</fieldset>
 					</div>
-					
 					<div class="Button">
-						 <!-- <a href="main.jsp"><input type="submit" value="제출" id ="button1"></a> 
-						 <a href="main.jsp"><input type="reset" value="취소" id = "button2"></a> -->
-						 <a href="main.jsp" id = "button1">제출</a> 
-						 <a href="main.jsp" id = "button2">취소</a> 
-						
+						 <a href="main.jsp"><input type="submit" value="제출"></a> 
+						 <a href="main.jsp"><input type="reset" value="취소"></a>
 					</div>
 				</div>
 			</form>

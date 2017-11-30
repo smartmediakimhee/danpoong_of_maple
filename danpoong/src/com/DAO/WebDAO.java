@@ -86,14 +86,15 @@ public class WebDAO {
 		return type_list;
 	}
 	
-	public int insertType(String result_type, String id) throws Exception{
+	public int insertType(String result_type1,String result_type2, String id) throws Exception{
 		/* Member 테이블에 type속성에 유저의 선호하는 술 분석 결과를 넣어주는 메소드 */
 		
 		getConnection();
 		
-		pst = con.prepareStatement("update member set type = ? where member_id = ?");
-		pst.setString(1, result_type);
-		pst.setString(2, id);
+		pst = con.prepareStatement("update member set type1 = ?, type2 = ? where member_id = ?");
+		pst.setString(1, result_type1);
+		pst.setString(2, result_type2);
+		pst.setString(3, id);
 		
 		cnt = pst.executeUpdate();
 		

@@ -2,7 +2,8 @@ create table member(
   member_id varchar2(50) primary key,
   member_pw varchar2(50) not null,
   nickname varchar2(50) not null,
-  type varchar2(10),
+  type1 varchar2(10),
+  type2 varchar2(10),
   age number(5),
   address varchar2(50)
 );
@@ -43,11 +44,11 @@ create table analysis(
   type varchar2(10)
 );
 
-insert into analysis values(1,5,5,1,1,'01');
-insert into analysis values(3,3,3,5,5,'02');
-insert into analysis values(5,3,3,5,5,'03');
-insert into analysis values(1,1,1,3,3,'04');
-insert into analysis values(1,5,1,3,3,'05');
-insert into analysis values(3,1,5,5,1,'06');
-insert into analysis values(5,3,5,5,5,'07');
-insert into analysis values(1,1,1,1,1,'08');
+insert into analysis values(1,3.5,5.5,7.5,3.5,'01');
+insert into analysis values(5.5,7.5,10,1,7.5,'02');
+insert into analysis values(10,10,10,1,5.5,'03');
+insert into analysis values(1,1,1,3.5,3.5,'04');
+insert into analysis values(1,3.5,1,3.5,3.5,'05');
+insert into analysis values(5.5,1,10,5.5,1,'06');
+insert into analysis values(10,7.5,10,1,5.5,'07');
+insert into analysis values(1,3.5,1,10,1,'08');
