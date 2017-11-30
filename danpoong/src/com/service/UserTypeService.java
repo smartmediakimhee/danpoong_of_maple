@@ -18,11 +18,11 @@ public class UserTypeService extends HttpServlet {
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		/* Form.jsp에서 넘어온 유저의 설문 결과값 */
-		int alcohol = Integer.parseInt(request.getParameter("alcohol"));
-		int flavor = Integer.parseInt(request.getParameter("flavor"));
-		int taste = Integer.parseInt(request.getParameter("taste"));
-		int feel = Integer.parseInt(request.getParameter("feel"));
-		int atm = Integer.parseInt(request.getParameter("atm"));
+		double alcohol = Double.parseDouble(request.getParameter("alcohol"));
+		double flavor = Double.parseDouble(request.getParameter("flavor"));
+		double taste = Double.parseDouble(request.getParameter("taste"));
+		double feel = Double.parseDouble(request.getParameter("feel"));
+		double atm = Double.parseDouble(request.getParameter("atm"));
 		
 		/* session에서 id값 가져와야 함 */
 		String id = "smart";
@@ -36,9 +36,10 @@ public class UserTypeService extends HttpServlet {
 			ArrayList<AttributeDTO> db_attr_list = dao.selectAnalysisAttribute();
 			ArrayList<String> db_type_list = dao.selectAnalysisType();
 			
-			String result_type = ucl.calDis(attr, db_attr_list, db_type_list);
+			String result_type1 = ucl.calDisNear(attr, db_attr_list, db_type_list);
+			String result_type2 = ucl.calDisFar(attr, db_attr_list, db_type_list);
 			
-			int cnt = dao.insertType(result_type, id);
+			int cnt = dao.insertType(result_type1, result_type2, id);
 			
 			if(cnt>0) {
 				/* Member 테이블에서 type속성이 정확하게 들어간 후 이동할 페이지 */

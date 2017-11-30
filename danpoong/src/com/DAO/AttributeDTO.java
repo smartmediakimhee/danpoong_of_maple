@@ -1,14 +1,14 @@
 package com.DAO;
 
 public class AttributeDTO {
-	private int alcohol;
-	private int flavor;
-	private int taste;
-	private int feel;
-	private int atm;
+	private double alcohol;
+	private double flavor;
+	private double taste;
+	private double feel;
+	private double atm;
 	private String type;
 	
-	public AttributeDTO(int alcohol, int flavor, int taste, int feel, int atm) {
+	public AttributeDTO(double alcohol, double flavor, double taste, double feel, double atm) {
 		this.alcohol = alcohol;
 		this.flavor = flavor;
 		this.taste = taste;
@@ -17,7 +17,7 @@ public class AttributeDTO {
 		this.type = null;
 	}
 
-	public int getAlcohol() {
+	public double getAlcohol() {
 		return alcohol;
 	}
 
@@ -25,7 +25,7 @@ public class AttributeDTO {
 		this.alcohol = alcohol;
 	}
 
-	public int getFlavor() {
+	public double getFlavor() {
 		return flavor;
 	}
 
@@ -33,7 +33,7 @@ public class AttributeDTO {
 		this.flavor = flavor;
 	}
 
-	public int getTaste() {
+	public double getTaste() {
 		return taste;
 	}
 
@@ -41,7 +41,7 @@ public class AttributeDTO {
 		this.taste = taste;
 	}
 
-	public int getFeel() {
+	public double getFeel() {
 		return feel;
 	}
 
@@ -49,7 +49,7 @@ public class AttributeDTO {
 		this.feel = feel;
 	}
 
-	public int getAtm() {
+	public double getAtm() {
 		return atm;
 	}
 
