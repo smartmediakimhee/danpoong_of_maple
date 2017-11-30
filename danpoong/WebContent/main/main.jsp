@@ -647,7 +647,7 @@ h3 {
 			</div>
 
 			<div
-				style="height: 600px; width: 1190px; border-bottom: 1px solid #791212; border-top: 1px solid #791212; margin-left: 22%">
+				style="height: 600px; width: 1190px; border-bottom: ; border-top: ; margin-left: 22%">
 				<div
 					style="height: 250px; width: 500px; border: 1px solid #EAEAEA; margin-left: 0.1%; margin-top: 2%;"
 					id="review";></div>
