@@ -3,6 +3,7 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style type="text/css">
 td {
 	border: gray 2px;
@@ -78,9 +79,49 @@ body {
 	margin-top: 5%;
 }
 </style>
+<script type="text/javascript">
+function checkPwd() {
+	var f1 = document.forms[0];
+	var pw1 = f1.pw.value;
+	var pw2 = f1.pw2.value;
+	if(pw1!=pw2) {
+		document.getElementById("checkPwd").style.color="red";		
+		document.getElementById("checkPwd").innerHTML = "동일한 암호를 입력하세요.";
+	} else {
+		document.getElementById("checkPwd").style.color="yellow";
+		document.getElementById("checkPwd").innerHTML = "암호가 동일합니다.";
+	}
+	
+}
+
+function checkNick() {
+	var f1 = document.forms[0];
+	var nick = f1.nick.value;
+	if(nick != "" || nick!=null) {
+		document.getElementById("nickMsg").style.color = "yellow";
+		document.getElementById("nickMsg").innerHTML = "입력완료";
+	}
+}
+function checkAge() {
+	var f1 = document.forms[0];
+	var age = f1.age.value;
+	if(age != "" || age!=null) {
+		document.getElementById("ageMsg").style.color = "yellow";
+		document.getElementById("ageMsg").innerHTML = "입력완료";
+	}
+}
+function checkLoc() {
+	var f1 = document.forms[0];
+	var location = f1.location.value;
+	if(location != "" || location!=null) {
+		document.getElementById("locMsg").style.color = "yellow";
+		document.getElementById("locMsg").innerHTML = "입력완료";
+	}
+}
+</script>
 </head>
 <body>
-<form action="JoinService">
+<form action="../JoinService">
 <div class="speak" align="center">
 <h1 style="color: white" id="speak" >
 			처음이신가요? 당신에 대해 알고싶군요.
@@ -97,32 +138,30 @@ body {
 			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
 		</div>
 		<div class="join_row">
-			<input class="login" name="pw2" type="password" placeholder="비밀번호확인" style="font-size: medium;" required>
-			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
+			<input class="login" name="pw2" type="password" placeholder="비밀번호확인" style="font-size: medium;" onkeyup="checkPwd()" required>
+			<div id="checkPwd" class="error" style="display: block;">필수 정보입니다.</div>
 		</div>
 	</div>
 	
 	<div class="row_group2">
 		<div class="join_row">
-			<input class="login" name="nick" type="text" placeholder="닉네임" style="font-size: medium;" required>
-			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
+			<input class="login" name="nick" type="text" placeholder="닉네임" style="font-size: medium;" onkeyup="checkNick()" required>
+			<div id="nickMsg" class="error" style="display: block;">필수 정보입니다.</div>
 		</div>
 		<div class="join_row">
-			<input class="login" name="age" type="text" placeholder="나이" style="font-size: medium;" required>
-			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
+			<input class="login" name="age" type="text" placeholder="나이" style="font-size: medium;" onkeyup="checkAge()" required>
+			<div id="ageMsg" class="error" style="display: block;">필수 정보입니다.</div>
 		</div>
 		<div class="join_row">
-			<input class="login" name="location" type="text" placeholder="지역" style="font-size: medium;" required>
-			<div id="idMsg" class="error" style="display: block;">필수 정보입니다.</div>
+			<input class="login" name="location" type="text" placeholder="지역" style="font-size: medium;" onkeyup="checkLoc()" required>
+			<div id="locMsg" class="error" style="display: block;">필수 정보입니다.</div>
 		</div>
 	</div>
 	<div class="finish_row" style="text-align: center;">
-		<input class="finish" style="border: solid silver 1px;" type="submit" value="가입" onclick="passwordCheck()">
+		<input class="finish" style="border: solid silver 1px;" type="submit" value="가입">
+		<!-- <input class="finish" style="border: solid silver 1px;" type="submit" value="가입"> -->
 	</div>
 </form>
-<script type="text/javascript">
-var password = document.getElementById("pw");
-var password2 = document.getElementById("pw2");
-</script>
+
 </body>
 </html>
