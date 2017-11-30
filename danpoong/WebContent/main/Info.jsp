@@ -35,6 +35,8 @@ img {
 .carousel {
 	border-top: solid brown 5px;
 	height: 500px;
+	/* background-color: #550000; */
+	background-color: white;
 }
 
 #main-wrapper {
@@ -279,6 +281,11 @@ img {
 #star3 {
 	display: inline-block;
 }
+
+.btn-lg{
+background-size: cover;
+background-repeat: no-repeat;
+}
 </style>
 </head>
 <body class="left-sidebar" style="background-color: white;">
@@ -360,13 +367,24 @@ img {
 				<div
 					style="height: 400px; width: 200px; display: inline-block; margin-top: 100px;">
 
-					<button type="button" class="btn btn-info btn-lg"
+					<button type="button" class="btn btn-info btn-lg" id = "image"
 						data-toggle="modal" data-target="#myModal"
-						style="height: 300px; width: 130px; background-image: url('images/02_0002.png'); background-repeat: no-repeat; background-size: cover; border: 3px solid black;"></button>
+						style="height: 300px; width: 130px; background-image: url('images/soju/02_0003.png');  border: 3px solid black;"></button>
+
+				</div>
+				
+				<div
+					style="height: 400px; width: 200px; display: inline-block; margin-top: 100px;">
+
+					<button type="button" class="btn btn-info btn-lg" id = "image"
+						data-toggle="modal" data-target="#myModal"
+						style="height: 300px; width: 130px; background-image: url('images/soju/02_0010.JPG'); border: 3px solid white;"></button>
 
 				</div>
 
 
+				
+				
 
 				<!-- <article> <a href="#" class="image featured"><img
 					src="images/soju/soju.png" alt="" /></a> <header>
