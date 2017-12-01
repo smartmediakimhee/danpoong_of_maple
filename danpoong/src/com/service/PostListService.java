@@ -31,7 +31,7 @@ public class PostListService extends HttpServlet {
 			
 			if(post_list != null) {
 				
-				int total_num = post_list.size()+1;
+				int total_num = post_list.size();
 				btn_num = total_num%10 == 0? total_num/10:total_num/10 + 1;
 				/*request.setAttribute("post_list", post_list);
 				request.setAttribute("btn_num", btn_num);*/
