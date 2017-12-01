@@ -1211,7 +1211,7 @@ h3 {
   </figcaption>
   <a href="macinfo.jsp"></a>
 </figure>
-
+<!--  -->
 </figure><figure class="snip12007">
   <img src="images/jeon7.jpg" alt="sq-sample32" />
   <figcaption>
