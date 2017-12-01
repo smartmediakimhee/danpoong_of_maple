@@ -159,12 +159,9 @@
 </style>
 </head>
 <body>
-
-
-
-
-
-
+<%-- 
+	술 이미지 클릭시 해당 술 정보 창 띄우는 페이지
+ --%>
 	<div class="container">
 		<h2>Modal Example</h2>
 		<!-- Trigger the modal with a button -->

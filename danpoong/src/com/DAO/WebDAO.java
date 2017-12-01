@@ -103,4 +103,92 @@ public class WebDAO {
 		return cnt;
 	}
 	
+	public ArrayList<PostDTO> selectPostAll() throws Exception {
+		/* Community.jsp에서 작성된 post를 모두 가져와 ArrayList형태로 반환하는 메소드 */
+		
+		getConnection();
+		
+		pst = con.prepareStatement("select * from post");
+		rs = pst.executeQuery();
+		
+		ArrayList<PostDTO> list = new ArrayList<PostDTO>();
+		
+		while(rs.next()) {
+			list.add(new PostDTO(rs.getInt(1), 
+					rs.getString(2), 
+					rs.getString(3), 
+					rs.getString(4),
+					rs.getString(5),
+					rs.getString(6),
+					rs.getInt(7)));
+		}
+		
+		close();
+		
+		return list;
+	
+	}
+
+	public int insertPost(PostDTO post) throws Exception {
+		/* Post 테이블에 유저가 작성한 댓글을 넣어주는 메소드 */
+		
+		getConnection();
+		
+		pst = con.prepareStatement("insert into post values(post_num.nextval,?,?,to_char(sysdate, 'YYYY-MM-DD'),?,?,?)");
+		pst.setString(1, post.getTitle());
+		pst.setString(2, post.getPost_author());
+		pst.setString(3, post.getPost_content());
+		pst.setString(4, post.getFile());
+		pst.setInt(5, 0);
+		
+		
+		cnt = pst.executeUpdate();
+		
+		close();
+		
+		return cnt;
+	}
+
+	public ArrayList<ReviewDTO> selectReviewAll() throws Exception {
+		/* soolInfo.jsp에서 작성된 review를 모두 가져와 ArrayList형태로 반환하는 메소드 */
+		
+		getConnection();
+		
+		pst = con.prepareStatement("select * from review");
+		rs = pst.executeQuery();
+		
+		ArrayList<ReviewDTO> list = new ArrayList<ReviewDTO>();
+		
+		while(rs.next()) {
+			list.add(new ReviewDTO(rs.getInt(1), 
+					rs.getString(2), 
+					rs.getDouble(3), 
+					rs.getString(4), 
+					rs.getString(5)));
+		}
+		
+		close();
+		
+		return list;
+	}
+	
+	public int insertReview(ReviewDTO review) throws Exception {
+		/* Post 테이블에 유저가 작성한 댓글을 넣어주는 메소드 */
+		
+		getConnection();
+		
+		pst = con.prepareStatement("insert into review values(review_num.nextval,?,?,?,?)");
+		pst.setString(1, review.getDrink_id());
+		pst.setDouble(2, review.getScore());
+		pst.setString(3, review.getAuthor());
+		pst.setString(4, review.getReview_content());
+		
+		cnt = pst.executeUpdate();
+		
+		close();
+		
+		return cnt;
+	}
+
+	
 }

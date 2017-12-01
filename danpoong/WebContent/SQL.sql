@@ -43,17 +43,35 @@ create table analysis(
   type varchar2(10)
 );
 
+create table review(
+	num number(10),
+	drink_id varchar2(10),
+	score number(10,1) default 0,
+	author varchar2(50),
+	review_content varchar2(200)
+);
+
 insert into MEMBER values('1', '1', 'doggle', '0', 26, '대구');
 select * from MEMBER;
 drop table member;
 
 update member set member_pw=123, nickname=123, age=123, address=123 where member_id=2;
 
-insert into analysis values(1,5,5,1,1,'01');
-insert into analysis values(3,3,3,5,5,'02');
-insert into analysis values(5,3,3,5,5,'03');
-insert into analysis values(1,1,1,3,3,'04');
-insert into analysis values(1,5,1,3,3,'05');
-insert into analysis values(3,1,5,5,1,'06');
-insert into analysis values(5,3,5,5,5,'07');
-insert into analysis values(1,1,1,1,1,'08');
+insert into analysis values(1,3.5,5.5,7.5,3.5,'01');
+insert into analysis values(5.5,7.5,10,1,7.5,'02');
+insert into analysis values(10,10,10,1,5.5,'03');
+insert into analysis values(1,1,1,3.5,3.5,'04');
+insert into analysis values(1,3.5,1,3.5,3.5,'05');
+insert into analysis values(5.5,1,10,5.5,1,'06');
+insert into analysis values(10,7.5,10,1,5.5,'07');
+insert into analysis values(1,3.5,1,10,1,'08');
+
+// 시퀀스 생성 (post)
+create sequence post_num
+start with 1
+increment by 1;
+
+// 시퀀스 생성 (review)
+create sequence review_num
+start with 1
+increment by 1;
