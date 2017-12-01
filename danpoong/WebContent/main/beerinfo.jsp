@@ -22,6 +22,8 @@
 <link
 	href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
 	rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/jejuhallasan.css"
+	rel="stylesheet">
 
 
 <style type="text/css">
@@ -39,7 +41,8 @@ body {
 }
 
 .korean {
-	font-family: 'Nanum Brush Script', cursive;
+	font-family: 'Jeju Hallasan', cursive;
+	font-size: small;
 }
 /* #header-wrapper {
 			background-image: url("images/header_background/headerBack4.jpg");
@@ -396,12 +399,11 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/01_00015.png'); background-repeat: no-repeat; background-size: cover; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0001.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">참이슬
-								오리지날</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">카스 후레쉬</h4>
 						</div>
 						
 					</td>
@@ -410,12 +412,11 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/112.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0002.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">참이슬
-								오리지날</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">카스 라이트</h4>
 						</div>
 						
 					</td>
@@ -423,12 +424,11 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/ICE.jpg'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0003.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">참이슬
-								오리지날</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">카스 레드</h4>
 						</div>
 						
 					</td>
@@ -436,12 +436,11 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/02_0004.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0004.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">참이슬
-								오리지날</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">오비 프리미어 필스너</h4>
 						</div>
 						
 					</td>
@@ -451,6 +450,285 @@ li.item:LAST-CHILD {
 					
 				</tr>
 					
+						<tr>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0005.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">오비 프리미어 바이젠</h4>
+						</div>
+						
+					</td>
+					
+			<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0006.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">카프리</h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0007.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">버드와이저</h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0008.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">호가든</h4>
+						</div>
+						
+					</td>
+			
+			
+			
+					
+				</tr>
+				
+					<tr>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0009.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">버드 아이스</h4>
+						</div>
+						
+					</td>
+					
+			<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0010.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">벡스</h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0011.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">스텔라 아르투아</h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0012.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">레페</h4>
+						</div>
+						
+					</td>
+			
+			
+			
+					
+				</tr>
+				
+					<tr>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0013.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">레벤브로이</h4>
+						</div>
+						
+					</td>
+					
+			<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0014.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">산토리 더 프리미엄 몰츠</h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0015.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">코로나</h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0016.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">레드락</h4>
+						</div>
+						
+					</td>
+			
+			
+			
+					
+				</tr>
+				
+					<tr>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0017.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">하이트</h4>
+						</div>
+						
+					</td>
+					
+			<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0018.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">맥스</h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0019.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">드라이 D</h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0020.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">에스</h4>
+						</div>
+						
+					</td>
+			
+			
+			
+					
+				</tr>
+				
+					<tr>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0021.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">스타우트</h4>
+						</div>
+						
+					</td>
+					
+			<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0022.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">퀸즈에일</h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0023.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">클라우드</h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0024.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">피츠 수퍼클리어</h4>
+						</div>
+						
+					</td>
+			
+			
+			
+					
+				</tr>
 					
 					
 				

@@ -19,6 +19,11 @@
 
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower"
 	rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/jejuhallasan.css"
+	rel="stylesheet">
+
+	
+
 <link
 	href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
 	rel="stylesheet">
@@ -39,7 +44,8 @@ body {
 }
 
 .korean {
-	font-family: 'Nanum Brush Script', cursive;
+	font-family: 'Jeju Hallasan', cursive;
+	font-size: small;
 }
 /* #header-wrapper {
 			background-image: url("images/header_background/headerBack4.jpg");
@@ -752,7 +758,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이 복숭아
 							</h4>
 						</div>
 
@@ -766,7 +772,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이 석류
 							</h4>
 						</div>
 
@@ -779,7 +785,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
+							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이 블루베리
 							</h4>
 						</div>
 
@@ -792,8 +798,8 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">잎새주
-								부라더</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이 자몽
+								</h4>
 						</div>
 
 					</td>
@@ -808,7 +814,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이 유자
 							</h4>
 						</div>
 
@@ -822,7 +828,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이 파인애플
 							</h4>
 						</div>
 
@@ -835,7 +841,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
+							<h4 style="color: black; margin-left: 20px;" class="korean">화이트
 							</h4>
 						</div>
 
@@ -848,8 +854,8 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">잎새주
-								부라더</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">트로피칼이 톡소다
+								</h4>
 						</div>
 
 					</td>
@@ -864,7 +870,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">진짜 맛있는 국화
 							</h4>
 						</div>
 
@@ -878,7 +884,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">엔조이 오리지날 사과
 							</h4>
 						</div>
 
@@ -891,7 +897,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
+							<h4 style="color: black; margin-left: 20px;" class="korean">엔조이 오리지날 배
 							</h4>
 						</div>
 
@@ -904,8 +910,8 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">잎새주
-								부라더</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">엔조이 오리지날 생강
+								</h4>
 						</div>
 
 					</td>
@@ -920,7 +926,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">엔조이 스파클링 사과
 							</h4>
 						</div>
 
@@ -934,7 +940,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">엔조이 스파클링 배
 							</h4>
 						</div>
 
@@ -947,7 +953,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
+							<h4 style="color: black; margin-left: 20px;" class="korean">매실 마을
 							</h4>
 						</div>
 
@@ -960,8 +966,8 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">잎새주
-								부라더</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">국화면 좋으리
+								</h4>
 						</div>
 
 					</td>
@@ -975,7 +981,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">대선
 							</h4>
 						</div>
 
@@ -989,7 +995,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">시원블루 자몽
 							</h4>
 						</div>
 
@@ -1002,7 +1008,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
+							<h4 style="color: black; margin-left: 20px;" class="korean">시원
 							</h4>
 						</div>
 
@@ -1015,8 +1021,8 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">잎새주
-								부라더</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">시원 프리미엄
+								</h4>
 						</div>
 
 					</td>
@@ -1031,7 +1037,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">맛있는 참
 							</h4>
 						</div>
 
@@ -1045,7 +1051,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">순한 참 유자
 							</h4>
 						</div>
 
@@ -1058,7 +1064,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
+							<h4 style="color: black; margin-left: 20px;" class="korean">순한 참 애플망고
 							</h4>
 						</div>
 
@@ -1071,8 +1077,8 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">잎새주
-								부라더</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">순한 참 자몽
+								</h4>
 						</div>
 
 					</td>
@@ -1087,7 +1093,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">순한 참 청포도
 							</h4>
 						</div>
 
@@ -1101,7 +1107,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">순한 참 블루베리
 							</h4>
 						</div>
 
@@ -1114,7 +1120,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
+							<h4 style="color: black; margin-left: 20px;" class="korean">순한 참 모히또 바나나
 							</h4>
 						</div>
 
