@@ -24,9 +24,11 @@ create table post(
   author varchar2(50) not null,
   time_check varchar2(20) not null,
   post_content varchar2(2000) not null,
-  file varchar2(255),
-  likey number(10) default 0
+  file_name varchar2(255),
+  likey number(10)
 );
+
+select * from post;
 
 create table drink_rank(
   rank_id varchar2(10),
