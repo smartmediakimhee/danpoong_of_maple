@@ -10,6 +10,10 @@
 <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 <link rel="stylesheet" href="assets/css/main.css" />
 <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
+	rel="stylesheet">
 <style type="text/css">
 
 /* 모달 css 시작 */
@@ -386,7 +390,7 @@ a#login_pop:hover, a#join_pop:hover {
 				<!-- Content -->
 				<article class="box post"> 
 					<div class="PostList" style="height:100%;">
-						<iframe src="PostList.jsp" style="width: 100%; height:auto;" scrolling="no"></iframe>
+						<iframe src="PostList.jsp" style="width: 100%; height:500px;" scrolling="no"></iframe>
 					</div>
 					<div class="PostWrite">
 					

@@ -164,6 +164,13 @@ a#login_pop:hover, a#join_pop:hover {
 	border: 1px solid blue;
 }
 
+
+/* <link href="https://fonts.googleapis.com/css?family=Indie+Flower"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
+	rel="stylesheet"> */
+
+
 body {
 	font-family: 'Indie Flower', cursive;
 }
@@ -572,7 +579,7 @@ h3 {
 							<header>
 							<h3 class = "korean">하이네켄</h3>
 							</header>
-							<h5 class = "korean">당신의 취향과 딱 맞는 술입니다. 분명 마음에 드실 겁니다!</h5>
+							<h5 class = "korean">당 신 의&nbsp 취 향 과&nbsp 딱&nbsp 맞 는&nbsp 술 입 니 다 . &nbsp분 명&nbsp 마 음 에&nbsp 드 실&nbsp 겁 니 다 !</h5>
 							<br>
 							<br>alcohol %%%<br>price %%%<br>score @@@
 							<footer> <a href="#" class="button alt">Find out
@@ -584,7 +591,7 @@ h3 {
 							<header>
 							<h3 class = "korean">오크에이지드</h3>
 							</header>
-							<h5 class = "korean">이번에 새로 나온 술입니다. 맛이 기대가 됩니다!</h5>
+							<h5 class = "korean">이 번 에&nbsp 새 로&nbsp 나 온&nbsp 술 입 니 다 .&nbsp 맛 이&nbsp 기 대 가&nbsp 됩 니 다 !</h5>
 							<br> <br> alcohol %%%<br> price %%%<br> score @@@
 							<footer> <a href="#" class="button alt">Find out
 								more</a> </footer>
@@ -595,7 +602,7 @@ h3 {
 							<header>
 							<h3 class = "korean">스톨리치나야</h3>
 							</header>
-							<h5 class = "korean">당신이 즐기는 술은 아니지만 새로운 도전을 위한 당신에게 추천드립니다.</h5>
+							<h5 class = "korean">당 신 이&nbsp 즐 기 는&nbsp 술 은&nbsp 아 니 지 만&nbsp 새 로 운&nbsp 도 전 을&nbsp 위 한&nbsp 당 신 에 게&nbsp 추 천 드 립 니 다 .</h5>
 							<br> alcohol %%%<br> price %%%<br> score @@@
 							<footer> <a href="#" class="button alt">Find out
 								more</a> </footer>
