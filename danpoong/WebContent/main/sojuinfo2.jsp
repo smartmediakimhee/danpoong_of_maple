@@ -1156,8 +1156,6 @@ li.item:LAST-CHILD {
 
 			<!-- Modal content-->
 
-
-
 			<div class="modal-content" style="border: 3px solid green;">
 				<div class="modal-header" >
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
