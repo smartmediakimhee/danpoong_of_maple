@@ -1153,7 +1153,7 @@ h3 {
       <h2>소주</h2>
     </div>
   </figcaption>
-  <a href="#"></a>
+  <a href="sojuinfo.jsp"></a>
   
 </figure><figure class="snip12002">
   <img src="images/infobeer2.jpg" alt="sq-sample32" />
@@ -1163,7 +1163,7 @@ h3 {
       <h2>맥주</h2>
     </div>
   </figcaption>
-  <a href="#"></a>
+  <a href="beerinfo.jsp"></a>
 </figure>
 
 </figure><figure class="snip12004">
@@ -1174,7 +1174,7 @@ h3 {
       <h2 style="color: black;">위스키</h2>
     </div>
   </figcaption>
-  <a href="#"></a>
+  <a href="whiskyinfo.jsp"></a>
 </figure>
 
 
@@ -1186,7 +1186,7 @@ h3 {
       <h2 style="color: black;">와인</h2>
     </div>
   </figcaption>
-  <a href="#"></a>
+  <a href="wineinfo.jsp"></a>
 </figure>
 
 </figure><figure class="snip12005">
@@ -1197,7 +1197,7 @@ h3 {
       <h2>브랜디</h2>
     </div>
   </figcaption>
-  <a href="#"></a>
+  <a href="coginfo.jsp"></a>
 </figure>
 
 
@@ -1209,7 +1209,7 @@ h3 {
       <h2 style="color: black;">막걸리</h2>
     </div>
   </figcaption>
-  <a href="#"></a>
+  <a href="macinfo.jsp"></a>
 </figure>
 
 </figure><figure class="snip12007">
@@ -1220,7 +1220,7 @@ h3 {
       <h2>전통주</h2>
     </div>
   </figcaption>
-  <a href="#"></a>
+  <a href="jeoninfo.jsp"></a>
 </figure>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
