@@ -396,12 +396,12 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/01_00015.png'); background-repeat: no-repeat; background-size: cover; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0001.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">참이슬
-								오리지날</h4>
+							<h4 style="color: black; margin-left: 1px;" class="korean">참이슬fresh
+								 </h4>
 						</div>
 						
 					</td>
@@ -410,12 +410,12 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/112.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0002.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">참이슬
-								오리지날</h4>
+							<h4 style="color: black; margin-left: 1px;" class="korean">참이슬 original
+								</h4>
 						</div>
 						
 					</td>
@@ -423,12 +423,12 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/ICE.jpg'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0003.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">참이슬
-								오리지날</h4>
+							<h4 style="color: black; margin-left: 1px;" class="korean">참이슬 16.9도
+								 </h4>
 						</div>
 						
 					</td>
@@ -436,12 +436,12 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/02_0004.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0004.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">참이슬
-								오리지날</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">일품진로
+								 </h4>
 						</div>
 						
 					</td>
@@ -451,7 +451,125 @@ li.item:LAST-CHILD {
 					
 				</tr>
 					
+					<tr>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0005.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">진로골드
+								 </h4>
+						</div>
+						
+					</td>
 					
+			<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0006.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">처음처럼
+								 </h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0007.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">처음처럼 순한
+								 </h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0008.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">처음처럼 진한
+								 </h4>
+						</div>
+						
+					</td>
+			
+			
+			
+					
+				</tr>
+				
+				<tr>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0009.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">산처럼
+								 </h4>
+						</div>
+						
+					</td>
+					
+			<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0010.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+								 </h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0011.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
+								 </h4>
+						</div>
+						
+					</td>
+					<td >
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0012.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">잎새주 부라더
+								 </h4>
+						</div>
+						
+					</td>
+			
+			
+			
+					
+				</tr>
 					
 				
 			</table>
@@ -613,8 +731,7 @@ li.item:LAST-CHILD {
 								};
 								starRating();
 							</script></li>
-							<li class="item"><input type="text"
-								style="width: 100%; height: 100%;"></li>
+							<li class="item"></li>
 						</ul>
 					</div>
 					<!-- 댓글란 별점이 매겨져야됨-->
