@@ -16,6 +16,15 @@
 	rel="stylesheet">
 <style type="text/css">
 
+
+
+body {
+	font-family: 'Indie Flower', cursive;
+}
+
+.korean{
+font-family: 'Nanum Brush Script', cursive;
+}
 /* 모달 css 시작 */
 .panel {
 	background-color: white;
@@ -353,7 +362,7 @@ a#login_pop:hover, a#join_pop:hover {
 
 				<!-- Logo -->
 				<h1>
-					<a href="main.jsp">알비스의 바입니다.</a>
+					<a href="main.jsp">ALVIS'S BAR</a>
 				</h1>
 
 				<!-- Nav -->

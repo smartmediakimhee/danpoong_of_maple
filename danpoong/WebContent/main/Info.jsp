@@ -32,6 +32,9 @@ body {
 	font-family: 'Indie Flower', cursive;
 }
 
+.korean{
+
+}
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 figure.snip12001 {
@@ -1150,7 +1153,7 @@ h3 {
     
     
     <div class="heading">
-      <h2>소주</h2>
+      <h2 class = "korean" style="font-size: xx-large;">소주</h2>
     </div>
   </figcaption>
   <a href="sojuinfo.jsp"></a>
@@ -1160,7 +1163,7 @@ h3 {
   <figcaption>
     <p>맥주를 뜻하는 beer의 어원은 두 가지 설이 있습니다. '마시다'는 뜻을 가진 라틴어 비베레(bibere)와 '곡물'을 뜻하는 게르만어 베오레(bior)입니다. 무엇이 진정한 어원인지는 모르지만 우리의 피로를 풀어주는 좋은 친구임이 틀림없습니다.</p>
     <div class="heading">
-      <h2>맥주</h2>
+      <h2 class = "korean" style="font-size: xx-large;">맥주</h2>
     </div>
   </figcaption>
   <a href="beerinfo.jsp"></a>
@@ -1171,7 +1174,7 @@ h3 {
   <figcaption>
     <p>위스키는 스코틀랜드에서 유래한 대표적인 증류주로서 양주의 대명사입니다. 한번 익숙해지기 시작하면 위스키본연의 향과 맛을 느낄 수 있다고 하는데 가격이 비싼 편이라 익숙해질 기회를 주지 않는 야속한 술입니다.</p>
     <div class="heading">
-      <h2 style="color: black;">위스키</h2>
+      <h2 class = "korean" style="font-size: xx-large;">위스키</h2>
     </div>
   </figcaption>
   <a href="whiskyinfo.jsp"></a>
@@ -1183,7 +1186,7 @@ h3 {
   <figcaption>
     <p>와인의 재료는 무수히 많지만 포도로 만든 수이 워낙 유명하다 보니 번역할 때는 과일주보다는 포도주라고 번역합니다. 와인병에 붙어있는 라벨(Label)은 일종의 신분 증명서로 와인의 원산지, 등급, 제조업자등이 상세하게 적혀있기 때문에 읽는 법을 알아두면 굉장히 많은 도움이 될 수 있습니다. (FEAT허세)</p>
     <div class="heading">
-      <h2 style="color: black;">와인</h2>
+      <h2 class = "korean" style="font-size: xx-large;">와인</h2>
     </div>
   </figcaption>
   <a href="wineinfo.jsp"></a>
@@ -1194,7 +1197,7 @@ h3 {
   <figcaption>
     <p>브랜디는 증류를 거친 과일주를 오크통에 저장하여 숙성시켜 만듭니다. 브랜디는 '불에 태운 술'이라는 의미로 호사스러운 맛과 향을 가지고 있어 술 중의 술이라고 합니다.</p>
     <div class="heading">
-      <h2>브랜디</h2>
+      <h2 class = "korean" style="font-size: xx-large;">브랜디</h2>
     </div>
   </figcaption>
   <a href="coginfo.jsp"></a>
@@ -1206,7 +1209,7 @@ h3 {
   <figcaption>
     <p>소주와 함께 우리나라를 대표하는 전통 술입니다. 쌀로 밑술을 담가 거기서 청주를 걸러내고 남은 술지게미를 다시 체에 물로 걸러내는 방법으로 주조합니다. 왠지 비가 오는 날이면 파전과 함께 급격하게 끌리는 술이 아닐까 싶습니다.</p>
     <div class="heading">
-      <h2 style="color: black;">막걸리</h2>
+      <h2 class = "korean" style="font-size: xx-large;">막걸리</h2>
     </div>
   </figcaption>
   <a href="macinfo.jsp"></a>
@@ -1217,7 +1220,7 @@ h3 {
   <figcaption>
     <p>전통주는 전통적으로 내려오는 제조 방법에 따라 만드는 술을 말합니다. 제조 방법에 따라 양조주와 증류주로 나뉘고 양조주는 순곡주와 혼양곡주로, 순곡주는 다시 탁주와 청주로 구별됩니다. </p>
     <div class="heading">
-      <h2>전통주</h2>
+      <h2 class = "korean" style="font-size: xx-large;">전통주</h2>
     </div>
   </figcaption>
   <a href="jeoninfo.jsp"></a>
