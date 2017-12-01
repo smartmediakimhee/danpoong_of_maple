@@ -86,7 +86,7 @@
 						<c:forEach items="${sessionScope.post_list}" var="list">
 							<tr>
 								<td style="width: 10%;">${list.num}</td>
-								<th><a href="PostContentService?num=${list.num}">${list.title}</a></th>
+								<th><a href="../PostContentService?num=${list.num}">${list.title}</a></th>
 								<td style="width: 10%;">${list.post_author}</td>
 								<td style="width: 10%;">${list.time_check}</td>
 								<td style="width: 10%;">${list.likey}</td>

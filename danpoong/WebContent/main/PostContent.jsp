@@ -76,7 +76,7 @@
 						<tr>
 							<td style="width: 10%;">${sessionScope.post.num}</td>
 							<th>${sessionScope.post.title}</th>
-							<td style="width: 10%;">${sessionScope.post.author}</td>
+							<td style="width: 10%;">${sessionScope.post.post_author}</td>
 							<td style="width: 10%;">${sessionScope.post.time_check}</td>
 							<td style="width: 10%;">${sessionScope.post.likey}</td>
 						</tr>
@@ -91,16 +91,16 @@
 							</c:when>
 						</c:choose>
 						<tr>
-							<td colspan="5">${sessionScope.post.content}</td>
+							<td colspan="5">${sessionScope.post.post_content}</td>
 						</tr>
 					</tbody>
 				</table>
 			</c:when>
 		</c:choose>
 		<hr/>
-		<a class="btn btn-default pull-left" src="PostContentService?num=${sessionScope.post.num-1}">이전글</a>
-		<a class="btn btn-default pull-left" src="PostContentService?num=${sessionScope.post.num+1}">다음글</a>
-		<a class="btn btn-default pull-right" src="PostListService">목록</a>
+		<a class="btn btn-default pull-left" href="../PostContentService?num=${sessionScope.post.num-1}">이전글</a>
+		<a class="btn btn-default pull-left" href="../PostContentService?num=${sessionScope.post.num+1}">다음글</a>
+		<a class="btn btn-default pull-right" href="PostList.jsp">목록</a>
 	</div>
 </body>
 </html>

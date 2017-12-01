@@ -26,9 +26,7 @@ public class PostListService extends HttpServlet {
 		HttpSession session = request.getSession();
 		
 		try {
-			
 			post_list = dao.selectPostAll();
-			
 			if(post_list != null) {
 				
 				int total_num = post_list.size();

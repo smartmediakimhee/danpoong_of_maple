@@ -401,7 +401,7 @@ h3 {
 	width: 70px;
 	height: 50px;
 	left: -70px;
-	background: #.34495e;
+	background: #.34495e;.
 	position: absolute;
 	transition: all .5s ease;
 	z-index: 1;
@@ -550,7 +550,7 @@ h3 {
 					<li class="current"><a href="index.html">MAIN</a></li>
 					<li><a href="#">INTRODUCE</a></li>
 					<li><a href="Info.jsp">INFO</a></li>
-					<li><a href="Community.jsp">COMMUNITY</a></li>
+					<li><a href="../PostListService">COMMUNITY</a></li>
 					<li><a href="MyPage.jsp">MY PAGE</a></li>
 				</ul>
 				</nav>

@@ -106,17 +106,14 @@ public class WebDAO {
 		/* Community.jsp에서 작성된 post를 모두 가져와 ArrayList형태로 반환하는 메소드 */
 
 		getConnection();
-
 		pst = con.prepareStatement("select * from post order by num desc");
 		rs = pst.executeQuery();
 
 		ArrayList<PostDTO> list = new ArrayList<PostDTO>();
-
 		while (rs.next()) {
 			list.add(new PostDTO(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5),
 					rs.getString(6), rs.getInt(7)));
 		}
-
 		close();
 
 		return list;
