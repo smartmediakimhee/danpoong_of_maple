@@ -82,8 +82,8 @@
 			</thead>
 			<tbody>
 				<c:choose>
-					<c:when test="${not empty post_list}">
-						<c:forEach items="${post_list}" var="list">
+					<c:when test="${not empty sessionScope.post_list}">
+						<c:forEach items="${sessionScope.post_list}" var="list">
 							<tr>
 								<td style="width: 10%;">${list.num}</td>
 								<th>${list.title}</th>
@@ -108,12 +108,14 @@
 		<div class="text-center">
 			<ul class="pagination">
 				<c:choose>
-					<c:when test="${btn_num > 0}">
-						<c:when test="${btn_num <= 10}">
-							<c:forEach begin="1" end="${btn_num}" var="i">
+					<c:when test="${sessionScope.btn_num > 0}">
+						<c:choose>
+						<c:when test="${sessionScope.btn_num <= 10}">
+							<c:forEach begin="1" end="${sessionScope.btn_num}" var="i">
 								<li><a href="#">${i}</a></li>
 							</c:forEach>
 						</c:when>
+						</c:choose>
 					</c:when>
 				</c:choose>
 			</ul>
