@@ -108,7 +108,7 @@ public class WebDAO {
 		
 		getConnection();
 		
-		pst = con.prepareStatement("select * from post");
+		pst = con.prepareStatement("select * from post order by num desc");
 		rs = pst.executeQuery();
 		
 		ArrayList<PostDTO> list = new ArrayList<PostDTO>();
