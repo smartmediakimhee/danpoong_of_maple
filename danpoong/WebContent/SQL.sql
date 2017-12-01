@@ -75,3 +75,16 @@ increment by 1;
 create sequence review_num
 start with 1
 increment by 1;
+
+insert into post values(post_num.nextval,'1111','1',to_char(sysdate, 'YYYY-MM-DD'),'11111','1111',0);
+insert into post values(post_num.nextval,'2222','2',to_char(sysdate, 'YYYY-MM-DD'),'11111','1111',0);
+insert into post values(post_num.nextval,'3333','3',to_char(sysdate, 'YYYY-MM-DD'),'11111','1111',0);
+insert into post values(post_num.nextval,'4444','4',to_char(sysdate, 'YYYY-MM-DD'),'11111','1111',0);
+insert into post values(post_num.nextval,'5555','5',to_char(sysdate, 'YYYY-MM-DD'),'11111','1111',0);
+insert into post values(post_num.nextval,'6666','6',to_char(sysdate, 'YYYY-MM-DD'),'11111','1111',0);
+insert into post values(post_num.nextval,'7777','7',to_char(sysdate, 'YYYY-MM-DD'),'11111','1111',0);
+insert into post values(post_num.nextval,'8888','8',to_char(sysdate, 'YYYY-MM-DD'),'11111','1111',0);
+insert into post values(post_num.nextval,'9999','9',to_char(sysdate, 'YYYY-MM-DD'),'11111','1111',0);
+insert into post values(post_num.nextval,'1010','10',to_char(sysdate, 'YYYY-MM-DD'),'11111','1111',0);
+insert into post values(post_num.nextval,'1111','11',to_char(sysdate, 'YYYY-MM-DD'),'11111','1111',0);
+insert into post values(post_num.nextval,'1212','12',to_char(sysdate, 'YYYY-MM-DD'),'11111','1111',0);

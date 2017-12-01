@@ -1,155 +1,160 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	pageEncoding="EUC-KR"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-	<head>
-		<title>Dopetrope by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<style type="text/css">
+<head>
+<title>Dopetrope by HTML5 UP</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="assets/css/main.css" />
+<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+<style type="text/css">
 
 /* 모달 css 시작 */
 .panel {
-    background-color: white;
-    height: 80px;
-    padding: 10px;
+	background-color: white;
+	height: 80px;
+	padding: 10px;
 }
+
 .panel a#login_pop, .panel a#join_pop {
-    border: 2px solid #aaa;
-    color: #fff;
-    display: block;
-    float: left;
-    margin-left: 10px;
-    padding: 5px 10px;
-    text-decoration: none;
-    text-shadow: 1px 1px #000;
-
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-	font-family:'dotum';
+	border: 2px solid #aaa;
+	color: #fff;
+	display: block;
+	float: left;
+	margin-left: 10px;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-shadow: 1px 1px #000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	font-family: 'dotum';
 }
+
 a#login_pop:hover, a#join_pop:hover {
-    border-color: #eee;
+	border-color: #eee;
 }
+
 .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    bottom: 0;
-    cursor: default;
-    left: 0;
-    opacity: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    visibility: hidden;
-    z-index: 1;
-
-    -webkit-transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -ms-transition: opacity .5s;
-    -o-transition: opacity .5s;
-    transition: opacity .5s;
+	background-color: rgba(0, 0, 0, 0.6);
+	bottom: 0;
+	cursor: default;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	z-index: 1;
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-ms-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
 }
+
 .overlay:target {
-    visibility: visible;
-    opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
+
 .popup {
-    background-color: #fff;
-    border: 3px solid #fff;
-    display: inline-block;
-    left: 50%;
-    opacity: 0;
-    padding: 15px;
-    position: fixed;
-    text-align: justify;
-    top: 40%;
-    visibility: hidden;
-    z-index: 10;
-
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-
-    -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-    -moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-    -ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-    -o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-
-    -webkit-transition: opacity .5s, top .5s;
-    -moz-transition: opacity .5s, top .5s;
-    -ms-transition: opacity .5s, top .5s;
-    -o-transition: opacity .5s, top .5s;
-    transition: opacity .5s, top .5s;
+	background-color: #fff;
+	border: 3px solid #fff;
+	display: inline-block;
+	left: 50%;
+	opacity: 0;
+	padding: 15px;
+	position: fixed;
+	text-align: justify;
+	top: 40%;
+	visibility: hidden;
+	z-index: 10;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	-moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	-ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	-o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	-webkit-transition: opacity .5s, top .5s;
+	-moz-transition: opacity .5s, top .5s;
+	-ms-transition: opacity .5s, top .5s;
+	-o-transition: opacity .5s, top .5s;
+	transition: opacity .5s, top .5s;
 }
+
 .overlay:target+.popup {
-    top: 50%;
-    opacity: 1;
-    visibility: visible;
+	top: 50%;
+	opacity: 1;
+	visibility: visible;
 }
+
 .close {
-    background-color: rgba(0, 0, 0, 0.8);
-    height: 30px;
-    line-height: 30px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    text-decoration: none;
-    top: -15px;
-    width: 30px;
-
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border-radius: 15px;
+	background-color: rgba(0, 0, 0, 0.8);
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-decoration: none;
+	top: -15px;
+	width: 30px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
 }
+
 .close:before {
-    color: rgba(255, 255, 255, 0.9);
-    content: "X";
-    font-size: 24px;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+	color: rgba(255, 255, 255, 0.9);
+	content: "X";
+	font-size: 24px;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
 }
-.close:hover {
-    background-color: rgba(64, 128, 128, 0.8);
-}
-.popup p, .popup div {
-    margin-bottom: 10px;
-}
-.popup label {
-    display: inline-block;
-    text-align: left;
-    width: 120px;
-}
-.popup input[type="text"], .popup input[type="password"] {
-    border: 1px solid;
-    border-color: #999 #ccc #ccc;
-    margin: 0;
-    padding: 2px;
 
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    border-radius: 2px;
+.close:hover {
+	background-color: rgba(64, 128, 128, 0.8);
 }
+
+.popup p, .popup div {
+	margin-bottom: 10px;
+}
+
+.popup label {
+	display: inline-block;
+	text-align: left;
+	width: 120px;
+}
+
+.popup input[type="text"], .popup input[type="password"] {
+	border: 1px solid;
+	border-color: #999 #ccc #ccc;
+	margin: 0;
+	padding: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+}
+
 .popup input[type="text"]:hover, .popup input[type="password"]:hover {
-    border-color: #555 #888 #888;
+	border-color: #555 #888 #888;
 }
 /* 모달 css 끝 */
 #container {
@@ -159,7 +164,6 @@ a#login_pop:hover, a#join_pop:hover {
 	margin-left: 70%;
 	display: inline-block;
 }
-
 
 .button-1 {
 	width: 70px;
@@ -248,11 +252,10 @@ a#login_pop:hover, a#join_pop:hover {
 .button-4:hover a {
 	color: #fff;
 }
-
-		</style>
-	</head>
-	<body class="right-sidebar" style="background-color: white;" >
-<!-- 모달 코드 시작 -->
+</style>
+</head>
+<body class="no-sidebar" style="background-color: white;">
+	<!-- 모달 코드 시작 -->
 	<c:choose>
 		<c:when test="${empty id }">
 			<div id="container">
@@ -273,60 +276,58 @@ a#login_pop:hover, a#join_pop:hover {
 		</c:otherwise>
 	</c:choose>
 
-<form action="../LoginService">
-	<a href="#x" class="overlay" id="login_form"></a>
-        <div class="popup">
-            <h2>Welcome Guest!</h2>
-            <p>Please enter your login and password here</p>
-            <div>
-                <label for="login">Login</label>
-                <input type="text" id="login" name="id" />
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="pw" />
-            </div>
-            <input type="submit" value="Log In" />
+	<form action="../LoginService">
+		<a href="#x" class="overlay" id="login_form"></a>
+		<div class="popup">
+			<h2>Welcome Guest!</h2>
+			<p>Please enter your login and password here</p>
+			<div>
+				<label for="login">Login</label> <input type="text" id="login"
+					name="id" />
+			</div>
+			<div>
+				<label for="password">Password</label> <input type="password"
+					id="password" name="pw" />
+			</div>
+			<input type="submit" value="Log In" /> <a class="close"
+				href="#close"></a>
+		</div>
+	</form>
+	<form action="../JoinService">
+		<a href="#x" class="overlay" id="join_form"></a>
+		<div class="popup">
+			<h2>Sign Up</h2>
+			<p>Please enter your details here</p>
+			<div>
+				<label for="email">ID</label> <input type="text" id="email"
+					name="id" />
+			</div>
+			<div>
+				<label for="pass">Password</label> <input type="password" id="pass"
+					name="pw" />
+			</div>
+			<div>
+				<label for="firstname">Password</label> <input type="password"
+					id="firstname" name="pw2" />
+			</div>
+			<div>
+				<label for="lastname">Nickname</label> <input type="text"
+					id="lastname" name="nick" />
+			</div>
+			<div>
+				<label for="lastname">Age</label> <input type="text" id="lastname"
+					name="age" />
+			</div>
+			<div>
+				<label for="lastname">Location</label> <input type="text"
+					id="lastname" name="location" />
+			</div>
+			<input type="submit" value="Sign Up" /> <a class="close"
+				href="#close"></a>
+		</div>
+	</form>
 
-            <a class="close" href="#close"></a>
-        </div>
- </form>
- <form action="../JoinService">
-        <a href="#x" class="overlay" id="join_form"></a>
-        <div class="popup">
-            <h2>Sign Up</h2>
-            <p>Please enter your details here</p>
-            <div>
-                <label for="email">ID</label>
-                <input type="text" id="email" name="id"/>
-            </div>
-            <div>
-                <label for="pass">Password</label>
-                <input type="password" id="pass" name="pw"/>
-            </div>
-            <div>
-                <label for="firstname">Password</label>
-                <input type="password" id="firstname" name="pw2"/>
-            </div>
-            <div>
-                <label for="lastname">Nickname</label>
-                <input type="text" id="lastname" name="nick"/>
-            </div>
-            <div>
-                <label for="lastname">Age</label>
-                <input type="text" id="lastname" name="age"/>
-            </div>
-            <div>
-                <label for="lastname">Location</label>
-                <input type="text" id="lastname" name="location"/>
-            </div>
-            <input type="submit" value="Sign Up" />
-
-            <a class="close" href="#close"></a>
-        </div>
-        </form>
-
-<!-- 모달 코드 끝 -->
+	<!-- 모달 코드 끝 -->
 
 	<!-- <div id="container">
 		<div class="button-1">
@@ -339,286 +340,62 @@ a#login_pop:hover, a#join_pop:hover {
 		</div>
 
 	</div> -->
-	
-		<div id="page-wrapper">
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<div id="header">
+	<div id="page-wrapper">
 
-						<!-- Logo -->
-							<h1><a href="main.jsp">알비스의 바입니다.</a></h1>
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header">
 
-						<!-- Nav -->
-							<nav id="nav">
+				<!-- Logo -->
+				<h1>
+					<a href="main.jsp">알비스의 바입니다.</a>
+				</h1>
+
+				<!-- Nav -->
+				<nav id="nav">
+				<ul>
+					<li><a href="main.jsp">MAIN</a></li>
+					<li><a href="#">INTRODUCE</a>
+						<ul>
+							<li><a href="#">Lorem ipsum dolor</a></li>
+							<li><a href="#">Magna phasellus</a></li>
+							<li><a href="#">Etiam dolore nisl</a></li>
+							<li><a href="#">Phasellus consequat</a>
 								<ul>
-									<li><a href="main.jsp">MAIN</a></li>
-									<li>
-										<a href="#">INTRODUCE</a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li><a href="#">Etiam dolore nisl</a></li>
-											<li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-													<li><a href="#">Veroeros feugiat</a></li>
-													<li><a href="#">Nisl sed aliquam</a></li>
-													<li><a href="#">Dolore adipiscing</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
-										</ul>
-									</li>
-									<li><a href="Info.jsp">INFO</a></li>
-									<li class="current"><a href="Community.jsp">COMMUNITY</a></li>
-									<li><a href="MyPage.jsp">MY PAGE</a></li>
-								</ul>
-							</nav>
+									<li><a href="#">Magna phasellus</a></li>
+									<li><a href="#">Etiam dolore nisl</a></li>
+									<li><a href="#">Veroeros feugiat</a></li>
+									<li><a href="#">Nisl sed aliquam</a></li>
+									<li><a href="#">Dolore adipiscing</a></li>
+								</ul></li>
+							<li><a href="#">Veroeros feugiat</a></li>
+						</ul></li>
+					<li><a href="Info.jsp">INFO</a></li>
+					<li class="current"><a href="Community.jsp">COMMUNITY</a></li>
+					<li><a href="MyPage.jsp">MY PAGE</a></li>
+				</ul>
+				</nav>
 
-					</div>
-				</div>
-
-			<!-- Main -->
-				<div id="main-wrapper">
-					<div class="container">
-						<div class="row">
-							<div class="8u 12u(mobile)">
-
-								<!-- Content -->
-									<article class="box post">
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-										<header>
-											<h2>Right sidebar</h2>
-											<p>Lorem ipsum dolor sit amet feugiat</p>
-										</header>
-										<p>
-											Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
-											hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
-											Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.
-											Pellentesque tempus nulla non urna eleifend ut ultrices nisi faucibus.
-										</p>
-										<p>
-											Praesent a dolor leo. Duis in felis in tortor lobortis volutpat et pretium tellus. Vestibulum ac ante nisl,
-											a elementum odio. Duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-											placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-											eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-											elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-											sit amet nullam consequat feugiat dolore tempus.
-										</p>
-										<section>
-											<header>
-												<h3>Something else</h3>
-											</header>
-											<p>
-												Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-												placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-												eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-												elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-												sit amet nullam consequat feugiat dolore tempus.
-											</p>
-											<p>
-												Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-												eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-												elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-												sit amet nullam consequat feugiat dolore tempus.
-											</p>
-										</section>
-										<section>
-											<header>
-												<h3>So in conclusion ...</h3>
-											</header>
-											<p>
-												Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-												eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-												elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-												sit amet nullam consequat feugiat dolore tempus. Elementum odio duis semper risus et lectus commodo fringilla.
-												Maecenas sagittis convallis justo vel mattis.
-											</p>
-										</section>
-									</article>
-
-							</div>
-							<div class="4u 12u(mobile)">
-
-								<!-- Sidebar -->
-									<section class="box">
-										<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
-										<header>
-											<h3>Sed etiam lorem nulla</h3>
-										</header>
-										<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-										<footer>
-											<a href="#" class="button alt">Magna sed taciti</a>
-										</footer>
-									</section>
-									<section class="box">
-										<header>
-											<h3>Feugiat consequat</h3>
-										</header>
-										<p>Veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat sed lorem consequat feugiat lorem dolore.</p>
-										<ul class="divided">
-											<li><a href="#">Sed et blandit consequat sed</a></li>
-											<li><a href="#">Hendrerit tortor vitae sapien dolore</a></li>
-											<li><a href="#">Sapien id suscipit magna sed felis</a></li>
-											<li><a href="#">Aptent taciti sociosqu ad litora</a></li>
-										</ul>
-										<footer>
-											<a href="#" class="button alt">Ipsum consequat</a>
-										</footer>
-									</section>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-			<!-- Footer -->
-				<div id="footer-wrapper">
-					<section id="footer" class="container">
-						<div class="row">
-							<div class="8u 12u(mobile)">
-								<section>
-									<header>
-										<h2>Blandit nisl adipiscing</h2>
-									</header>
-									<ul class="dates">
-										<li>
-											<span class="date">Jan <strong>27</strong></span>
-											<h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
-											<p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
-										</li>
-										<li>
-											<span class="date">Jan <strong>23</strong></span>
-											<h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
-											<p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
-										</li>
-										<li>
-											<span class="date">Jan <strong>15</strong></span>
-											<h3><a href="#">Magna tempus lorem feugiat</a></h3>
-											<p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
-										</li>
-										<li>
-											<span class="date">Jan <strong>12</strong></span>
-											<h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
-											<p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
-										</li>
-										<li>
-											<span class="date">Jan <strong>10</strong></span>
-											<h3><a href="#">Blandit tempus aliquam?</a></h3>
-											<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
-										</li>
-									</ul>
-								</section>
-							</div>
-							<div class="4u 12u(mobile)">
-								<section>
-									<header>
-										<h2>What's this all about?</h2>
-									</header>
-									<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
-									<p>
-										This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
-										<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
-										the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
-									</p>
-									<footer>
-										<a href="#" class="button">Find out more</a>
-									</footer>
-								</section>
-							</div>
-						</div>
-						<div class="row">
-							<div class="4u 12u(mobile)">
-								<section>
-									<header>
-										<h2>Tempus consequat</h2>
-									</header>
-									<ul class="divided">
-										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="4u 12u(mobile)">
-								<section>
-									<header>
-										<h2>Ipsum et phasellus</h2>
-									</header>
-									<ul class="divided">
-										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="4u 12u(mobile)">
-								<section>
-									<header>
-										<h2>Vitae tempor lorem</h2>
-									</header>
-									<ul class="social">
-										<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
-										<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-										<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-										<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
-										<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
-									</ul>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<p>
-												Untitled Incorporated<br />
-												1234 Somewhere Road Suite<br />
-												Nashville, TN 00000-0000
-											</p>
-										</li>
-										<li>
-											<h3>Mail</h3>
-											<p><a href="#">someone@untitled.tld</a></p>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<p>(800) 000-0000</p>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
-
-								<!-- Copyright -->
-									<div id="copyright">
-										<ul class="links">
-											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-										</ul>
-									</div>
-
-							</div>
-						</div>
-					</section>
-				</div>
-
+			</div>
 		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+		<!-- Main -->
+		<div id="main-wrapper">
+			<div class="container" style="height:500px;">
+				<!-- Content -->
+				<article class="box post"> 
+					<div class="PostList" style="height:100%;">
+						<iframe src="PostList.jsp" style="width: 100%; height:auto;" scrolling="no"></iframe>
+					</div>
+					<div class="PostWrite">
+					
+					</div>
+				</article>
+			</div>
+		</div>
 
-	</body>
+	</div>
+
+</body>
 </html>

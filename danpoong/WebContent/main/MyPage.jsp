@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,144 +13,148 @@
 
 <style type="text/css">
 .panel {
-    background-color: white;
-    height: 80px;
-    padding: 10px;
+	background-color: white;
+	height: 80px;
+	padding: 10px;
 }
+
 .panel a#login_pop, .panel a#join_pop {
-    border: 2px solid #aaa;
-    color: #fff;
-    display: block;
-    float: left;
-    margin-left: 10px;
-    padding: 5px 10px;
-    text-decoration: none;
-    text-shadow: 1px 1px #000;
-
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-	font-family:'dotum';
+	border: 2px solid #aaa;
+	color: #fff;
+	display: block;
+	float: left;
+	margin-left: 10px;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-shadow: 1px 1px #000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	font-family: 'dotum';
 }
+
 a#login_pop:hover, a#join_pop:hover {
-    border-color: #eee;
+	border-color: #eee;
 }
+
 .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    bottom: 0;
-    cursor: default;
-    left: 0;
-    opacity: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    visibility: hidden;
-    z-index: 1;
-
-    -webkit-transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -ms-transition: opacity .5s;
-    -o-transition: opacity .5s;
-    transition: opacity .5s;
+	background-color: rgba(0, 0, 0, 0.6);
+	bottom: 0;
+	cursor: default;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	z-index: 1;
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-ms-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
 }
+
 .overlay:target {
-    visibility: visible;
-    opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
+
 .popup {
-    background-color: #fff;
-    border: 3px solid #fff;
-    display: inline-block;
-    left: 50%;
-    opacity: 0;
-    padding: 15px;
-    position: fixed;
-    text-align: justify;
-    top: 40%;
-    visibility: hidden;
-    z-index: 10;
-
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-
-    -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-    -moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-    -ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-    -o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-
-    -webkit-transition: opacity .5s, top .5s;
-    -moz-transition: opacity .5s, top .5s;
-    -ms-transition: opacity .5s, top .5s;
-    -o-transition: opacity .5s, top .5s;
-    transition: opacity .5s, top .5s;
+	background-color: #fff;
+	border: 3px solid #fff;
+	display: inline-block;
+	left: 50%;
+	opacity: 0;
+	padding: 15px;
+	position: fixed;
+	text-align: justify;
+	top: 40%;
+	visibility: hidden;
+	z-index: 10;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	-moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	-ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	-o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	-webkit-transition: opacity .5s, top .5s;
+	-moz-transition: opacity .5s, top .5s;
+	-ms-transition: opacity .5s, top .5s;
+	-o-transition: opacity .5s, top .5s;
+	transition: opacity .5s, top .5s;
 }
+
 .overlay:target+.popup {
-    top: 50%;
-    opacity: 1;
-    visibility: visible;
+	top: 50%;
+	opacity: 1;
+	visibility: visible;
 }
+
 .close {
-    background-color: rgba(0, 0, 0, 0.8);
-    height: 30px;
-    line-height: 30px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    text-decoration: none;
-    top: -15px;
-    width: 30px;
-
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border-radius: 15px;
+	background-color: rgba(0, 0, 0, 0.8);
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-decoration: none;
+	top: -15px;
+	width: 30px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
 }
+
 .close:before {
-    color: rgba(255, 255, 255, 0.9);
-    content: "X";
-    font-size: 24px;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+	color: rgba(255, 255, 255, 0.9);
+	content: "X";
+	font-size: 24px;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
 }
+
 .close:hover {
-    background-color: rgba(64, 128, 128, 0.8);
+	background-color: rgba(64, 128, 128, 0.8);
 }
+
 .popup p, .popup div {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
+
 .popup label {
-    display: inline-block;
-    text-align: left;
-    width: 120px;
+	display: inline-block;
+	text-align: left;
+	width: 120px;
 }
+
 .popup input[type="text"], .popup input[type="password"] {
-    border: 1px solid;
-    border-color: #999 #ccc #ccc;
-    margin: 0;
-    padding: 2px;
-
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    border-radius: 2px;
+	border: 1px solid;
+	border-color: #999 #ccc #ccc;
+	margin: 0;
+	padding: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
 }
+
 .popup input[type="text"]:hover, .popup input[type="password"]:hover {
-    border-color: #555 #888 #888;
+	border-color: #555 #888 #888;
 }
-
 
 #pw {
 	display: inline-block;
@@ -253,43 +257,43 @@ a#login_pop:hover, a#join_pop:hover {
 }
 </style>
 <script type="text/javascript">
-function checkPwd() {
-	var f1 = document.forms[0];
-	var pw1 = f1.pw.value;
-	var pw2 = f1.pw2.value;
-	if(pw1!=pw2) {
-		document.getElementById("pwMsg").style.color="red";		
-		document.getElementById("pwMsg").innerHTML = "동일한 암호를 입력하세요.";
-	} else {
-		document.getElementById("pwMsg").style.color="blue";
-		document.getElementById("pwMsg").innerHTML = "암호가 동일합니다.";
+	function checkPwd() {
+		var f1 = document.forms[0];
+		var pw1 = f1.pw.value;
+		var pw2 = f1.pw2.value;
+		if (pw1 != pw2) {
+			document.getElementById("pwMsg").style.color = "red";
+			document.getElementById("pwMsg").innerHTML = "동일한 암호를 입력하세요.";
+		} else {
+			document.getElementById("pwMsg").style.color = "blue";
+			document.getElementById("pwMsg").innerHTML = "암호가 동일합니다.";
+		}
 	}
-}
 </script>
 </head>
 <body class="no-sidebar" style="background-color: white;">
- <c:choose>
- 	<c:when test="${empty id }">
-				<div id="container">
+	<c:choose>
+		<c:when test="${empty id }">
+			<div id="container">
 				<div class="button-1">
-                <a href="#login_form" id="login_pop">login</a>
-                </div>
-                <div class="button-4">
-                <a href="#join_form" id="join_pop">Join</a>
-                </div>
-                </div>
-	</c:when>
-<c:otherwise>
-<div id="container">
+					<a href="#login_form" id="login_pop">login</a>
+				</div>
+				<div class="button-4">
+					<a href="#join_form" id="join_pop">Join</a>
+				</div>
+			</div>
+		</c:when>
+		<c:otherwise>
+			<div id="container">
 				<div class="button-1">
-                <a href="Logout.jsp" id="login_pop">logout</a>
-                </div>
-         </div>
-     </c:otherwise>
-</c:choose>
-	
-         
-<!-- 	<div id="container">
+					<a href="Logout.jsp" id="login_pop">logout</a>
+				</div>
+			</div>
+		</c:otherwise>
+	</c:choose>
+
+
+	<!-- 	<div id="container">
 		<div class="button-1">
 			<div class="eff-1"></div>
 			<a href="Login.html"> 로그인 </a>
@@ -300,60 +304,58 @@ function checkPwd() {
 		</div>
  -->
 
- <form action="../LoginService">
-	<a href="#x" class="overlay" id="login_form"></a>
-        <div class="popup">
-            <h2>Welcome Guest!</h2>
-            <p>Please enter your login and password here</p>
-            <div>
-                <label for="login">Login</label>
-                <input type="text" id="login" name="id" />
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="pw" />
-            </div>
-            <input type="submit" value="Log In" />
+	<form action="../LoginService">
+		<a href="#x" class="overlay" id="login_form"></a>
+		<div class="popup">
+			<h2>Welcome Guest!</h2>
+			<p>Please enter your login and password here</p>
+			<div>
+				<label for="login">Login</label> <input type="text" id="login"
+					name="id" />
+			</div>
+			<div>
+				<label for="password">Password</label> <input type="password"
+					id="password" name="pw" />
+			</div>
+			<input type="submit" value="Log In" /> <a class="close"
+				href="#close"></a>
+		</div>
+	</form>
+	<form action="../JoinService">
+		<a href="#x" class="overlay" id="join_form"></a>
+		<div class="popup">
+			<h2>Sign Up</h2>
+			<p>Please enter your details here</p>
+			<div>
+				<label for="email">ID</label> <input type="text" id="email"
+					name="id" />
+			</div>
+			<div>
+				<label for="pass">Password</label> <input type="password" id="pass"
+					name="pw" />
+			</div>
+			<div>
+				<label for="firstname">Password</label> <input type="password"
+					id="firstname" name="pw2" />
+			</div>
+			<div>
+				<label for="lastname">Nickname</label> <input type="text"
+					id="lastname" name="nick" />
+			</div>
+			<div>
+				<label for="lastname">Age</label> <input type="text" id="lastname"
+					name="age" />
+			</div>
+			<div>
+				<label for="lastname">Location</label> <input type="text"
+					id="lastname" name="location" />
+			</div>
+			<input type="submit" value="Sign Up" /> <a class="close"
+				href="#close"></a>
+		</div>
+	</form>
 
-            <a class="close" href="#close"></a>
-        </div>
- </form>
- <form action="../JoinService">
-        <a href="#x" class="overlay" id="join_form"></a>
-        <div class="popup">
-            <h2>Sign Up</h2>
-            <p>Please enter your details here</p>
-            <div>
-                <label for="email">ID</label>
-                <input type="text" id="email" name="id"/>
-            </div>
-            <div>
-                <label for="pass">Password</label>
-                <input type="password" id="pass" name="pw"/>
-            </div>
-            <div>
-                <label for="firstname">Password</label>
-                <input type="password" id="firstname" name="pw2"/>
-            </div>
-            <div>
-                <label for="lastname">Nickname</label>
-                <input type="text" id="lastname" name="nick"/>
-            </div>
-            <div>
-                <label for="lastname">Age</label>
-                <input type="text" id="lastname" name="age"/>
-            </div>
-            <div>
-                <label for="lastname">Location</label>
-                <input type="text" id="lastname" name="location"/>
-            </div>
-            <input type="submit" value="Sign Up" />
 
-            <a class="close" href="#close"></a>
-        </div>
-        </form>
-       
-        
 
 
 	<div id="page-wrapper">
@@ -382,48 +384,49 @@ function checkPwd() {
 		</div>
 	</div>
 
-		<!-- Main -->
-<form action="../updateService">
+	<!-- Main -->
+	<form action="../updateService">
 		<div id="main-wrapper">
 			<div class="container">
 
 				<!-- Content -->
 				<article class="box post">
 				<div style="margin-left: 20%; margin-right: 30%;">
-						<table>
-							<tr>
-								<td align="left">비밀번호를 입력해주세요</td>
-								<td align="right"><input type="password" name="pw">
-								</td>
-							</tr>
-							<tr>
-								<td align="left">비밀번호를 다시확인해주세요</td>
-								<td align="right" height="50"> <input type="password" name="pw2" onkeyup="checkPwd()">
+					<table>
+						<tr>
+							<td align="left">비밀번호를 입력해주세요</td>
+							<td align="right"><input type="password" name="pw">
+							</td>
+						</tr>
+						<tr>
+							<td align="left">비밀번호를 다시확인해주세요</td>
+							<td align="right" height="50"><input type="password"
+								name="pw2" onkeyup="checkPwd()">
 								<div id="pwMsg" style="display: inline;"></div></td>
-							</tr>
-							<tr>
-								<td align="left">닉네임을 입력해주세요</td>
-								<td align="right"><input type="text" name="nick"></td>
-							</tr>
-							<tr>
-								<td align="left">나이를 입력해주세요</td>
-								<td align="right"><input type="text" name="age"></td>
-							</tr>
-							<tr>
-								<td align="left">사는 지역을 입력해주세요</td>
-								<td align="right"><input type="text" name="location"></td>
-							</tr>
-						</table>
+						</tr>
+						<tr>
+							<td align="left">닉네임을 입력해주세요</td>
+							<td align="right"><input type="text" name="nick"></td>
+						</tr>
+						<tr>
+							<td align="left">나이를 입력해주세요</td>
+							<td align="right"><input type="text" name="age"></td>
+						</tr>
+						<tr>
+							<td align="left">사는 지역을 입력해주세요</td>
+							<td align="right"><input type="text" name="location"></td>
+						</tr>
+					</table>
 				</div>
-				<p align = "center">
-				<input type = "submit"  style="width: 150px; height: 60px;" value="확인">
+				<p align="center">
+					<input type="submit" style="width: 150px; height: 60px;" value="확인">
 				</p>
 				</article>
 			</div>
 		</div>
-</form>
-		<!-- Footer -->
-		<!-- <div id="footer-wrapper">
+	</form>
+	<!-- Footer -->
+	<!-- <div id="footer-wrapper">
 			<section id="footer" class="container">
 			<div class="row">
 				<div class="8u 12u(mobile)">
