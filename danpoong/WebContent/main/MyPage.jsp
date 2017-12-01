@@ -14,7 +14,9 @@
 	rel="stylesheet">
 <link href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
 	rel="stylesheet">
-	
+	<link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css"
+	rel="stylesheet">
+
 <style type="text/css">
 
 body {
@@ -22,7 +24,7 @@ body {
 }
 
 .korean{
-font-family: 'Nanum Brush Script', cursive;
+font-family: 'Jeju Hallasan', cursive;
 }
 
 .panel {
@@ -407,26 +409,26 @@ a#login_pop:hover, a#join_pop:hover {
 				<div style="margin-left: 20%; margin-right: 30%;">
 					<table>
 						<tr>
-							<td align="left" class="korean"><h3 style="font-weight: 600; font-size:large;">비 밀 번 호 를 &nbsp  입 력 해 주 세 요</h3></td>
+							<td align="left" class="korean"><h3 style="font-weight: 200; font-size:large;">비 밀 번 호 를 &nbsp  입 력 해 주 세 요</h3></td>
 							<td align="right"><input type="password" name="pw">
 							</td>
 						</tr>
 						<tr>
-							<td align="left" class="korean"><h3 style="font-weight: 600; font-size:large;">비 밀 번 호 를 &nbsp 다 시 확 인 해 주 세 요</h3></td>
+							<td align="left" class="korean"><h3 style="font-weight: 200; font-size:large;">비 밀 번 호 를 &nbsp 다 시 확 인 해 주 세 요</h3></td>
 							<td align="right" height="50"><input type="password"
 								name="pw2" onkeyup="checkPwd()">
 								<div id="pwMsg" style="display: inline;"></div></td>
 						</tr>
 						<tr>
-							<td align="left" class="korean"><h3 style="font-weight: 600; font-size:large;">닉 네 임 을 &nbsp  입 력 해 주 세 요</h3></td>
+							<td align="left" class="korean"><h3 style="font-weight: 200; font-size:large;">닉 네 임 을 &nbsp  입 력 해 주 세 요</h3></td>
 							<td align="right"><input type="text" name="nick"></td>
 						</tr>
 						<tr>
-							<td align="left" class="korean"><h3 style="font-weight: 600; font-size:large;"> 나 이 를  &nbsp 입 력 해 주 세 요</h3></td>
+							<td align="left" class="korean"><h3 style="font-weight: 200; font-size:large;"> 나 이 를  &nbsp 입 력 해 주 세 요</h3></td>
 							<td align="right"><input type="text" name="age"></td>
 						</tr>
 						<tr>
-							<td align="left" class="korean"><h3 style="font-weight: 600; font-size:large;">사 는  &nbsp 지 역 을&nbsp   입 력 해 주 세 요</h3></td>
+							<td align="left" class="korean"><h3 style="font-weight: 200; font-size:large;">사 는  &nbsp 지 역 을&nbsp   입 력 해 주 세 요</h3></td>
 							<td align="right"><input type="text" name="location"></td>
 						</tr>
 					</table>
