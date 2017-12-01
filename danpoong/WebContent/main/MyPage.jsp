@@ -10,8 +10,21 @@
 <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 <link rel="stylesheet" href="assets/css/main.css" />
 <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
+	rel="stylesheet">
+	
 <style type="text/css">
+
+body {
+	font-family: 'Indie Flower', cursive;
+}
+
+.korean{
+font-family: 'Nanum Brush Script', cursive;
+}
+
 .panel {
 	background-color: white;
 	height: 80px;
@@ -366,7 +379,7 @@ a#login_pop:hover, a#join_pop:hover {
 
 				<!-- Logo -->
 				<h1>
-					<a href="main.jsp">알비스의 바입니다.</a>
+					<a href="main.jsp">ALVIS'S BAR</a>
 				</h1>
 
 				<!-- Nav -->
@@ -394,26 +407,26 @@ a#login_pop:hover, a#join_pop:hover {
 				<div style="margin-left: 20%; margin-right: 30%;">
 					<table>
 						<tr>
-							<td align="left">비밀번호를 입력해주세요</td>
+							<td align="left" class="korean"><h3 style="font-weight: 600; font-size:large;">비 밀 번 호 를 &nbsp  입 력 해 주 세 요</h3></td>
 							<td align="right"><input type="password" name="pw">
 							</td>
 						</tr>
 						<tr>
-							<td align="left">비밀번호를 다시확인해주세요</td>
+							<td align="left" class="korean"><h3 style="font-weight: 600; font-size:large;">비 밀 번 호 를 &nbsp 다 시 확 인 해 주 세 요</h3></td>
 							<td align="right" height="50"><input type="password"
 								name="pw2" onkeyup="checkPwd()">
 								<div id="pwMsg" style="display: inline;"></div></td>
 						</tr>
 						<tr>
-							<td align="left">닉네임을 입력해주세요</td>
+							<td align="left" class="korean"><h3 style="font-weight: 600; font-size:large;">닉 네 임 을 &nbsp  입 력 해 주 세 요</h3></td>
 							<td align="right"><input type="text" name="nick"></td>
 						</tr>
 						<tr>
-							<td align="left">나이를 입력해주세요</td>
+							<td align="left" class="korean"><h3 style="font-weight: 600; font-size:large;"> 나 이 를  &nbsp 입 력 해 주 세 요</h3></td>
 							<td align="right"><input type="text" name="age"></td>
 						</tr>
 						<tr>
-							<td align="left">사는 지역을 입력해주세요</td>
+							<td align="left" class="korean"><h3 style="font-weight: 600; font-size:large;">사 는  &nbsp 지 역 을&nbsp   입 력 해 주 세 요</h3></td>
 							<td align="right"><input type="text" name="location"></td>
 						</tr>
 					</table>

@@ -164,6 +164,13 @@ a#login_pop:hover, a#join_pop:hover {
 	border: 1px solid blue;
 }
 
+
+/* <link href="https://fonts.googleapis.com/css?family=Indie+Flower"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
+	rel="stylesheet"> */
+
+
 body {
 	font-family: 'Indie Flower', cursive;
 }

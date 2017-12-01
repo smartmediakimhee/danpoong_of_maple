@@ -10,8 +10,21 @@
 <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 <link rel="stylesheet" href="assets/css/main.css" />
 <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
+	rel="stylesheet">
 <style type="text/css">
 
+
+
+body {
+	font-family: 'Indie Flower', cursive;
+}
+
+.korean{
+font-family: 'Nanum Brush Script', cursive;
+}
 /* 모달 css 시작 */
 .panel {
 	background-color: white;
@@ -349,7 +362,7 @@ a#login_pop:hover, a#join_pop:hover {
 
 				<!-- Logo -->
 				<h1>
-					<a href="main.jsp">알비스의 바입니다.</a>
+					<a href="main.jsp">ALVIS'S BAR</a>
 				</h1>
 
 				<!-- Nav -->
