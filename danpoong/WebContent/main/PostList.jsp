@@ -68,6 +68,8 @@
 </style>
 </head>
 <body>
+<c:set var="index" value="${page > 0? page*10:0}" scope="request"></c:set>
+<c:set var="list" value="${sessionScope.post_list}" scope="request"></c:set>
 	<div class="container">
 		<table class="table table-hover">
 			<thead>
@@ -83,13 +85,13 @@
 			<tbody>
 				<c:choose>
 					<c:when test="${not empty sessionScope.post_list}">
-						<c:forEach items="${sessionScope.post_list}" var="list">
+						<c:forEach begin="${index}" end="${index+9}" var="i">
 							<tr>
-								<td style="width: 10%;">${list.num}</td>
-								<th><a href="../PostContentService?num=${list.num}">${list.title}</a></th>
-								<td style="width: 10%;">${list.post_author}</td>
-								<td style="width: 10%;">${list.time_check}</td>
-								<td style="width: 10%;">${list.likey}</td>
+								<td style="width: 10%;">${list.get(i).getNum()}</td>
+								<th><a href="../PostContentService?num=${list.get(i).getNum()}">${list.get(i).getTitle()}</a></th>
+								<td style="width: 10%;">${list.get(i).getPost_author()}</td>
+								<td style="width: 10%;">${list.get(i).getTime_check()}</td>
+								<td style="width: 10%;">${list.get(i).getLikey()}</td>
 							</tr>
 						</c:forEach>
 					</c:when>
@@ -115,6 +117,11 @@
 								<li><a href="#">${i}</a></li>
 							</c:forEach>
 						</c:when>
+						<c:otherwise>
+							<c:forEach begin="1" end="${sessionScope.btn_num}" var="i">
+								<li><a href="PostList.jsp?page=${i-1}">${i}</a></li>
+							</c:forEach>
+						</c:otherwise>
 						</c:choose>
 					</c:when>
 				</c:choose>
