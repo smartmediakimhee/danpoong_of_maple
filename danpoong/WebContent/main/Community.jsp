@@ -379,7 +379,7 @@ a#login_pop:hover, a#join_pop:hover {
 
 			</div>
 		</div>
-
+<!--  -->
 		<!-- Main -->
 		<div id="main-wrapper">
 			<div class="container" style="height:500px;">

@@ -71,7 +71,7 @@ create sequence post_num
 start with 1
 increment by 1;
 
-// 矫啮胶 积己 (review)
+// 矫啮胶 积己 (review)??
 create sequence review_num
 start with 1
 increment by 1;
