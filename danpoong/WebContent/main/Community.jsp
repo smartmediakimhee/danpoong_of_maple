@@ -395,11 +395,11 @@ a#login_pop:hover, a#join_pop:hover {
 <!--  -->
 		<!-- Main -->
 		<div id="main-wrapper">
-			<div class="container" style="height:500px;">
+			<div class="container" style="height:600px;">
 				<!-- Content -->
 				<article class="box post"> 
 					<div class="PostList" style="height:100%;">
-						<iframe src="PostList.jsp" style="width: 100%; height:500px;" scrolling="no"></iframe>
+						<iframe src="PostList.jsp" style="width: 100%; height:600px;" scrolling="no"></iframe>
 					</div>
 					<div class="PostWrite">
 					
