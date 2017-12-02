@@ -1,3 +1,4 @@
+<%@page import="com.google.gson.Gson"%>
 <%@page import="com.DAO.ReviewDTO"%>
 <%@page import="com.DAO.DrinkInfoDTO"%>
 <%@page import="java.util.ArrayList"%>
@@ -510,6 +511,9 @@ li.item:LAST-CHILD {
 
 <%
 	ArrayList<DrinkInfoDTO> drink_list = (ArrayList<DrinkInfoDTO>)session.getAttribute("drink_list");
+	Gson gson = new Gson();
+	String json = gson.toJson(drink_list);
+	System.out.println(json);
 	ArrayList<ReviewDTO> review_list = (ArrayList<ReviewDTO>)session.getAttribute("review_list");
 %>
 
