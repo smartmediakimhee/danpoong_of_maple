@@ -166,8 +166,8 @@ public class WebDAO {
 
 		getConnection();
 
-		pst = con.prepareStatement("select * from review where drink_id = ?");
-		pst.setString(1, drink_id+"%");
+		pst = con.prepareStatement("select * from review where drink_id like ?||'%' order by num desc");
+		pst.setString(1, drink_id);
 		rs = pst.executeQuery();
 
 		ArrayList<ReviewDTO> list = new ArrayList<ReviewDTO>();

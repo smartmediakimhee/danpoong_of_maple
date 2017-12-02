@@ -507,6 +507,8 @@ li.item:LAST-CHILD {
 		Gson drink_gson = new Gson();
 		String drink_json = drink_gson.toJson(drink_list);
 		ArrayList<ReviewDTO> review_list = (ArrayList<ReviewDTO>) session.getAttribute("review_list");
+		Gson review_gson = new Gson();
+		String review_json = review_gson.toJson(review_list);
 	%>
 
 
@@ -1349,8 +1351,7 @@ li.item:LAST-CHILD {
 
 					<!-- 댓글란 별점이 매겨져야됨-->
 					<div>
-						<ul id="myReviews"
-							style="margin: 0px; padding: 0px; list-style-type: none; margin-bottom: 42%;">
+						<ul id="myReviews" style="margin: 0px; padding: 0px; list-style-type: none; margin-bottom: 42%;">
 							<li class="item"></li>
 							<li class="item"><span class="star-input"> <span
 									class="input"> <input type="radio" name="star-input"
@@ -1369,7 +1370,7 @@ li.item:LAST-CHILD {
 										id="p9" value="9"><label for="p9">9</label> <input
 										type="radio" name="star-input" id="p10" value="10"><label
 										for="p10">10</label>
-								</span> <output for="star-input"> <b style="opacity: 0;">0</b></output>
+								</span> <output for="star-input"> <b>32323</b></output>
 							</span> <script type="text/javascript">
 								var starRating = function() {
 									var $star = $(".star-input"), $result = $star
@@ -1430,9 +1431,39 @@ li.item:LAST-CHILD {
 							</script></li>
 							<li class="item"></li>
 						</ul>
+						
 					</div>
 					<!-- 댓글란 별점이 매겨져야됨-->
 
+					<div style="margin-top: 42px;">
+						<table>
+							<tr>
+								<td id="reviewAuthor1"></td>
+								<td id="reviewScore1"></td>
+								<td id="reviewContent1"></td>
+							</tr>
+							<tr>
+								<td id="reviewAuthor2"></td>
+								<td id="reviewScore2"></td>
+								<td id="reviewContent2"></td>
+							</tr>
+							<tr>
+								<td id="reviewAuthor3"></td>
+								<td id="reviewScore3"></td>
+								<td id="reviewContent3"></td>
+							</tr>
+							<tr>
+								<td id="reviewAuthor4"></td>
+								<td id="reviewScore4"></td>
+								<td id="reviewContent4"></td>
+							</tr>
+							<tr>
+								<td id="reviewAuthor5"></td>
+								<td id="reviewScore5"></td>
+								<td id="reviewContent5"></td>
+							</tr>
+						</table>
+					</div>
 
 					<!--  별점매기는 시스템 -->
 
@@ -1440,24 +1471,31 @@ li.item:LAST-CHILD {
 						<ul id="myReviews"
 							style="margin: 0px; padding: 0px; list-style-type: none;">
 							<li class="item"></li>
-							<li class="item"><span class="star-input"> <span
-									class="input"> <input type="radio" name="star-input"
-										id="p1" value="1"><label for="p1">1</label> <input
-										type="radio" name="star-input" id="p2" value="2"><label
-										for="p2">2</label> <input type="radio" name="star-input"
-										id="p3" value="3"><label for="p3">3</label> <input
-										type="radio" name="star-input" id="p4" value="4"><label
-										for="p4">4</label> <input type="radio" name="star-input"
-										id="p5" value="5"><label for="p5">5</label> <input
-										type="radio" name="star-input" id="p6" value="6"><label
-										for="p6">6</label> <input type="radio" name="star-input"
-										id="p7" value="7"><label for="p7">7</label> <input
-										type="radio" name="star-input" id="p8" value="8"><label
-										for="p8">8</label> <input type="radio" name="star-input"
-										id="p9" value="9"><label for="p9">9</label> <input
-										type="radio" name="star-input" id="p10" value="10"><label
-										for="p10">10</label>
-								</span> <output for="star-input"> <b style="opacity: 0;">0</b></output>
+							<li class="item">
+							<span class="star-input"> 
+							<span class="input"> 
+							<input type="radio" name="star-input" id="p1" value="1">
+							<label for="p1">1</label> 
+							<input type="radio" name="star-input" id="p2" value="2">
+							<label for="p2">2</label> 
+							<input type="radio" name="star-input" id="p3" value="3">
+							<label for="p3">3</label> 
+							<input type="radio" name="star-input" id="p4" value="4">
+							<label for="p4">4</label> 
+							<input type="radio" name="star-input" id="p5" value="5">
+							<label for="p5">5</label> 
+							<input type="radio" name="star-input" id="p6" value="6">
+							<label for="p6">6</label> 
+							<input type="radio" name="star-input" id="p7" value="7">
+							<label for="p7">7</label> 
+							<input type="radio" name="star-input" id="p8" value="8">
+							<label for="p8">8</label> 
+							<input type="radio" name="star-input" id="p9" value="9">
+							<label for="p9">9</label> 
+							<input type="radio" name="star-input" id="p10" value="10">
+							<label for="p10">10</label>
+								</span> 
+								<output for="star-input"> <b style="opacity: 0;">0</b></output>
 							</span> <script type="text/javascript">
 								var starRating = function() {
 									var $star = $(".star-input"), $result = $star
@@ -1541,9 +1579,9 @@ li.item:LAST-CHILD {
 
 	<script type="text/javascript">
 		function check(id) {
-			var drink_list =
-	<%=drink_json%>
-		;
+			var drink_list =<%=drink_json%>;
+			var review_list = <%=review_json%>;
+			
 			for (var i = 0; i < drink_list.length; i++) {
 				if (id == drink_list[i].drink_id) {
 					document.getElementById("modalName").innerHTML = drink_list[i].drink_name;
@@ -1551,6 +1589,17 @@ li.item:LAST-CHILD {
 					document.getElementById("modalPrice").innerHTML = drink_list[i].price;
 					document.getElementById("modalScore").innerHTML = drink_list[i].year;
 					document.getElementById("modalInfo").innerHTML = drink_list[i].info;
+				}
+			}
+			
+			var index = 1;
+			
+			for (var i=0; i < 5; i++) {
+				if(id == review_list[i].drink_id) {
+					document.getElementById("reviewAuthor"+index).innerHTML = review_list[i].author;
+					document.getElementById("reviewScore"+index).innerHTML = review_list[i].score;
+					document.getElementById("reviewContent"+index).innerHTML = review_list[i].review_content;
+					index += 1;
 				}
 			}
 		}
