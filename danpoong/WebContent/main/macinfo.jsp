@@ -629,8 +629,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0002.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0002')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0002.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0002')"></button>
 							<h4 style="color: black; margin-left: 1px;" class="korean">참이슬
 								original</h4>
 						</div>
@@ -640,8 +640,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0003.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0003')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0003.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0003')"></button>
 							<h4 style="color: black; margin-left: 1px;" class="korean">참이슬
 								16.9도</h4>
 						</div>
@@ -651,8 +651,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0004.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0004')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0004.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0004')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">일품진로
 							</h4>
 						</div>
@@ -665,7 +665,7 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0005.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0005.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
 
 
 							</button>
@@ -679,8 +679,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0006.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0006')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0006.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0006')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">처음처럼
 							</h4>
 						</div>
@@ -690,8 +690,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0007.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0007')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0007.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0007')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">처음처럼
 								순한</h4>
 						</div>
@@ -701,8 +701,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0008.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0008')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0008.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0008')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">처음처럼
 								진한</h4>
 						</div>
@@ -715,8 +715,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0009.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0009')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0009.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0009')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">산처럼
 							</h4>
 						</div>
@@ -727,8 +727,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0010.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0010')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0010.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0010')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
 							</h4>
 						</div>
@@ -738,8 +738,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0011.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0011')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0011.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0011')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
 							</h4>
 						</div>
@@ -749,8 +749,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0012.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0012')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0012.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0012')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">잎새주
 								부라더</h4>
 						</div>
@@ -763,8 +763,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0013.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0013')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0013.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0013')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">부라더#소다
 							</h4>
 						</div>
@@ -775,8 +775,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0014.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0014')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0014.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0014')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">복받은
 								부라더</h4>
 						</div>
@@ -786,8 +786,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0015.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0015')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0015.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0015')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">아홉시반
 							</h4>
 						</div>
@@ -797,8 +797,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0016.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0016')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0016.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0016')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">잎새주
 							</h4>
 						</div>
@@ -811,8 +811,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0017.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0017')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0017.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0017')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">보해
 								골드</h4>
 						</div>
@@ -823,8 +823,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0018.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0018')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0018.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0018')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">보해
 								복분자</h4>
 						</div>
@@ -834,8 +834,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0019.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0019')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0019.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0019')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">매취순
 							</h4>
 						</div>
@@ -845,8 +845,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0020.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0020')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0020.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0020')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">O2린
 							</h4>
 						</div>
@@ -859,8 +859,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0021.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0021')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0021.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0021')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">한라산
 								Original</h4>
 						</div>
@@ -871,8 +871,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0022.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0022')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0022.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0022')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">한라산
 								올래</h4>
 						</div>
@@ -882,8 +882,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0023.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0023')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0023.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0023')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">한라산
 								허벅술</h4>
 						</div>
@@ -893,8 +893,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0024.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0024')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0024.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0024')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
 							</h4>
 						</div>
@@ -907,8 +907,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0025.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0025')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0025.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0025')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
 								복숭아</h4>
 						</div>
@@ -919,8 +919,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0026.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0026')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0026.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0026')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
 								석류</h4>
 						</div>
@@ -930,8 +930,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0027.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0027')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0027.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0027')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
 								블루베리</h4>
 						</div>
@@ -941,8 +941,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0028.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0028')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0028.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0028')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
 								자몽</h4>
 						</div>
@@ -955,8 +955,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0029.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0029')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0029.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0029')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
 								유자</h4>
 						</div>
@@ -967,8 +967,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0030.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0030')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0030.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0030')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
 								파인애플</h4>
 						</div>
@@ -978,8 +978,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0031.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0031')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0031.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0031')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">화이트
 							</h4>
 						</div>
@@ -989,8 +989,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0032.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0032')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0032.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0032')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">트로피칼이
 								톡소다</h4>
 						</div>
@@ -1002,8 +1002,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0033.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0033')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0033.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0033')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">진짜
 								맛있는 국화</h4>
 						</div>
@@ -1012,8 +1012,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0034.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0034')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0034.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0034')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">엔조이
 								오리지날 사과</h4>
 						</div>
@@ -1022,8 +1022,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0035.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0035')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0035.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0035')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">엔조이
 								오리지날 배</h4>
 						</div>
@@ -1032,8 +1032,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0036.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0036')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0036.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0036')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">엔조이
 								오리지날 생강</h4>
 						</div>
@@ -1044,8 +1044,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0037.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0037')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0037.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0037')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">엔조이
 								스파클링 사과</h4>
 						</div>
@@ -1054,8 +1054,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0038.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0038')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0038.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0038')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">엔조이
 								스파클링 배</h4>
 						</div>
@@ -1064,8 +1064,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0039.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0039')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0039.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0039')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">매실
 								마을</h4>
 						</div>
@@ -1074,8 +1074,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0040.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0040')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0040.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0040')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">국화면
 								좋으리</h4>
 						</div>
@@ -1086,8 +1086,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0041.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0041')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0041.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0041')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">대선
 							</h4>
 						</div>
@@ -1096,8 +1096,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0042.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0042')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0042.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0042')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">시원블루
 								자몽</h4>
 						</div>
@@ -1106,8 +1106,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0043.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0043')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0043.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0043')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">시원
 							</h4>
 						</div>
@@ -1116,8 +1116,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0044.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0044')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0044.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0044')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">시원
 								프리미엄</h4>
 						</div>
@@ -1128,8 +1128,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0045.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0045')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0045.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0045')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">맛있는
 								참</h4>
 						</div>
@@ -1138,8 +1138,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0046.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0046')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0046.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0046')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">순한
 								참 유자</h4>
 						</div>
@@ -1148,8 +1148,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0047.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0047')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0047.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0047')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">순한
 								참 애플망고</h4>
 						</div>
@@ -1158,8 +1158,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0048.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0048')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0048.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0048')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">순한
 								참 자몽</h4>
 						</div>
@@ -1170,8 +1170,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0049.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0049')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0049.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0049')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">순한
 								참 청포도</h4>
 						</div>
@@ -1180,8 +1180,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0050.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0050')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0050.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0050')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">순한
 								참 블루베리</h4>
 						</div>
@@ -1190,8 +1190,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0051.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
-								onclick="check('02_0051')"></button>
+								style="height: 83%; width: 83%; background-image: url('images/mac/05_0051.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('05_0051')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">순한
 								참 모히또 바나나</h4>
 						</div>
