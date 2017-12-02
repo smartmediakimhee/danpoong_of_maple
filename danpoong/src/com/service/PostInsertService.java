@@ -14,6 +14,7 @@ import com.DAO.WebDAO;
 public class PostInsertService extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("euc-kr");
 		String id = request.getParameter("id");
 		String title = request.getParameter("subject");
 		String post_content = request.getParameter("content");
