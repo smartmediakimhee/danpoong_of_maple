@@ -15,7 +15,8 @@
 	rel="stylesheet">
 <link href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
 	rel="stylesheet">
-
+<link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css"
+	rel="stylesheet">
 
 <style type="text/css">
 /* 모달 css 시작 */
@@ -181,6 +182,7 @@ body {
 }
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
 figure.snip12001 {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
@@ -1136,7 +1138,13 @@ h3 {
 	margin-left: 88.5%;
 	display: inline-block;
 }
-
+#container2 {
+	width: 300px;
+	height: 26px;
+	margin-top: 3%;
+	margin-left: 70%;
+	display: inline-block;
+}
 .button-1 {
 	width: 70px;
 	height: 25px;
@@ -1224,6 +1232,10 @@ h3 {
 .button-4:hover a {
 	color: #fff;
 }
+.main-wrapper {
+	background-color: #f7f7f7;
+	width:100%;
+}
 </style>
 
 
@@ -1236,7 +1248,7 @@ h3 {
 
 
 <!-- 모달 코드 시작 -->
-<div >
+<div>
 	<c:choose>
 		<c:when test="${empty id }">
 			<div id="container">
@@ -1310,7 +1322,7 @@ h3 {
 
 	<!-- 모달 코드 끝 -->
 
-	<<!-- div id="container">
+	<!-- div id="container">
 		<div class="button-1">
 			<div class="eff-1"></div>
 			<a href="Login.html"> LOGIN </a>
@@ -1356,96 +1368,146 @@ h3 {
 
 </div>
 </div>
-			
-			
-			
-			
-			
-			
-			
-<figure class="snip12001" >
-  <img src="images/infosoju.jpg" alt="sq-sample27" />
-  <figcaption>
-    <p>한국에서 대표적인 술. 재미있는 것은 마시는 경우 중 '고민 상담'이 가장 많다는 것입니다. 고민상담을 할 때 마시는 술 소주, 만약 당신이 고민을 가지고 있다면 오늘 밤은 소주 한잔 어떠신가요?</p>
-    
-    
-    <div class="heading">
-      <h2 class = "korean" style="font-size: xx-large;">소주</h2>
-    </div>
-  </figcaption>
-  <a href="../DrinkListService?drink_id=02"></a>
-  
-</figure><figure class="snip12002">
-  <img src="images/infobeer2.jpg" alt="sq-sample32" />
-  <figcaption>
-    <p>맥주를 뜻하는 beer의 어원은 두 가지 설이 있습니다. '마시다'는 뜻을 가진 라틴어 비베레(bibere)와 '곡물'을 뜻하는 게르만어 베오레(bior)입니다. 무엇이 진정한 어원인지는 모르지만 우리의 피로를 풀어주는 좋은 친구임이 틀림없습니다.</p>
-    <div class="heading">
-      <h2 class = "korean" style="font-size: xx-large;">맥주</h2>
-    </div>
-  </figcaption>
-  <a href="../DrinkListService?drink_id=01"></a>
-</figure>
-
-</figure><figure class="snip12004">
-  <img src="images/whisky1.jpg" alt="sq-sample32" />
-  <figcaption>
-    <p>위스키는 스코틀랜드에서 유래한 대표적인 증류주로서 양주의 대명사입니다. 한번 익숙해지기 시작하면 위스키본연의 향과 맛을 느낄 수 있다고 하는데 가격이 비싼 편이라 익숙해질 기회를 주지 않는 야속한 술입니다.</p>
-    <div class="heading">
-      <h2 class = "korean" style="font-size: xx-large;">위스키</h2>
-    </div>
-  </figcaption>
-  <a href="../DrinkListService?drink_id=03"></a>
-</figure>
 
 
-</figure><figure class="snip12003">
-  <img src="images/infowine1.jpg" alt="sq-sample32" />
-  <figcaption>
-    <p>와인의 재료는 무수히 많지만 포도로 만든 수이 워낙 유명하다 보니 번역할 때는 과일주보다는 포도주라고 번역합니다. 와인병에 붙어있는 라벨(Label)은 일종의 신분 증명서로 와인의 원산지, 등급, 제조업자등이 상세하게 적혀있기 때문에 읽는 법을 알아두면 굉장히 많은 도움이 될 수 있습니다. (FEAT허세)</p>
-    <div class="heading">
-      <h2 class = "korean" style="font-size: xx-large;">와인</h2>
-    </div>
-  </figcaption>
-  <a href="../DrinkListService?drink_id=04"></a>
-</figure>
-
-</figure><figure class="snip12005">
-  <img src="images/cog.jpg" alt="sq-sample32" />
-  <figcaption>
-    <p>브랜디는 증류를 거친 과일주를 오크통에 저장하여 숙성시켜 만듭니다. 브랜디는 '불에 태운 술'이라는 의미로 호사스러운 맛과 향을 가지고 있어 술 중의 술이라고 합니다.</p>
-    <div class="heading">
-      <h2 class = "korean" style="font-size: xx-large;">브랜디</h2>
-    </div>
-  </figcaption>
-  <a href="../DrinkListService?drink_id=07"></a>
-</figure>
 
 
-</figure><figure class="snip12006">
-  <img src="images/mac3.jpg" alt="sq-sample32" />
-  <figcaption>
-    <p>소주와 함께 우리나라를 대표하는 전통 술입니다. 쌀로 밑술을 담가 거기서 청주를 걸러내고 남은 술지게미를 다시 체에 물로 걸러내는 방법으로 주조합니다. 왠지 비가 오는 날이면 파전과 함께 급격하게 끌리는 술이 아닐까 싶습니다.</p>
-    <div class="heading">
-      <h2 class = "korean" style="font-size: xx-large;">막걸리</h2>
-    </div>
-  </figcaption>
-  <a href="../DrinkListService?drink_id=05"></a>
-</figure>
-
-</figure><figure class="snip12007">
-  <img src="images/jeon7.jpg" alt="sq-sample32" />
-  <figcaption>
-    <p>전통주는 전통적으로 내려오는 제조 방법에 따라 만드는 술을 말합니다. 제조 방법에 따라 양조주와 증류주로 나뉘고 양조주는 순곡주와 혼양곡주로, 순곡주는 다시 탁주와 청주로 구별됩니다. </p>
-    <div class="heading">
-      <h2 class = "korean" style="font-size: xx-large;">전통주</h2>
-    </div>
-  </figcaption>
-  <a href="../DrinkListService?drink_id=06"></a>
-</figure>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
+	<div class="main-wrapper">
+		<div>
+			<figure class="snip12001"> <img src="images/infosoju.jpg"
+				alt="sq-sample27" /> <figcaption>
+			<p>한국에서 대표적인 술. 재미있는 것은 마시는 경우 중 '고민 상담'이 가장 많다는 것입니다. 고민상담을 할 때
+				마시는 술 소주, 만약 당신이 고민을 가지고 있다면 오늘 밤은 소주 한잔 어떠신가요?</p>
+
+
+			<div class="heading">
+				<h2 class="korean" style="font-size: xx-large;">소주</h2>
+			</div>
+			</figcaption> <a href="../DrinkListService?drink_id=02"></a> </figure>
+			<figure class="snip12002"> <img src="images/infobeer2.jpg"
+				alt="sq-sample32" /> <figcaption>
+			<p>맥주를 뜻하는 beer의 어원은 두 가지 설이 있습니다. '마시다'는 뜻을 가진 라틴어 비베레(bibere)와
+				'곡물'을 뜻하는 게르만어 베오레(bior)입니다. 무엇이 진정한 어원인지는 모르지만 우리의 피로를 풀어주는 좋은 친구임이
+				틀림없습니다.</p>
+			<div class="heading">
+				<h2 class="korean" style="font-size: xx-large;">맥주</h2>
+			</div>
+			</figcaption> <a href="../DrinkListService?drink_id=01"></a> </figure>
+
+			</figure>
+			<figure class="snip12004"> <img src="images/whisky1.jpg"
+				alt="sq-sample32" /> <figcaption>
+			<p>위스키는 스코틀랜드에서 유래한 대표적인 증류주로서 양주의 대명사입니다. 한번 익숙해지기 시작하면 위스키본연의
+				향과 맛을 느낄 수 있다고 하는데 가격이 비싼 편이라 익숙해질 기회를 주지 않는 야속한 술입니다.</p>
+			<div class="heading">
+				<h2 class="korean" style="font-size: xx-large;">위스키</h2>
+			</div>
+			</figcaption> <a href="../DrinkListService?drink_id=03"></a> </figure>
+
+
+			</figure>
+			<figure class="snip12003"> <img src="images/infowine1.jpg"
+				alt="sq-sample32" /> <figcaption>
+			<p>와인의 재료는 무수히 많지만 포도로 만든 수이 워낙 유명하다 보니 번역할 때는 과일주보다는 포도주라고
+				번역합니다. 와인병에 붙어있는 라벨(Label)은 일종의 신분 증명서로 와인의 원산지, 등급, 제조업자등이 상세하게
+				적혀있기 때문에 읽는 법을 알아두면 굉장히 많은 도움이 될 수 있습니다. (FEAT허세)</p>
+			<div class="heading">
+				<h2 class="korean" style="font-size: xx-large;">와인</h2>
+			</div>
+			</figcaption> <a href="../DrinkListService?drink_id=04"></a> </figure>
+
+			</figure>
+			<figure class="snip12005"> <img src="images/cog.jpg"
+				alt="sq-sample32" /> <figcaption>
+			<p>브랜디는 증류를 거친 과일주를 오크통에 저장하여 숙성시켜 만듭니다. 브랜디는 '불에 태운 술'이라는 의미로
+				호사스러운 맛과 향을 가지고 있어 술 중의 술이라고 합니다.</p>
+			<div class="heading">
+				<h2 class="korean" style="font-size: xx-large;">브랜디</h2>
+			</div>
+			</figcaption> <a href="../DrinkListService?drink_id=07"></a> </figure>
+
+
+			</figure>
+			<figure class="snip12006"> <img src="images/mac3.jpg"
+				alt="sq-sample32" /> <figcaption>
+			<p>소주와 함께 우리나라를 대표하는 전통 술입니다. 쌀로 밑술을 담가 거기서 청주를 걸러내고 남은 술지게미를 다시
+				체에 물로 걸러내는 방법으로 주조합니다. 왠지 비가 오는 날이면 파전과 함께 급격하게 끌리는 술이 아닐까 싶습니다.</p>
+			<div class="heading">
+				<h2 class="korean" style="font-size: xx-large;">막걸리</h2>
+			</div>
+			</figcaption> <a href="../DrinkListService?drink_id=05"></a> </figure>
+
+			</figure>
+			<figure class="snip12007"> <img src="images/jeon7.jpg"
+				alt="sq-sample32" /> <figcaption>
+			<p>전통주는 전통적으로 내려오는 제조 방법에 따라 만드는 술을 말합니다. 제조 방법에 따라 양조주와 증류주로 나뉘고
+				양조주는 순곡주와 혼양곡주로, 순곡주는 다시 탁주와 청주로 구별됩니다.</p>
+			<div class="heading">
+				<h2 class="korean" style="font-size: xx-large;">전통주</h2>
+			</div>
+			</figcaption> <a href="../DrinkListService?drink_id=06"></a> </figure>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br> <br>
+			<br>
+			<br>
+			<br>
+		</div>
+	</div>
+
+	<hr>
+<div id="footer-wrapper" align="center">
+<hr>
+			<section id="footer" class="container2" style="text-align:center; margin: auto;">
+			<div style="display: block; text-align: center;">
+				<h1 style="font-size: 65px">Alvis Bar</h1>
+			</div>
+			<br>			
+			<div style="display: block; text-align: center;">
+				<font style="font-family: 'Jeju Hallasan', cursive;">광주광역시 남구 송암로60 광주CGI센터 203호 (송하동)</font>
+				<br>
+				<font style="font-family: 'Jeju Hallasan', cursive;">김희정 방준영 이도건 이현선 전상호</font>
+				<br>
+				<font style="font-family: 'Jeju Hallasan', cursive;">062-655-3509</font>
+				<br>
+				<font style="font-family: 'Jeju Hallasan', cursive;">smhrd@smhrd.or.kr</font>
+			</div>
+						<ul class="links" style="text-algin: center">
+							<li>&copy; danpoong of maple. All rights reserved.</li>
+						</ul>
+			</section>
+		</div>
+		
 <script type="text/javascript">
 $(".hover").mouseleave(
 	    function () {

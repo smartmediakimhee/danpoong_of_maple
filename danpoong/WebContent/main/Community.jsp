@@ -14,6 +14,8 @@
 	rel="stylesheet">
 <link href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
 	rel="stylesheet">
+<link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css"
+	rel="stylesheet">	
 <style type="text/css">
 
 
@@ -409,6 +411,26 @@ a#login_pop:hover, a#join_pop:hover {
 		</div>
 
 	</div>
+	<div id="footer-wrapper">
+			<section id="footer" class="container" style="text-align:center">
+			<div style="display: block; text-align: center;">
+				<h1 style="font-size: 65px">Alvis Bar</h1>
+			</div>
+			<br>			
+			<div style="display: block; text-align: center;">
+				<font style="font-family: 'Jeju Hallasan', cursive;">광주광역시 남구 송암로60 광주CGI센터 203호 (송하동)</font>
+				<br>
+				<font style="font-family: 'Jeju Hallasan', cursive;">김희정 방준영 이도건 이현선 전상호</font>
+				<br>
+				<font style="font-family: 'Jeju Hallasan', cursive;">062-655-3509</font>
+				<br>
+				<font style="font-family: 'Jeju Hallasan', cursive;">smhrd@smhrd.or.kr</font>
+			</div>
+						<ul class="links" style="text-algin: center">
+							<li>&copy; danpoong of maple. All rights reserved.</li>
+						</ul>
+			</section>
+		</div>
 
 </body>
 </html>
