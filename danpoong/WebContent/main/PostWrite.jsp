@@ -70,7 +70,7 @@
 	<%
 		String id = (String) session.getAttribute("id");
 	%>
-	<div class="container-board">
+	<div class="container-board" style="height: 600px;">
 		<form action="../PostInsertService?id=<%=id%>" method="post"
 			encType="multiplart/form-data">
 			<table class="table table-bordered">
@@ -94,11 +94,6 @@
 								<input class="upload-name" value="파일선택" disabled="disabled">
 								<label for="ex_file">업로드</label> <input type="file" name="ex_file">
 							</div></td>
-					</tr>
-					<tr>
-						<th>비밀번호</th>
-						<td><input type="password" placeholder="비밀번호를 입력하세요"
-							class="form-control"></td>
 					</tr>
 					<tr>
 						<td colspan="2"><input type="submit" value="등록"
