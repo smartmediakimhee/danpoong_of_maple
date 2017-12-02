@@ -1760,7 +1760,8 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: url("images/bg01.png");
+/* 			background: url("images/bg01.png"); */
+			background-color: #0e0e0e;
 			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.5;

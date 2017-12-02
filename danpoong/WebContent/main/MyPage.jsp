@@ -442,13 +442,26 @@ a#login_pop:hover, a#join_pop:hover {
 	</form>
 	
 	<div id="footer-wrapper">
-			<section id="footer" class="container">
-			<div class="row">
+			<section id="footer" class="container" style="text-align:center">
+			<div style="display: block; text-align: center;">
+				<h1 style="font-size: 65px">Albis Bar</h1>
+			</div>
+			<br>			
+			<div style="display: block; text-align: center;">
+				<font style="font-family: 'Jeju Hallasan', cursive;">광주광역시 남구 송암로60 광주CGI센터 203호 (송하동)</font>
+				<br>
+				<font style="font-family: 'Jeju Hallasan', cursive;">김희정 방준영 이도건 이현선 전상호</font>
+				<br>
+				<font style="font-family: 'Jeju Hallasan', cursive;">062-655-3509</font>
+				<br>
+				<font style="font-family: 'Jeju Hallasan', cursive;">smhrd@smhrd.or.kr</font>
+			</div>
+			<!-- <div class="row">
 				<div class="8u 12u(mobile)">
 					<section> <header>
-					<h2>Blandit nisl adipiscing</h2>
+					<h2>사이트 만든이</h2>
 					</header>
-					<!-- <ul class="dates">
+					<ul class="dates">
 						<li><span class="date">Jan <strong>27</strong></span>
 							<h3>
 								<a href="#">Lorem dolor sit amet veroeros</a>
@@ -479,10 +492,10 @@ a#login_pop:hover, a#join_pop:hover {
 							</h3>
 							<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem
 								ipsum dolor sit amet dolore.</p></li>
-					</ul> -->
+					</ul>
 					</section>
 				</div>
-				<!-- <div class="4u 12u(mobile)">
+				<div class="4u 12u(mobile)">
 					<section> <header>
 					<h2>What's this all about?</h2>
 					</header> <a href="#" class="image featured"><img src="images/pic10.jpg"
@@ -497,9 +510,9 @@ a#login_pop:hover, a#join_pop:hover {
 						us!
 					</p>
 					<footer> <a href="#" class="button">Find out more</a> </footer> </section>
-				</div> -->
-			</div>
-			<div class="row">
+				</div>
+			</div> -->
+			<!-- <div class="row">
 				<div class="4u 12u(mobile)">
 					<section> <header>
 					<h2>Tempus consequat</h2>
@@ -573,20 +586,18 @@ a#login_pop:hover, a#join_pop:hover {
 					</ul>
 					</section>
 				</div>
-			</div>
-			<div class="row">
-				<div class="12u">
-
-					Copyright
-					<div id="copyright">
-						<ul class="links">
-							<li>&copy; Untitled. All rights reserved.</li>
-							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</div> -->
+			<!-- <div class="row"> -->
+				<!-- <div class="12u"> -->
+					<!-- <div id="copyright"> -->
+						<ul class="links" style="text-algin: center">
+							<li>&copy; danpoong of maple. All rights reserved.</li>
+							
 						</ul>
-					</div>
+					<!-- </div> -->
 
-				</div>
-			</div>
+				<!-- </div> -->
+		<!-- 	</div> -->
 			</section>
 		</div>
 

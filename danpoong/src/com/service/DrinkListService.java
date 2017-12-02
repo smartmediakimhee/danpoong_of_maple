@@ -18,7 +18,7 @@ import com.DAO.WebDAO;
 public class DrinkListService extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String drink_id = request.getParameter("dirnk_id");
+		String drink_id = request.getParameter("drink_id");
 		
 		WebDAO dao = WebDAO.getInstance();
 		ArrayList<ReviewDTO> review_list = null;

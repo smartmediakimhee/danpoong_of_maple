@@ -514,6 +514,7 @@ li.item:LAST-CHILD {
 	Gson gson = new Gson();
 	String json = gson.toJson(drink_list);
 	System.out.println(json);
+	System.out.println(drink_list.size());
 	ArrayList<ReviewDTO> review_list = (ArrayList<ReviewDTO>)session.getAttribute("review_list");
 %>
 
@@ -1739,14 +1740,13 @@ li.item:LAST-CHILD {
 
 <script type="text/javascript">
 	function check(id) {
-		var drink_list = <%=drink_list%>;
-		
-		for(var i=0; i<drink_list.size(); i++) {
-			if(id.equals(drink_list.get(i).getDrink_id())) {
-				document.getElementById("modalName").innerHTML = drink_list.get(i).getName();
-				document.getElementById("modalAl").innerHTML = drink_list.get(i).getAlcohol();
-				document.getElementById("modalPrice").innerHTML = drink_list.get(i).getPrice();
-				document.getElementById("modalScore").innerHTML = drink_list.get(i).getScore();
+		var drink_list = <%=json%>;
+		for(var i=0; i<drink_list.length; i++) {
+			if(id == drink_list[i].drink_id) {
+				document.getElementById("modalName").innerHTML = drink_list[i].drink_name;
+				document.getElementById("modalAl").innerHTML = drink_list[i].alcohol;
+				document.getElementById("modalPrice").innerHTML = drink_list[i].price;
+				document.getElementById("modalScore").innerHTML = drink_list[i].year;
 			}
 		}
 	}

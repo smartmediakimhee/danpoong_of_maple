@@ -203,8 +203,8 @@ public class WebDAO {
 		/* Drink테이블에 접근해서 해당 종류의 술 정보들을 가져와 arraylist에 저장 */
 		getConnection();
 
-		pst = con.prepareStatement("select * from drink where drink_id = ?");
-		pst.setString(1, drink_id+"%");
+		pst = con.prepareStatement("select * from drink where drink_id like ?||'%'");
+		pst.setString(1, drink_id);
 		rs = pst.executeQuery();
 
 		ArrayList<DrinkInfoDTO> list = new ArrayList<DrinkInfoDTO>();
