@@ -64,18 +64,20 @@
 	-moz-appearance: none;
 	appearance: none;
 }
-
 </style>
 </head>
 <body>
+	<%
+		String id = (String) session.getAttribute("id");
+	%>
 	<div class="container-board">
-		<table class="table table-bordered">
-			<thead>
-			<caption>글쓰기</caption>
-			</thead>
-			<tbody>
-				<form action="write_ok.jsp" method="post"
-					encType="multiplart/form-data">
+		<form action="PostInsertService?id=<%=id%>" method="post"
+			encType="multiplart/form-data">
+			<table class="table table-bordered">
+				<thead>
+				<caption>글쓰기</caption>
+				</thead>
+				<tbody>
 					<tr>
 						<th>제목</th>
 						<td><input type="text" placeholder="제목을 입력하세요. "
@@ -90,7 +92,7 @@
 						<th>첨부파일</th>
 						<td><div class="filebox">
 								<input class="upload-name" value="파일선택" disabled="disabled">
-								<label for="ex_file">업로드</label> <input type="file" id="ex_file">
+								<label for="ex_file">업로드</label> <input type="file" name="ex_file">
 							</div></td>
 					</tr>
 					<tr>
@@ -105,10 +107,11 @@
 							<!-- <input type="button" value="글 목록으로... " class="pull-right" onclick="javascript:location.href='Community.jsp'"> -->
 						</td>
 					</tr>
-				</form>
-			</tbody>
-		</table>
+				</tbody>
+			</table>
+		</form>
 	</div>
+	
 	<script type="text/javascript">
 		$(document).ready(
 				function() {
@@ -125,5 +128,6 @@
 					});
 				});
 	</script>
+	
 </body>
 </html>

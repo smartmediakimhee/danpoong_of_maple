@@ -323,7 +323,7 @@ body {
 
 #border1 {
 	display: inline-block;
-	background-image: url("images/01_0001.png");
+	background-image: url("images/02_0001.png");
 	background-repeat: no-repeat;
 	background-size: 100px;
 	background-position: center;
@@ -509,6 +509,8 @@ li.item:LAST-CHILD {
 		ArrayList<ReviewDTO> review_list = (ArrayList<ReviewDTO>) session.getAttribute("review_list");
 		Gson review_gson = new Gson();
 		String review_json = review_gson.toJson(review_list);
+		
+		String id = (String)session.getAttribute("id");
 	%>
 
 
@@ -1285,17 +1287,10 @@ li.item:LAST-CHILD {
 		</div>
 	</div>
 
-
-
-
-
-	<form action="ReviewInsertService?id=${sessionScope.id}">
 		<div class="modal fade" id="myModal" role="dialog">
 			<div class="modal-dialog">
 
 				<!-- Modal content-->
-
-
 
 				<div class="modal-content">
 					<div class="modal-header">
@@ -1351,89 +1346,7 @@ li.item:LAST-CHILD {
 
 
 						<!-- 댓글란 별점이 매겨져야됨-->
-						<!-- <div>
-						<ul id="myReviews" style="margin: 0px; padding: 0px; list-style-type: none; margin-bottom: 42%;">
-							<li class="item"></li>
-							<li class="item"><span class="star-input"> <span
-									class="input"> <input type="radio" name="star-input"
-										id="p1" value="1"><label for="p1">1</label> <input
-										type="radio" name="star-input" id="p2" value="2"><label
-										for="p2">2</label> <input type="radio" name="star-input"
-										id="p3" value="3"><label for="p3">3</label> <input
-										type="radio" name="star-input" id="p4" value="4"><label
-										for="p4">4</label> <input type="radio" name="star-input"
-										id="p5" value="5"><label for="p5">5</label> <input
-										type="radio" name="star-input" id="p6" value="6"><label
-										for="p6">6</label> <input type="radio" name="star-input"
-										id="p7" value="7"><label for="p7">7</label> <input
-										type="radio" name="star-input" id="p8" value="8"><label
-										for="p8">8</label> <input type="radio" name="star-input"
-										id="p9" value="9"><label for="p9">9</label> <input
-										type="radio" name="star-input" id="p10" value="10"><label
-										for="p10">10</label>
-								</span> <output for="star-input"> <b style="opacity: 0;">0</b></output>
-							</span> <script type="text/javascript">
-								var starRating = function() {
-									var $star = $(".star-input"), $result = $star
-											.find("output>b");
-									$(document)
-											.on(
-													"focusin",
-													".star-input>.input",
-													function() {
-														$(this).addClass(
-																"focus");
-													})
-											.on(
-													"focusout",
-													".star-input>.input",
-													function() {
-														var $this = $(this);
-														setTimeout(
-																function() {
-																	if ($this
-																			.find(":focus").length === 0) {
-																		$this
-																				.removeClass("focus");
-																	}
-																}, 100);
-													})
-											.on(
-													"change",
-													".star-input :radio",
-													function() {
-														$result.text($(this)
-																.next().text());
-													})
-											.on(
-													"mouseover",
-													".star-input label",
-													function() {
-														$result.text($(this)
-																.text());
-													})
-											.on(
-													"mouseleave",
-													".star-input>.input",
-													function() {
-														var $checked = $star
-																.find(":checked");
-														if ($checked.length === 0) {
-															$result.text("0");
-														} else {
-															$result
-																	.text($checked
-																			.next()
-																			.text());
-														}
-													});
-								};
-								starRating();
-							</script></li>
-							<li class="item"></li>
-						</ul>
-						
-					</div> -->
+
 						<!-- 댓글란 별점이 매겨져야됨-->
 
 						<div style="margin-top: 42px;">
@@ -1469,6 +1382,7 @@ li.item:LAST-CHILD {
 						<!--  별점매기는 시스템 -->
 
 						<div>
+						<form name="f">
 							<ul id="myReviews"
 								style="margin: 0px; padding: 0px; list-style-type: none;">
 								<li class="item"></li>
@@ -1489,7 +1403,8 @@ li.item:LAST-CHILD {
 											id="p9" value="9"> <label for="p9">9</label> <input
 											type="radio" name="star-input" id="p10" value="10"> <label
 											for="p10">10</label>
-									</span> <output for="star-input"> <b style="opacity: 0;">0</b></output>
+									</span> <output for="star-input"> <b style="opacity: 0;"
+											id="sscore">0</b></output>
 								</span> <script type="text/javascript">
 									var starRating = function() {
 										var $star = $(".star-input"), $result = $star
@@ -1554,9 +1469,10 @@ li.item:LAST-CHILD {
 									};
 									starRating();
 								</script></li>
+								
 								<li class="item"><input type="text"
 									style="width: 100%; height: 100%;" name="review_content"></li>
-							</ul>
+							</ul></form>
 						</div>
 
 						<!--  별점매기는 시스템 -->
@@ -1568,25 +1484,40 @@ li.item:LAST-CHILD {
 
 					<div class="modal-footer">
 
-						<input type="submit" class="btn btn-default" data-dismiss="modal"
-							style="background-color: black;" value="write">
-						<input type="reset" class="btn btn-default" data-dismiss="modal"
-							style="background-color: black;" value="close">
+						<button type="button" class="btn btn-default" data-dismiss="modal"
+							style="background-color: black;" onclick="send()">Write</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal"
+							style="background-color: black;">Close</button>
 					</div>
 				</div>
 
 			</div>
 
 		</div>
-	</form>
+
+	<script type="text/javascript">
+		
+		function send() {
+			
+			var review_content = document.f.review_content;
+			var score = document.getElementById("sscore").innerHTML;
+			var id=<%=id%>
+			
+			$.ajax({
+				url:"ReviewInsertService?id="+id+"&review_content="+review_content+"&score="+score,
+				success	: function(result) {
+					document.write("성공");
+				}	
+			});
+			
+		}
+		
+	</script>
+
 	<script type="text/javascript">
 		function check(id) {
-			var drink_list =
-	<%=drink_json%>
-		;
-			var review_list =
-	<%=review_json%>
-		;
+			var drink_list =<%=drink_json%>;
+			var review_list =<%=review_json%>;
 
 			for (var i = 0; i < drink_list.length; i++) {
 				if (id == drink_list[i].drink_id) {

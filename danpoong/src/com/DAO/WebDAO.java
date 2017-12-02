@@ -125,8 +125,7 @@ public class WebDAO {
 
 		getConnection();
 
-		pst = con
-				.prepareStatement("insert into post values(post_num.nextval,?,?,to_char(sysdate, 'YYYY-MM-DD'),?,?,?)");
+		pst = con.prepareStatement("insert into post values(post_num.nextval,?,?,to_char(sysdate, 'YYYY-MM-DD'),?,?,?)");
 		pst.setString(1, post.getTitle());
 		pst.setString(2, post.getPost_author());
 		pst.setString(3, post.getPost_content());
@@ -219,6 +218,25 @@ public class WebDAO {
 		close();
 
 		return list;
+	}
+	
+	public String selectNick(String id) throws Exception {
+		/* 유저 닉네임을 가져오는 메소드 */
+		getConnection();
+
+		pst = con.prepareStatement("select nickname from member where member_id = ?");
+		pst.setString(1, id);
+		rs = pst.executeQuery();
+
+		String result = null;
+		
+		while (rs.next()) {
+			result=rs.getString(1);
+		}
+
+		close();
+		
+		return result;
 	}
 
 }

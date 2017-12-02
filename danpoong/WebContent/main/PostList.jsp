@@ -105,7 +105,7 @@
 		</table>
 <!--  -->
 		<hr />
-		<a class="btn btn-default pull-right">글쓰기</a>
+		<a class="btn btn-default pull-right" href="PostWrite.jsp">글쓰기</a>
 
 		<div class="text-center">
 			<ul class="pagination">
