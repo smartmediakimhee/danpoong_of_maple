@@ -71,7 +71,7 @@
 		String id = (String) session.getAttribute("id");
 	%>
 	<div class="container-board">
-		<form action="PostInsertService?id=<%=id%>" method="post"
+		<form action="../PostInsertService?id=<%=id%>" method="post"
 			encType="multiplart/form-data">
 			<table class="table table-bordered">
 				<thead>
@@ -101,7 +101,7 @@
 							class="form-control"></td>
 					</tr>
 					<tr>
-						<td colspan="2"><input type="button" value="등록"
+						<td colspan="2"><input type="submit" value="등록"
 							onclick="sendData()" class="pull-right"> <input
 							type="button" value="취소" class="pull-left" onclick="move()">
 							<!-- <input type="button" value="글 목록으로... " class="pull-right" onclick="javascript:location.href='Community.jsp'"> -->
