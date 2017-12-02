@@ -1737,7 +1737,7 @@ li.item:LAST-CHILD {
 	function check(id) {
 		var drink_list = <%=drink_list%>;
 		
-		for(int i=0; i<drink_list.size(); i++) {
+		for(var i=0; i<drink_list.size(); i++) {
 			if(id.equals(drink_list.get(i).getDrink_id())) {
 				document.getElementById("modalName").innerHTML = drink_list.get(i).getName();
 				document.getElementById("modalAl").innerHTML = drink_list.get(i).getAlcohol();
