@@ -1194,6 +1194,8 @@ li.item:LAST-CHILD {
 				</div>
 				
 				<div style="border: 3px solid maroon; height: 150px; width: 100%;"></div>
+				
+				
 				<div style="border: 6px solid black; height: 300px; width: 100%;"
 					id="border3">
 
