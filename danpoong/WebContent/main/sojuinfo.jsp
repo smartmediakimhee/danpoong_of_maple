@@ -508,6 +508,11 @@ li.item:LAST-CHILD {
 <body class="left-sidebar" style="background-color: white;">
 
 
+<%
+	ArrayList<DrinkInfoDTO> drink_list = (ArrayList<DrinkInfoDTO>)session.getAttribute("drink_list");
+	ArrayList<ReviewDTO> review_list = (ArrayList<ReviewDTO>)session.getAttribute("review_list");
+%>
+
 
 	<script type="text/javascript">
 		function win() {
@@ -1730,7 +1735,7 @@ li.item:LAST-CHILD {
 
 <script type="text/javascript">
 	function check(id) {
-		var drink_list = ${sessionScope.drink_list};
+		var drink_list = <%=drink_list%>;
 		
 		for(int i=0; i<drink_list.size(); i++) {
 			if(id.equals(drink_list.get(i).getDrink_id())) {
