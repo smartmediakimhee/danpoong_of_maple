@@ -511,11 +511,12 @@ li.item:LAST-CHILD {
 
 <%
 	ArrayList<DrinkInfoDTO> drink_list = (ArrayList<DrinkInfoDTO>)session.getAttribute("drink_list");
-	Gson gson = new Gson();
-	String json = gson.toJson(drink_list);
-	System.out.println(json);
-	System.out.println(drink_list.size());
+	Gson drink_gson = new Gson();
+	String drink_json = drink_gson.toJson(drink_list);
+	/* System.out.println(json);
+	System.out.println(drink_list.size()); */
 	ArrayList<ReviewDTO> review_list = (ArrayList<ReviewDTO>)session.getAttribute("review_list");
+	
 %>
 
 
@@ -1541,7 +1542,9 @@ li.item:LAST-CHILD {
 						</tr>
 					</table>
 				</div>
-				<div style="border: 3px solid maroon; height: 150px; width: 100%;"></div>
+				<div style="border: 3px solid maroon; height: 150px; width: 100%;" id="modalInfo">
+				<h5>내용내용내용</h5>
+				</div>
 				<div style="border: 6px solid black; height: 300px; width: 100%;"
 					id="border3">
 
@@ -1741,13 +1744,14 @@ li.item:LAST-CHILD {
 
 <script type="text/javascript">
 	function check(id) {
-		var drink_list = <%=json%>;
+		var drink_list = <%=drink_json%>;
 		for(var i=0; i<drink_list.length; i++) {
 			if(id == drink_list[i].drink_id) {
 				document.getElementById("modalName").innerHTML = drink_list[i].drink_name;
 				document.getElementById("modalAl").innerHTML = drink_list[i].alcohol;
 				document.getElementById("modalPrice").innerHTML = drink_list[i].price;
 				document.getElementById("modalScore").innerHTML = drink_list[i].year;
+				document.getElementById("modalInfo").innerHTML = drink_list[i].info;
 			}
 		}
 	}
