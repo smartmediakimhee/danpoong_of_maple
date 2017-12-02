@@ -32,7 +32,7 @@ public class PostInsertService extends HttpServlet {
 			cnt = dao.insertPost(post);
 			
 			if(cnt>0) {
-				response.sendRedirect("main/Community.jsp");
+				response.sendRedirect("PostListService?page=1");
 			}
 			
 		} catch (Exception e) {

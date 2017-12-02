@@ -17,38 +17,79 @@ import com.DAO.WebDAO;
 @WebServlet("/PostListService")
 public class PostListService extends HttpServlet {
 
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		int btn_num = 0;
-		
-		WebDAO dao = WebDAO.getInstance();
-		ArrayList<PostDTO> post_list = null;
-		HttpSession session = request.getSession();
-		
-		try {
-			post_list = dao.selectPostAll();
-			if(post_list != null) {
-				
-				int total_num = post_list.size();
-				btn_num = total_num%10 == 0? total_num/10:total_num/10 + 1;
-				/*request.setAttribute("post_list", post_list);
-				request.setAttribute("btn_num", btn_num);*/
-				session.setAttribute("post_list", post_list);
-				session.setAttribute("btn_num", btn_num);
-				
-			} else {
-				System.out.println("조회 결과가 없음");
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String page = request.getParameter("page");
+
+		if (page == null) {
+			int btn_num = 0;
+
+			WebDAO dao = WebDAO.getInstance();
+			ArrayList<PostDTO> post_list = null;
+			HttpSession session = request.getSession();
+
+			try {
+				post_list = dao.selectPostAll();
+				if (post_list != null) {
+
+					int total_num = post_list.size();
+					btn_num = total_num % 10 == 0 ? total_num / 10 : total_num / 10 + 1;
+					/*
+					 * request.setAttribute("post_list", post_list); request.setAttribute("btn_num",
+					 * btn_num);
+					 */
+					session.setAttribute("post_list", post_list);
+					session.setAttribute("btn_num", btn_num);
+
+				} else {
+					System.out.println("조회 결과가 없음");
+				}
+
+				response.sendRedirect("main/Community.jsp");
+				/*
+				 * RequestDispatcher dis = request.getRequestDispatcher("main/Community.jsp");
+				 * dis.forward(request, response);
+				 */
+
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
-			
-			response.sendRedirect("main/Community.jsp");
-			/*RequestDispatcher dis = request.getRequestDispatcher("main/Community.jsp");
-			dis.forward(request, response);*/
-			
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} else {
+			int btn_num = 0;
+
+			WebDAO dao = WebDAO.getInstance();
+			ArrayList<PostDTO> post_list = null;
+			HttpSession session = request.getSession();
+
+			try {
+				post_list = dao.selectPostAll();
+				if (post_list != null) {
+
+					int total_num = post_list.size();
+					btn_num = total_num % 10 == 0 ? total_num / 10 : total_num / 10 + 1;
+					/*
+					 * request.setAttribute("post_list", post_list); request.setAttribute("btn_num",
+					 * btn_num);
+					 */
+					session.setAttribute("post_list", post_list);
+					session.setAttribute("btn_num", btn_num);
+
+				} else {
+					System.out.println("조회 결과가 없음");
+				}
+
+				response.sendRedirect("main/PostList.jsp");
+				/*
+				 * RequestDispatcher dis = request.getRequestDispatcher("main/Community.jsp");
+				 * dis.forward(request, response);
+				 */
+
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
-		
 	}
 
 }
