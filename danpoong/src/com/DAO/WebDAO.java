@@ -161,12 +161,13 @@ public class WebDAO {
 		return post;
 	}
 
-	public ArrayList<ReviewDTO> selectReviewAll() throws Exception {
+	public ArrayList<ReviewDTO> selectReviewAll(String drink_id) throws Exception {
 		/* soolInfo.jsp에서 작성된 review를 모두 가져와 ArrayList형태로 반환하는 메소드 */
 
 		getConnection();
 
-		pst = con.prepareStatement("select * from review");
+		pst = con.prepareStatement("select * from review where drink_id = ?");
+		pst.setString(1, drink_id+"%");
 		rs = pst.executeQuery();
 
 		ArrayList<ReviewDTO> list = new ArrayList<ReviewDTO>();
@@ -196,6 +197,28 @@ public class WebDAO {
 		close();
 
 		return cnt;
+	}
+	
+	public ArrayList<DrinkInfoDTO> selectDrinkInfo(String drink_id) throws Exception {
+		/* Drink테이블에 접근해서 해당 종류의 술 정보들을 가져와 arraylist에 저장 */
+		getConnection();
+
+		pst = con.prepareStatement("select * from drink where drink_id = ?");
+		pst.setString(1, drink_id+"%");
+		rs = pst.executeQuery();
+
+		ArrayList<DrinkInfoDTO> list = new ArrayList<DrinkInfoDTO>();
+
+		while (rs.next()) {
+			list.add(new DrinkInfoDTO(rs.getString(1), 
+					rs.getString(2), rs.getDouble(3), 
+					rs.getString(4), rs.getString(5), 
+					rs.getInt(6), rs.getString(7), rs.getString(8)));
+		}
+
+		close();
+
+		return list;
 	}
 
 }
