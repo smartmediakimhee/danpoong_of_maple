@@ -1,3 +1,7 @@
+<%@page import="com.DAO.ReviewDTO"%>
+<%@page import="com.google.gson.Gson"%>
+<%@page import="com.DAO.DrinkInfoDTO"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -332,10 +336,12 @@ li.item:LAST-CHILD {
 </style>
 </head>
 <body class="left-sidebar" style="background-color: white;">
-
-
-
-
+	<%
+		ArrayList<DrinkInfoDTO> drink_list = (ArrayList<DrinkInfoDTO>) session.getAttribute("drink_list");
+		Gson drink_gson = new Gson();
+		String drink_json = drink_gson.toJson(drink_list);
+		ArrayList<ReviewDTO> review_list = (ArrayList<ReviewDTO>) session.getAttribute("review_list");
+	%>
 	<script type="text/javascript">
 		function win() {
 			window.open("Login.html", "", "channelmode, width=700, height=500,"
@@ -393,381 +399,294 @@ li.item:LAST-CHILD {
 
 
 			<table>
-			<tr><td colspan="4"><br><br><br></td></tr>
 				<tr>
-					<td >
-						<div style="height: 370px; width: 150px;">
-							<button type="button" class="btn btn-info btn-lg"
-								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0001.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">카스 후레쉬</h4>
-						</div>
-						
-					</td>
-					
-			<td >
-						<div style="height: 370px; width: 150px;">
-							<button type="button" class="btn btn-info btn-lg"
-								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0002.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">카스 라이트</h4>
-						</div>
-						
-					</td>
-					<td >
-						<div style="height: 370px; width: 150px;">
-							<button type="button" class="btn btn-info btn-lg"
-								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0003.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">카스 레드</h4>
-						</div>
-						
-					</td>
-					<td >
-						<div style="height: 370px; width: 150px;">
-							<button type="button" class="btn btn-info btn-lg"
-								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0004.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">오비 프리미어 필스너</h4>
-						</div>
-						
-					</td>
-			
-			
-			
-					
+					<td colspan="4"><br> <br> <br></td>
 				</tr>
-					
-						<tr>
-					<td >
+				<tr>
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0005.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">오비 프리미어 바이젠</h4>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0001.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0001')"></button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">카스
+								후레쉬</h4>
 						</div>
-						
+
 					</td>
-					
-			<td >
+
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0006.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0002.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0002')"></button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">카스
+								라이트</h4>
+						</div>
 
+					</td>
+					<td>
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0003.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0003')"></button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">카스
+								레드</h4>
+						</div>
 
-							</button>
+					</td>
+					<td>
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0004.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0004')"></button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">오비
+								프리미어 필스너</h4>
+						</div>
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0005.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0005')"></button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">오비
+								프리미어 바이젠</h4>
+						</div>
+
+					</td>
+
+					<td>
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0006.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0006')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">카프리</h4>
 						</div>
-						
+
 					</td>
-					<td >
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0007.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
-
-
-							</button>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0007.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0007')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">버드와이저</h4>
 						</div>
-						
+
 					</td>
-					<td >
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0008.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0008.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0008')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">호가든</h4>
 						</div>
-						
+
 					</td>
-			
-			
-			
-					
 				</tr>
-				
-					<tr>
-					<td >
+
+				<tr>
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0009.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">버드 아이스</h4>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0009.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0009')"></button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">버드
+								아이스</h4>
 						</div>
-						
+
 					</td>
-					
-			<td >
+
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0010.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0010.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0010')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">벡스</h4>
 						</div>
-						
+
 					</td>
-					<td >
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0011.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">스텔라 아르투아</h4>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0011.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0011')"></button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">스텔라
+								아르투아</h4>
 						</div>
-						
+
 					</td>
-					<td >
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0012.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0012.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0012')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">레페</h4>
 						</div>
-						
+
 					</td>
-			
-			
-			
-					
 				</tr>
-				
-					<tr>
-					<td >
+
+				<tr>
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0013.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0013.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0013')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">레벤브로이</h4>
 						</div>
-						
+
 					</td>
-					
-			<td >
+
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0014.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">산토리 더 프리미엄 몰츠</h4>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0014.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0014')"></button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">산토리
+								더 프리미엄 몰츠</h4>
 						</div>
-						
+
 					</td>
-					<td >
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0015.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
-
-
-							</button>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0015.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0015')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">코로나</h4>
 						</div>
-						
+
 					</td>
-					<td >
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0016.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0016.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0016')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">레드락</h4>
 						</div>
-						
+
 					</td>
-			
-			
-			
-					
 				</tr>
-				
-					<tr>
-					<td >
+
+				<tr>
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0017.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0017.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0017')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">하이트</h4>
 						</div>
-						
+
 					</td>
-					
-			<td >
+
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0018.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0018.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0018')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">맥스</h4>
 						</div>
-						
+
 					</td>
-					<td >
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0019.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">드라이 D</h4>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0019.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0019')"></button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">드라이
+								D</h4>
 						</div>
-						
+
 					</td>
-					<td >
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0020.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0020.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0020')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">에스</h4>
 						</div>
-						
+
 					</td>
-			
-			
-			
-					
 				</tr>
-				
-					<tr>
-					<td >
+
+				<tr>
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0021.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0021.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0021')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">스타우트</h4>
 						</div>
-						
+
 					</td>
-					
-			<td >
+
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0022.png'); background-repeat: no-repeat; background-size:contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0022.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0022')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">퀸즈에일</h4>
 						</div>
-						
+
 					</td>
-					<td >
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0023.png'); background-repeat: no-repeat; background-size: contain;border: 3px solid white; background-color: white;">
-
-
-							</button>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0023.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0023')"></button>
 							<h4 style="color: black; margin-left: 20px;" class="korean">클라우드</h4>
 						</div>
-						
+
 					</td>
-					<td >
+					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0024.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">피츠 수퍼클리어</h4>
+								style="height: 83%; width: 83%; background-image: url('images/beerinfo/01_0024.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('01_0024')"></button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">피츠
+								수퍼클리어</h4>
 						</div>
-						
 					</td>
-			
-			
-			
-					
 				</tr>
-					
-					
-				
 			</table>
-
-
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-
 	</div>
-
-
-
-
-
 
 	<div class="modal fade" id="myModal" role="dialog">
 		<div class="modal-dialog">
 
 			<!-- Modal content-->
 
-
-
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					술이름
 				</div>
-
 
 				<div class="modal-body"></div>
 
@@ -985,10 +904,6 @@ li.item:LAST-CHILD {
 						</ul>
 					</div>
 					<!--  별점매기는 시스템 -->
-
-
-
-
 				</div>
 
 				<div class="modal-footer">
@@ -999,11 +914,22 @@ li.item:LAST-CHILD {
 
 		</div>
 	</div>
+	<script type="text/javascript">
+		function check(id) {
+			var drink_list =
+	<%=drink_json%>
+		;
 
-
-
-
-
-
+			for (var i = 0; i < drink_list.length; i++) {
+				if (id == drink_list[i].drink_id) {
+					document.getElementById("modalName").innerHTML = drink_list[i].drink_name;
+					document.getElementById("modalAl").innerHTML = drink_list[i].alcohol;
+					document.getElementById("modalPrice").innerHTML = drink_list[i].price;
+					document.getElementById("modalScore").innerHTML = drink_list[i].year;
+					document.getElementById("modalInfo").innerHTML = drink_list[i].info;
+				}
+			}
+		}
+	</script>
 </body>
 </html>

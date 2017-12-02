@@ -1,3 +1,7 @@
+<%@page import="com.DAO.ReviewDTO"%>
+<%@page import="com.google.gson.Gson"%>
+<%@page import="com.DAO.DrinkInfoDTO"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -478,8 +482,12 @@ li.item:LAST-CHILD {
 </head>
 <body class="left-sidebar" style="background-color: white;">
 
-
-
+	<%
+		ArrayList<DrinkInfoDTO> drink_list = (ArrayList<DrinkInfoDTO>) session.getAttribute("drink_list");
+		Gson drink_gson = new Gson();
+		String drink_json = drink_gson.toJson(drink_list);
+		ArrayList<ReviewDTO> review_list = (ArrayList<ReviewDTO>) session.getAttribute("review_list");
+	%>
 
 	<script type="text/javascript">
 		function win() {
@@ -612,20 +620,19 @@ li.item:LAST-CHILD {
 
 			<table>
 				<tr>
-					<td colspan="4"><br>
-					<br>
-					<br></td>
+					<td colspan="4"><br> <br> <br></td>
 				</tr>
 				<tr>
 					<td>
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0001.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0001.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0001')">
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">로제 당주</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">로제
+								당주</h4>
 						</div>
 
 					</td>
@@ -634,11 +641,13 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0002.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0002.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0002')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">레미 파니에르 뮈스까데</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">레미
+								파니에르 뮈스까데</h4>
 						</div>
 
 					</td>
@@ -646,7 +655,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0003.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0003.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0003')">
 
 
 							</button>
@@ -658,7 +668,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0004.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0004.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0004')">
 
 
 							</button>
@@ -666,10 +677,6 @@ li.item:LAST-CHILD {
 						</div>
 
 					</td>
-
-
-
-
 				</tr>
 
 				<tr>
@@ -677,11 +684,13 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0005.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0005.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0005')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">에르미따쥬 루즈</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">에르미따쥬
+								루즈</h4>
 						</div>
 
 					</td>
@@ -690,7 +699,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0006.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0006.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0006')">
 
 
 							</button>
@@ -702,7 +712,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0007.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0007.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0007')">
 
 
 							</button>
@@ -714,7 +725,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0008.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0008.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0008')">
 
 
 							</button>
@@ -722,10 +734,6 @@ li.item:LAST-CHILD {
 						</div>
 
 					</td>
-
-
-
-
 				</tr>
 
 				<tr>
@@ -733,7 +741,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0009.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0009.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0009')">
 
 
 							</button>
@@ -746,11 +755,13 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0010.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0010.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0010')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">크로즈 에르미따쥬</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">크로즈
+								에르미따쥬</h4>
 						</div>
 
 					</td>
@@ -758,11 +769,13 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0011.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0011.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0011')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">생 조세프</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">생
+								조세프</h4>
 						</div>
 
 					</td>
@@ -770,18 +783,16 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0012.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0012.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0012')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">꼬뜨뒤론 빌라쥬</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">꼬뜨뒤론
+								빌라쥬</h4>
 						</div>
 
 					</td>
-
-
-
-
 				</tr>
 
 				<tr>
@@ -789,7 +800,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0013.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0013.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0013')">
 
 
 							</button>
@@ -802,7 +814,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0014.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0014.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0014')">
 
 
 							</button>
@@ -814,7 +827,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0015.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0015.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0015')">
 
 
 							</button>
@@ -826,18 +840,16 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0016.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0016.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0016')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">그랑크뤼 리스링</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">그랑크뤼
+								리스링</h4>
 						</div>
 
 					</td>
-
-
-
-
 				</tr>
 
 				<tr>
@@ -845,11 +857,13 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0017.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0017.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0017')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">타르티브 피노그리</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">타르티브
+								피노그리</h4>
 						</div>
 
 					</td>
@@ -858,11 +872,13 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0018.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0018.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0018')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">알사스 브뤼</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">알사스
+								브뤼</h4>
 						</div>
 
 					</td>
@@ -870,11 +886,13 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0019.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0019.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0019')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean"> 알사스 데미섹</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">
+								알사스 데미섹</h4>
 						</div>
 
 					</td>
@@ -882,18 +900,75 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0020.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0020.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0020')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">샤또네프 뒤 파프 르 파비</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">샤또네프
+								뒤 파프 르 파비</h4>
+						</div>
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0021.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0021')">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">로티
+								레글랑틴</h4>
 						</div>
 
 					</td>
 
+					<td>
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0022.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0022')">
 
 
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">사모랑
+								화이트</h4>
+						</div>
 
+					</td>
+					<td>
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0023.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0023')">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">사모랑
+								레드</h4>
+						</div>
+
+					</td>
+					<td>
+						<div style="height: 370px; width: 150px;">
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal"
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0024.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0024')">
+
+
+							</button>
+							<h4 style="color: black; margin-left: 20px;" class="korean">에르미타주
+								레 미오</h4>
+						</div>
+
+					</td>
 				</tr>
 
 				<tr>
@@ -901,11 +976,13 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0021.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0025.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0025')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">로티 레글랑틴</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">미스터
+								애플</h4>
 						</div>
 
 					</td>
@@ -914,63 +991,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0022.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">사모랑 화이트</h4>
-						</div>
-
-					</td>
-					<td>
-						<div style="height: 370px; width: 150px;">
-							<button type="button" class="btn btn-info btn-lg"
-								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0023.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">사모랑 레드</h4>
-						</div>
-
-					</td>
-					<td>
-						<div style="height: 370px; width: 150px;">
-							<button type="button" class="btn btn-info btn-lg"
-								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0024.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">에르미타주 레 미오</h4>
-						</div>
-
-					</td>
-
-
-
-
-				</tr>
-
-				<tr>
-					<td>
-						<div style="height: 370px; width: 150px;">
-							<button type="button" class="btn btn-info btn-lg"
-								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0025.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
-
-
-							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">미스터 애플</h4>
-						</div>
-
-					</td>
-
-					<td>
-						<div style="height: 370px; width: 150px;">
-							<button type="button" class="btn btn-info btn-lg"
-								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0026.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0026.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0026')">
 
 
 							</button>
@@ -982,7 +1004,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0027.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0027.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0027')">
 
 
 							</button>
@@ -994,18 +1017,16 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0028.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0028.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0028')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">패스포트 보르도 블랑</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">패스포트
+								보르도 블랑</h4>
 						</div>
 
 					</td>
-
-
-
-
 				</tr>
 
 				<tr>
@@ -1013,11 +1034,13 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0029.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0029.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0029')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">패스포트 생떼밀리옹</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">패스포트
+								생떼밀리옹</h4>
 						</div>
 
 					</td>
@@ -1026,44 +1049,20 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0030.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/wineinfo/03_0030.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('03_0030')">
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">생 루이스 화이트</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">생
+								루이스 화이트</h4>
 						</div>
 
 					</td>
-					
-
-
-
-
 				</tr>
-
-
 			</table>
-
-
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-
 	</div>
-
-
-
-
-
 
 	<div class="modal fade" id="myModal" role="dialog">
 		<div class="modal-dialog">
@@ -1312,7 +1311,23 @@ li.item:LAST-CHILD {
 
 
 
+	<script type="text/javascript">
+		function check(id) {
+			var drink_list =
+	<%=drink_json%>
+		;
 
+			for (var i = 0; i < drink_list.length; i++) {
+				if (id == drink_list[i].drink_id) {
+					document.getElementById("modalName").innerHTML = drink_list[i].drink_name;
+					document.getElementById("modalAl").innerHTML = drink_list[i].alcohol;
+					document.getElementById("modalPrice").innerHTML = drink_list[i].price;
+					document.getElementById("modalScore").innerHTML = drink_list[i].year;
+					document.getElementById("modalInfo").innerHTML = drink_list[i].info;
+				}
+			}
+		}
+	</script>
 
 
 </body>
