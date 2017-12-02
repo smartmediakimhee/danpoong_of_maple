@@ -1,3 +1,6 @@
+<%@page import="com.DAO.ReviewDTO"%>
+<%@page import="com.DAO.DrinkInfoDTO"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -506,7 +509,6 @@ li.item:LAST-CHILD {
 
 
 
-
 	<script type="text/javascript">
 		function win() {
 			window.open("Login.html", "", "channelmode, width=700, height=500,"
@@ -733,7 +735,8 @@ li.item:LAST-CHILD {
 						<div style="height: 370px; width: 150px;">
 							<button type="button" class="btn btn-info btn-lg"
 								data-toggle="modal" data-target="#myModal"
-								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0001.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+								style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0001.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+								onclick="check('02_0001')">
 
 
 							</button>
@@ -1503,28 +1506,28 @@ li.item:LAST-CHILD {
 						<td>&nbsp</td>
 						<tr align="center" style="border-bottom: 1px solid black;">
 							<td style="width: 100px;"><h3>name</h3></td>
-							<td style="width: 100px;"><h3>%%%</h3></td>
+							<td id="modalName" style="width: 100px;"><h3>%%%</h3></td>
 						</tr>
 						<tr>
 							<td><h5>&nbsp</h5></td>
 						</tr>
 						<tr align="center" style="border-bottom: 1px solid black">
 							<td style="width: 100px;"><h3>alcohol</h3></td>
-							<td style="width: 100px;"><h3>%%%</h3></td>
+							<td id="modalAl" style="width: 100px;"><h3>%%%</h3></td>
 						</tr>
 						<tr>
 							<td><h5>&nbsp</h5></td>
 						</tr>
 						<tr align="center" style="border-bottom: 1px solid black">
 							<td style="width: 100px;"><h3>price</h3></td>
-							<td style="width: 100px;"><h3>%%%</h3></td>
+							<td id="modalPrice" style="width: 100px;"><h3>%%%</h3></td>
 						</tr>
 						<tr>
 							<td><h5>&nbsp</h5></td>
 						</tr>
 						<tr align="center" style="border-bottom: 1px solid black">
 							<td style="width: 100px;"><h3>SCORE</h3></td>
-							<td style="width: 100px;"><h3>%%%</h3></td>
+							<td id="modalScore" style="width: 100px;"><h3>%%%</h3></td>
 						</tr>
 					</table>
 				</div>
@@ -1725,7 +1728,20 @@ li.item:LAST-CHILD {
 		</div>
 	</div>
 
-
+<script type="text/javascript">
+	function check(id) {
+		var drink_list = ${sessionScope.drink_list};
+		
+		for(int i=0; i<drink_list.size(); i++) {
+			if(id.equals(drink_list.get(i).getDrink_id())) {
+				document.getElementById("modalName").innerHTML = drink_list.get(i).getName();
+				document.getElementById("modalAl").innerHTML = drink_list.get(i).getAlcohol();
+				document.getElementById("modalPrice").innerHTML = drink_list.get(i).getPrice();
+				document.getElementById("modalScore").innerHTML = drink_list.get(i).getScore();
+			}
+		}
+	}
+</script>
 
 
 

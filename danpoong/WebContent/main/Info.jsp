@@ -1373,7 +1373,7 @@ h3 {
       <h2 class = "korean" style="font-size: xx-large;">소주</h2>
     </div>
   </figcaption>
-  <a href="DrinkListService?drink_id=02"></a>
+  <a href="../DrinkListService?drink_id=02"></a>
   
 </figure><figure class="snip12002">
   <img src="images/infobeer2.jpg" alt="sq-sample32" />
@@ -1383,7 +1383,7 @@ h3 {
       <h2 class = "korean" style="font-size: xx-large;">맥주</h2>
     </div>
   </figcaption>
-  <a href="DrinkListService?drink_id=01"></a>
+  <a href="../DrinkListService?drink_id=01"></a>
 </figure>
 
 </figure><figure class="snip12004">
@@ -1394,7 +1394,7 @@ h3 {
       <h2 class = "korean" style="font-size: xx-large;">위스키</h2>
     </div>
   </figcaption>
-  <a href="DrinkListService?drink_id=03"></a>
+  <a href="../DrinkListService?drink_id=03"></a>
 </figure>
 
 
@@ -1406,7 +1406,7 @@ h3 {
       <h2 class = "korean" style="font-size: xx-large;">와인</h2>
     </div>
   </figcaption>
-  <a href="DrinkListService?drink_id=04"></a>
+  <a href="../DrinkListService?drink_id=04"></a>
 </figure>
 
 </figure><figure class="snip12005">
@@ -1417,7 +1417,7 @@ h3 {
       <h2 class = "korean" style="font-size: xx-large;">브랜디</h2>
     </div>
   </figcaption>
-  <a href="DrinkListService?drink_id=07"></a>
+  <a href="../DrinkListService?drink_id=07"></a>
 </figure>
 
 
@@ -1429,7 +1429,7 @@ h3 {
       <h2 class = "korean" style="font-size: xx-large;">막걸리</h2>
     </div>
   </figcaption>
-  <a href="DrinkListService?drink_id=05"></a>
+  <a href="../DrinkListService?drink_id=05"></a>
 </figure>
 
 </figure><figure class="snip12007">
@@ -1440,7 +1440,7 @@ h3 {
       <h2 class = "korean" style="font-size: xx-large;">전통주</h2>
     </div>
   </figcaption>
-  <a href="DrinkListService?drink_id=06"></a>
+  <a href="../DrinkListService?drink_id=06"></a>
 </figure>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
