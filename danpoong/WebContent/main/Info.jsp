@@ -1132,8 +1132,8 @@ h3 {
 #container {
 	width: 300px;
 	height: 26px;
-	margin-top: 3%;
-	margin-left: 70%;
+	margin-top: 5.9%;
+	margin-left: 88.5%;
 	display: inline-block;
 }
 
@@ -1236,6 +1236,7 @@ h3 {
 
 
 <!-- 모달 코드 시작 -->
+<div >
 	<c:choose>
 		<c:when test="${empty id }">
 			<div id="container">
@@ -1255,7 +1256,7 @@ h3 {
 			</div>
 		</c:otherwise>
 	</c:choose>
-
+</div>
 	<form action="../LoginService">
 		<a href="#x" class="overlay" id="login_form"></a>
 		<div class="popup">
