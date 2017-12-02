@@ -440,15 +440,15 @@ a#login_pop:hover, a#join_pop:hover {
 			</div>
 		</div>
 	</form>
-	<!-- Footer -->
-	<!-- <div id="footer-wrapper">
+	
+	<div id="footer-wrapper">
 			<section id="footer" class="container">
 			<div class="row">
 				<div class="8u 12u(mobile)">
 					<section> <header>
 					<h2>Blandit nisl adipiscing</h2>
 					</header>
-					<ul class="dates">
+					<!-- <ul class="dates">
 						<li><span class="date">Jan <strong>27</strong></span>
 							<h3>
 								<a href="#">Lorem dolor sit amet veroeros</a>
@@ -479,10 +479,10 @@ a#login_pop:hover, a#join_pop:hover {
 							</h3>
 							<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem
 								ipsum dolor sit amet dolore.</p></li>
-					</ul>
+					</ul> -->
 					</section>
 				</div>
-				<div class="4u 12u(mobile)">
+				<!-- <div class="4u 12u(mobile)">
 					<section> <header>
 					<h2>What's this all about?</h2>
 					</header> <a href="#" class="image featured"><img src="images/pic10.jpg"
@@ -497,7 +497,7 @@ a#login_pop:hover, a#join_pop:hover {
 						us!
 					</p>
 					<footer> <a href="#" class="button">Find out more</a> </footer> </section>
-				</div>
+				</div> -->
 			</div>
 			<div class="row">
 				<div class="4u 12u(mobile)">
@@ -590,7 +590,7 @@ a#login_pop:hover, a#join_pop:hover {
 			</section>
 		</div>
 
-	</div> -->
+	</div>
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>

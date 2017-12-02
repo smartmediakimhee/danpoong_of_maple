@@ -11,7 +11,7 @@ public class ImotionAnalysis {
 	private String[] cmd = null;
 	
 	private String py = "py";
-	private String url = "C:/Users/aa/Desktop/TextAnalysis.py";
+	private String url = "C:/Users/pc-18/Desktop/TextAnalysis.py";
 	private String function = "print";
 	
 	private String str = null;
