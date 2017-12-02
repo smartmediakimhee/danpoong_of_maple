@@ -173,7 +173,7 @@ public class WebDAO {
 		ArrayList<ReviewDTO> list = new ArrayList<ReviewDTO>();
 
 		while (rs.next()) {
-			list.add(new ReviewDTO(rs.getInt(1), rs.getString(2), rs.getDouble(3), rs.getString(4), rs.getString(5)));
+			list.add(new ReviewDTO(rs.getInt(1), rs.getString(2), rs.getDouble(3),rs.getDouble(4), rs.getString(5), rs.getString(6)));
 		}
 
 		close();

@@ -5,14 +5,16 @@ public class ReviewDTO {
 	private int num;
 	private String drink_id;
 	private double score;
+	private double score_analysis;
 	private String author;
 	private String review_content;
 	
-	public ReviewDTO(int num, String drink_id, double score, String author, String review_content) {
+	public ReviewDTO(int num, String drink_id, double score1,double score2, String author, String review_content) {
 		/* soolInfo.jsp에서 댓글을 불러올 때 정보를 다 담을 수 있는 객체 생성자 */
 		this.num = num;
 		this.drink_id = drink_id;
-		this.score = score;
+		this.score = score1;
+		this.score_analysis = score2;
 		this.author = author;
 		this.review_content = review_content;
 	}
@@ -61,6 +63,14 @@ public class ReviewDTO {
 
 	public void setReview_content(String review_content) {
 		this.review_content = review_content;
+	}
+
+	public double getScore_analysis() {
+		return score_analysis;
+	}
+
+	public void setScore_analysis(double score_analysis) {
+		this.score_analysis = score_analysis;
 	}
 	
 }
