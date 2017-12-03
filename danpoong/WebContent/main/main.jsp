@@ -28,6 +28,12 @@
 	padding: 10px;
 }
 
+.korean {
+	font-family: 'Jeju Hallasan', cursive;
+	font-size: large;
+}
+
+
 .panel a#login_pop, .panel a#join_pop {
 	border: 2px solid #aaa;
 	color: #fff;
@@ -548,9 +554,9 @@ h3 {
 				</nav>
 
 				<!-- Banner -->
-				<div class="row3">
-					<section id="banner"> <header>
-					<h3>WELCOME! WHAT DO YOU WANT?</h3>
+				<div class="row3" align="left" style="width: 200px; height: 300px; ">
+					<section id="banner" > <header >
+					<h3 style="font-size: 30px;">WELCOME! WHAT DO YOU WANT?</h3>
 
 					</header> </section>
 				</div>
@@ -573,9 +579,9 @@ h3 {
 							</header>
 							<h5 class="korean">당 신 의&nbsp 취 향 과&nbsp 딱&nbsp 맞 는&nbsp 술 입
 								니 다 . &nbsp분 명&nbsp 마 음 에&nbsp 드 실&nbsp 겁 니 다 !</h5>
-							<br> <br>alcohol %%%<br>price %%%<br>score
-							@@@
-							<footer> <a href="#" class="button alt">Find out
+							<br> <br>alcohol 5%<br>price 2500<br>score
+							8점
+							<footer> <a href="Info.jsp" class="button alt">Find out
 								more</a> </footer>
 						</div>
 						<div class="4u 12u(mobile)">
@@ -586,9 +592,9 @@ h3 {
 							</header>
 							<h5 class="korean">이 번 에&nbsp 새 로&nbsp 나 온&nbsp 술 입 니 다
 								.&nbsp 맛 이&nbsp 기 대 가&nbsp 됩 니 다 !</h5>
-							<br> <br> alcohol %%%<br> price %%%<br> score
-							@@@
-							<footer> <a href="#" class="button alt">Find out
+							<br> <br> alcohol 13%<br> price 182000<br> score
+							7점
+							<footer> <a href="Info.jsp" class="button alt">Find out
 								more</a> </footer>
 						</div>
 						<div class="4u 12u(mobile)">
@@ -600,8 +606,8 @@ h3 {
 							<h5 class="korean">당 신 이&nbsp 즐 기 는&nbsp 술 은&nbsp 아 니 지
 								만&nbsp 새 로 운&nbsp 도 전 을&nbsp 위 한&nbsp 당 신 에 게&nbsp 추 천 드 립 니 다 .</h5>
 								<br>
-							<br> alcohol %%%<br> price %%%<br> score @@@
-							<footer> <a href="#" class="button alt">Find out
+							<br> alcohol 40%<br> price 35000<br> score 6점
+							<footer> <a href="Info.jsp" class="button alt">Find out
 								more</a> </footer>
 						</div>
 
@@ -653,19 +659,19 @@ h3 {
 											<td align="center"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">1ST</td>
+											<td align="center" class = "korean"><a href = "sojuinfo.jsp">참이슬 fresh</a></td>
 										</tr>
 										<tr align="right">
-											<td align="center">2ST</td>
+											<td align="center" class = "korean">잎새주</td>
 										</tr>
 										<tr align="right">
-											<td align="center">3ST</td>
+											<td align="center" class = "korean">좋은데이 석류</td>
 										</tr>
 										<tr align="right">
-											<td align="center">4ST</td>
+											<td align="center" class = "korean">대장부</td>
 										</tr>
 										<tr align="right">
-											<td align="center">5ST</td>
+											<td align="center" class = "korean">진로골드</td>
 										</tr>
 									</table>
 								</td>
@@ -680,20 +686,20 @@ h3 {
 											<td align="center"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">1ST</td>
+											<td align="center" class = "korean"><a href = "beerinfo.jsp">하이트</a></td>
 										</tr>
 										<tr align="right">
-											<td align="center">2ST</td>
+											<td align="center" class = "korean">호가든</td>
 										</tr>
 										<tr align="right">
-											<td align="center">3ST</td>
+											<td align="center" class = "korean">카프리</td>
 										</tr>
 										<tr align="right">
-											<td align="center">4ST</td>
+											<td align="center" class = "korean">카스 후레쉬</td>
 										</tr>
 										<!-- dsdsd -->
 										<tr align="right">
-											<td align="center">5ST</td>
+											<td align="center" class = "korean">레드락</td>
 										</tr>
 									</table>
 								</td>
@@ -708,19 +714,19 @@ h3 {
 											<td align="center"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">1ST</td>
+											<td align="center" class = "korean"><a href = "macinfo.jsp">달홀주</a></td>
 										</tr>
 										<tr align="right">
-											<td align="center">2ST</td>
+											<td align="center" class = "korean">입장탁주</td>
 										</tr>
 										<tr align="right">
-											<td align="center">3ST</td>
+											<td align="center" class = "korean">고흥 알밤주</td>
 										</tr>
 										<tr align="right">
-											<td align="center">4ST</td>
+											<td align="center" class = "korean">황토방 쌀막걸리</td>
 										</tr>
 										<tr align="right">
-											<td align="center">5ST</td>
+											<td align="center" class = "korean">안양 동동주</td>
 										</tr>
 									</table>
 								</td>
@@ -732,22 +738,22 @@ h3 {
 													class="korean">양주</h3></td>
 										</tr>
 										<tr align="right">
-											<td align="center"><h5>&nbsp</h5></td>
+											<td align="center" class = "korean"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">1ST</td>
+											<td align="center" class = "korean"><a href = "whiskyinfo.jsp">쿠마라 포친</a></td>
 										</tr>
 										<tr align="right">
-											<td align="center">2ST</td>
+											<td align="center" class = "korean">와일드 터키81</td>
 										</tr>
 										<tr align="right">
-											<td align="center">3ST</td>
+											<td align="center" class = "korean">달모어 15년</td>
 										</tr>
 										<tr align="right">
-											<td align="center">4ST</td>
+											<td align="center" class = "korean">조니워커 레드</td>
 										</tr>
 										<tr align="right">
-											<td align="center">5ST</td>
+											<td align="center" class = "korean">쿠마라 포친</td>
 										</tr>
 									</table>
 								</td>
@@ -769,25 +775,25 @@ h3 {
 										<br>
 										<tr align="right">
 											<td align="center"><h3 style="color: black;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
-												<h3 style="color: black;" class="korean">보드카</h3></td>
+												<h3 style="color: black;" class="korean">샴페인</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1ST</td>
+											<td align="center" class = "korean">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href = "coginfo.jsp">델라모뜨 브뤼</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2ST</td>
+											<td align="center" class = "korean">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp카르타 네바다</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3ST</td>
+											<td align="center" class = "korean">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp그랑바흐까바</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4ST</td>
+											<td align="center" class = "korean">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp까바 벨리스코</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5ST</td>
+											<td align="center" class = "korean">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp멈로제</td>
 										</tr>
 									</table>
 								</td>
@@ -803,19 +809,19 @@ h3 {
 											<td align="center"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1ST</td>
+											<td align="center" class = "korean">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href = "jeoninfo.jsp">하향주</a></td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2ST</td>
+											<td align="center" class = "korean">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp황금주</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3ST</td>
+											<td align="center" class = "korean">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp신라주</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4ST</td>
+											<td align="center" class = "korean">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp고소리술</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5ST</td>
+											<td align="center" class = "korean">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp산삼술</td>
 										</tr>
 									</table>
 								</td>
@@ -830,19 +836,19 @@ h3 {
 											<td align="center"><h5>&nbsp</h5></td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1ST</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href = "wineinfo.jsp">SPELL</a></td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2ST</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCORRDIRON</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3ST</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMRAPPLE</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4ST</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLUISEWHITE</td>
 										</tr>
 										<tr align="right">
-											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5ST</td>
+											<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLEMIO</td>
 										</tr>
 									</table>
 								</td>
@@ -910,22 +916,22 @@ h3 {
 					id="review3";>
 					<h3 class="korean">혼술하기 딱 좋은 술</h3>
 					<br> <br>
-					<p align="left" class="korean">
-						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
-						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
-						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</p>
+					<p align="left" class="korean" style="font-size: x-large; font-weight: bold;">
+						도청근처 신시외곽쪽 부타라는 술집에 혼술을 첨으로 해보앗어요 분위기도 좋고 다찌?? 바 형식의 자리에서 홀로 정갈한 마음으로 사람들속에서 먹는 기분 참 신기하고 기분 좋은 경험이었습니다. 다음에 기회가 된다면 또 마셔보고 싶네요.</p>
 				</div>
 
 
 				<div
 					style="height: 250px; width: 430px; border: 1px solid #EAEAEA; margin-left: 15.1%; margin-top: 2%;"
-					id="review4">
+					id="review4" >
 					<h3 class="korean">친구들이랑 마셨어요</h3>
 					<br> <br>
-					<p align="left" class="korean">
-						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
-						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
-						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+					<p align="left" class="korean" style="font-size: x-large; font-weight: bold;">
+						어제 술자리 단체사진입니다!!
+익숙한 얼굴이 대부분이지만 102기분들은 첫 술자리셔서 저언혀 모르겠군요..
+진우형 옆에 102기 형님 한분 계셨는데 화장실 가신건지 사라지셨네요 ㅋㅋ
+딩가에서 자주 뵈요!! 그와중에 귀요미 진우형도 보이네요..
+요새 주량이 바짝 물이 올라서 라운지를 주름잡고 계시죠
 
 						<!-- 168글자 가능 -->
 
