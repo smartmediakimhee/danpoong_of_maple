@@ -692,6 +692,7 @@ li.item:LAST-CHILD {
 					술이름
 				</div>
 
+
 				<div class="modal-body"></div>
 
 
@@ -703,31 +704,36 @@ li.item:LAST-CHILD {
 						<td>&nbsp</td>
 						<tr align="center" style="border-bottom: 1px solid black;">
 							<td style="width: 100px;"><h3>name</h3></td>
-							<td style="width: 100px;"><h3>%%%</h3></td>
+							<td id="modalName" style="width: 100px;"><h3>%%%</h3></td>
 						</tr>
 						<tr>
 							<td><h5>&nbsp</h5></td>
 						</tr>
 						<tr align="center" style="border-bottom: 1px solid black">
 							<td style="width: 100px;"><h3>alcohol</h3></td>
-							<td style="width: 100px;"><h3>%%%</h3></td>
+							<td id="modalAl" style="width: 100px;"><h3>%%%</h3></td>
 						</tr>
 						<tr>
 							<td><h5>&nbsp</h5></td>
 						</tr>
 						<tr align="center" style="border-bottom: 1px solid black">
 							<td style="width: 100px;"><h3>price</h3></td>
-							<td style="width: 100px;"><h3>%%%</h3></td>
+							<td id="modalPrice" style="width: 100px;"><h3>%%%</h3></td>
 						</tr>
 						<tr>
 							<td><h5>&nbsp</h5></td>
 						</tr>
 						<tr align="center" style="border-bottom: 1px solid black">
 							<td style="width: 100px;"><h3>SCORE</h3></td>
-							<td style="width: 100px;"><h3>%%%</h3></td>
+							<td id="modalScore" style="width: 100px;"><h3>%%%</h3></td>
 						</tr>
 					</table>
 				</div>
+				<div style="border: 3px solid maroon; height: 150px; width: 100%;"
+					id="modalInfo">
+					<h5>내용내용내용</h5>
+				</div>
+
 				<div style="border: 6px solid black; height: 300px; width: 100%;"
 					id="border3">
 
@@ -919,11 +925,38 @@ li.item:LAST-CHILD {
 		</div>
 	</div>
 	<script type="text/javascript">
+		function send() {
+			var drink_name = document.getElementById("modalName").innerHTML;
+			var review_content = document.getElementById("review_content").value;
+			var score = document.getElementById("sscore").innerHTML;
+			var id =
+	<%=id%>
+		$.ajax({
+				url : "../ReviewInsertService",
+				data : "drink_name=" + drink_name + "&review_content="
+						+ review_content + "&score=" + score + "&member_id="
+						+ id,
+				success : function(success) {
+					alert("리뷰작성 성공");
+				},
+				error : function(dd, status, cc) {
+					alert(cc)
+				}
+			});
+
+		}
+	</script>
+
+	<script type="text/javascript">
 		function check(id) {
-			imgurl = "url('images/beerinfo/"+id+".png')"; 
+			imgurl = "url('images/beerinfo/" + id + ".png')";
 			document.getElementById("border1").style.backgroundImage = imgurl;
+
 			var drink_list =
 	<%=drink_json%>
+		;
+			var review_list =
+	<%=review_json%>
 		;
 
 			for (var i = 0; i < drink_list.length; i++) {
@@ -935,6 +968,23 @@ li.item:LAST-CHILD {
 					document.getElementById("modalInfo").innerHTML = drink_list[i].info;
 				}
 			}
+
+			var index = 1;
+
+			if (review_list != null) {
+				for (var i = 0; i < 10; i++) {
+					if (id == review_list[i].drink_id) {
+						document.getElementById("reviewAuthor" + index).innerHTML = review_list[i].author;
+						document.getElementById("reviewScore" + index).innerHTML = review_list[i].score;
+						document.getElementById("reviewContent" + index).innerHTML = review_list[i].review_content;
+						index += 1;
+					}
+				}
+			}
+			/* 			var imgurl = document.getElementById("border1"); */
+
+			/* 	document.imgurl.style.backgroundImage = "url('images/sojuinfo/')"; */
+
 		}
 	</script>
 </body>
