@@ -1508,12 +1508,7 @@ li.item:LAST-CHILD {
 			
 			$.ajax({
 				url:"ReviewInsertService",
-				data:{
-					"drink_name" : drink_name,
-					"review_content" : review_content,
-					"score" : score,
-					"member_id" : id
-					},
+				data:"drink_name="+drink_name+"&review_content="+review_content+"&score="+score+"&member_id="+id,
 				success:function(success){
 					alert("리뷰작성 성공");
 				}
