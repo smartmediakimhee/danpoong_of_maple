@@ -39,15 +39,15 @@ public class DrinkListService extends HttpServlet {
 				url = "main/beerinfo.jsp";
 			} else if(drink_id.equals("02")) {
 				url = "main/sojuinfo.jsp";
-			} else if(drink_id.equals("03")) {
-				url = "main/whiskyinfo.jsp";
 			} else if(drink_id.equals("04")) {
+				url = "main/whiskyinfo.jsp";
+			} else if(drink_id.equals("03")) {
 				url = "main/wineinfo.jsp";
 			} else if(drink_id.equals("05")) {
 				url = "main/macinfo.jsp";
 			} else if(drink_id.equals("06")) {
 				url = "main/jeoninfo.jsp";
-			} else if(drink_id.equals("07")) {
+			} else if(drink_id.equals("08")) {
 				url = "main/coginfo.jsp";
 			}
 			

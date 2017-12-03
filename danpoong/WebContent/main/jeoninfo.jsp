@@ -1501,6 +1501,8 @@ li.item:LAST-CHILD {
 	<script type="text/javascript">
 		
 		function send() {
+			
+			
 			var drink_name = document.getElementById("modalName").innerHTML;
 			var review_content = document.getElementById("review_content").value;
 			var score = document.getElementById("sscore").innerHTML;
@@ -1526,7 +1528,7 @@ li.item:LAST-CHILD {
 
 	<script type="text/javascript">
 		function check(id) {
-			imgurl = "url('images/sojuinfo/"+id+".png')"; 
+			imgurl = "url('images/jeon/"+id+".png')"; 
 			document.getElementById("border1").style.backgroundImage = imgurl;
 			
 			var drink_list =<%=drink_json%>;

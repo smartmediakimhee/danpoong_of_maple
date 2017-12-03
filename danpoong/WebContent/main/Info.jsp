@@ -1404,7 +1404,7 @@ h3 {
 			<div class="heading">
 				<h2 class="korean" style="font-size: xx-large;">위스키</h2>
 			</div>
-			</figcaption> <a href="../DrinkListService?drink_id=03"></a> </figure>
+			</figcaption> <a href="../DrinkListService?drink_id=04"></a> </figure>
 
 
 			</figure>
@@ -1416,7 +1416,7 @@ h3 {
 			<div class="heading">
 				<h2 class="korean" style="font-size: xx-large;">와인</h2>
 			</div>
-			</figcaption> <a href="../DrinkListService?drink_id=04"></a> </figure>
+			</figcaption> <a href="../DrinkListService?drink_id=03"></a> </figure>
 
 			</figure>
 			<figure class="snip12005"> <img src="images/cham1.jpg"
@@ -1426,7 +1426,7 @@ h3 {
 			<div class="heading">
 				<h2 class="korean" style="font-size: xx-large;">샴페인</h2>
 			</div>
-			</figcaption> <a href="../DrinkListService?drink_id=07"></a> </figure>
+			</figcaption> <a href="../DrinkListService?drink_id=08"></a> </figure>
 
 
 			</figure>
@@ -1515,6 +1515,7 @@ $(".hover").mouseleave(
 	    }
 	  );
 </script>
+
 
 
 </body>

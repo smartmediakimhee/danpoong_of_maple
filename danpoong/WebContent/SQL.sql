@@ -59,6 +59,7 @@ insert into MEMBER values('1', '1', 'doggle', '0', 26, '´ë±¸');
 select * from MEMBER;
 drop table review;
 select * from review;
+select* from drink;
 
 update member set member_pw=123, nickname=123, age=123, address=123 where member_id=2;
 
