@@ -546,7 +546,7 @@ h3 {
 				<nav id="nav">
 				<ul>
 					<li class="current"><a href="index.html">MAIN</a></li>
-					<li><a href="#">INTRODUCE</a></li>
+					<li><a href="introduce.jsp">INTRODUCE</a></li>
 					<li><a href="Info.jsp">INFO</a></li>
 					<li><a href="../PostListService">COMMUNITY</a></li>
 					<li><a href="MyPage.jsp">MY PAGE</a></li>
