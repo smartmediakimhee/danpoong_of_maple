@@ -16,7 +16,7 @@ import com.DAO.WebDAO;
 public class RankService extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		//
 		ImotionAnalysis ana = new ImotionAnalysis();
 		
 		ArrayList<String> temp_list = ana.textImotionAnalysis();
