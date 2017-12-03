@@ -599,6 +599,7 @@ h3 {
 							</header>
 							<h5 class="korean">당 신 이&nbsp 즐 기 는&nbsp 술 은&nbsp 아 니 지
 								만&nbsp 새 로 운&nbsp 도 전 을&nbsp 위 한&nbsp 당 신 에 게&nbsp 추 천 드 립 니 다 .</h5>
+								<br>
 							<br> alcohol %%%<br> price %%%<br> score @@@
 							<footer> <a href="#" class="button alt">Find out
 								more</a> </footer>
