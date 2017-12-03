@@ -659,7 +659,8 @@ li.item:LAST-CHILD {
 								<div style="height: 370px; width: 150px;">
 									<button type="button" class="btn btn-info btn-lg"
 										data-toggle="modal" data-target="#myModal"
-										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_00<%=num1%>.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_00<%=num1%>.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+										onclick="checkId('02_00<%=num1%>')">
 									</button>
 									<h4 style="color: black; margin-left: 1px;" class="korean">
 									</h4>
@@ -669,7 +670,9 @@ li.item:LAST-CHILD {
 								<div style="height: 370px; width: 150px;">
 									<button type="button" class="btn btn-info btn-lg"
 										data-toggle="modal" data-target="#myModal"
-										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_00<%=num2%>.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_00<%=num2%>.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+										onclick="checkId('02_00<%=num2%>')">
+									
 									</button>
 									<h4 style="color: black; margin-left: 1px;" class="korean">
 										</h4>
@@ -680,7 +683,8 @@ li.item:LAST-CHILD {
 								<div style="height: 370px; width: 150px;">
 									<button type="button" class="btn btn-info btn-lg"
 										data-toggle="modal" data-target="#myModal"
-										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_00<%=num3%>.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_00<%=num3%>.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+										onclick="checkId('02_00<%=num3%>')">
 
 
 									</button>
@@ -694,7 +698,8 @@ li.item:LAST-CHILD {
 								<div style="height: 370px; width: 150px;">
 									<button type="button" class="btn btn-info btn-lg"
 										data-toggle="modal" data-target="#myModal"
-										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_00<%=num4%>.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_00<%=num4%>.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
+										onclick="checkId('02_00<%=num4%>')">
 
 
 									</button>
