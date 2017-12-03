@@ -1382,7 +1382,7 @@ li.item:LAST-CHILD {
 						<!--  별점매기는 시스템 -->
 
 						<div>
-						<form name="f">
+						
 							<ul id="myReviews"
 								style="margin: 0px; padding: 0px; list-style-type: none;">
 								<li class="item"></li>
@@ -1471,8 +1471,8 @@ li.item:LAST-CHILD {
 								</script></li>
 								
 								<li class="item"><input type="text"
-									style="width: 100%; height: 100%;" name="review_content"></li>
-							</ul></form>
+									style="width: 100%; height: 100%;" id="review_content"></li>
+							</ul>
 						</div>
 
 						<!--  별점매기는 시스템 -->
@@ -1483,11 +1483,14 @@ li.item:LAST-CHILD {
 					</div>
 
 					<div class="modal-footer">
-
+						<c:choose>
+						<c:when test="${not empty sessionScope.id}">
 						<button type="button" class="btn btn-default" data-dismiss="modal"
 							style="background-color: black;" onclick="send()">Write</button>
 						<button type="button" class="btn btn-default" data-dismiss="modal"
 							style="background-color: black;">Close</button>
+					</c:when>
+					</c:choose>
 					</div>
 				</div>
 
@@ -1498,17 +1501,26 @@ li.item:LAST-CHILD {
 	<script type="text/javascript">
 		
 		function send() {
-			
-			var review_content = document.f.review_content;
+			var drink_name = document.getElementById("modalName").innerHTML;
+			var review_content = document.getElementById("review_content").value;
 			var score = document.getElementById("sscore").innerHTML;
 			var id=<%=id%>
 			
 			$.ajax({
-				url:"ReviewInsertService?id="+id+"&review_content="+review_content+"&score="+score,
-				success	: function(result) {
-					document.write("성공");
-				}	
+				url:"ReviewInsertService",
+				data:{
+					"drink_name" : drink_name,
+					"review_content" : review_content,
+					"score" : score,
+					"member_id" : id
+					},
+				success:function(success){
+					alert("리뷰작성 성공");
+				}
 			});
+			
+			
+			
 			
 		}
 		
