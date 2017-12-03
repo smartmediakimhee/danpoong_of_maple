@@ -1419,12 +1419,12 @@ h3 {
 			</figcaption> <a href="../DrinkListService?drink_id=04"></a> </figure>
 
 			</figure>
-			<figure class="snip12005"> <img src="images/cog.jpg"
+			<figure class="snip12005"> <img src="images/cham1.jpg"
 				alt="sq-sample32" /> <figcaption>
-			<p>브랜디는 증류를 거친 과일주를 오크통에 저장하여 숙성시켜 만듭니다. 브랜디는 '불에 태운 술'이라는 의미로
-				호사스러운 맛과 향을 가지고 있어 술 중의 술이라고 합니다.</p>
+			<p>스파클링 와인의 부류에 들어가는 술로 이산화탄소를 주입하는 스파클링 와인과는 다르게 전통방식으로 탄산을 갖도록 양조한 술이다. 
+			샴페인은 영문식이며, 프랑스어로는 샹파뉴(Champagne)라고 한다.</p>
 			<div class="heading">
-				<h2 class="korean" style="font-size: xx-large;">브랜디</h2>
+				<h2 class="korean" style="font-size: xx-large;">샴페인</h2>
 			</div>
 			</figcaption> <a href="../DrinkListService?drink_id=07"></a> </figure>
 
