@@ -1516,6 +1516,9 @@ li.item:LAST-CHILD {
 
 	<script type="text/javascript">
 		function check(id) {
+			imgurl = "url('images/sojuinfo/"+id+".png')"; 
+			document.getElementById("border1").style.backgroundImage = imgurl;
+			
 			var drink_list =<%=drink_json%>;
 			var review_list =<%=review_json%>;
 
@@ -1539,12 +1542,7 @@ li.item:LAST-CHILD {
 					index += 1;
 				}
 			}
-			
 /* 			var imgurl = document.getElementById("border1"); */
-			imgurl = "url('images/sojuinfo/"+id+".png')"; 
-				
-			
-			document.getElementById("border1").style.backgroundImage = imgurl;
 		
 		/* 	document.imgurl.style.backgroundImage = "url('images/sojuinfo/')"; */
 		

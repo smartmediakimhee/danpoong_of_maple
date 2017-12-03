@@ -85,7 +85,7 @@
 					</tr>
 					<tr>
 						<th>내용</th>
-						<td><textarea cols="10" placeholder="내용을 입력하세요. "
+						<td><textarea cols="10" style="height: 390px;" placeholder="내용을 입력하세요. "
 								name="content" class="form-control"></textarea></td>
 					</tr>
 					<tr>
