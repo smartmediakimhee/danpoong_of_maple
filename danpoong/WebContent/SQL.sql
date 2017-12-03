@@ -2,7 +2,8 @@ create table member(
   member_id varchar2(50) primary key,
   member_pw varchar2(50) not null,
   nickname varchar2(50) not null,
-  type varchar2(10),
+  type1 varchar2(10),
+  type2 varchar2(10),
   age number(5),
   address varchar2(50)
 );

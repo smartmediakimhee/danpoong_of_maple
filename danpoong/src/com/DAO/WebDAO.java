@@ -58,7 +58,12 @@ public class WebDAO {
 		ArrayList<AttributeDTO> list = new ArrayList<AttributeDTO>();
 
 		while (rs.next()) {
-			list.add(new AttributeDTO(rs.getInt(1), rs.getInt(2), rs.getInt(3), rs.getInt(4), rs.getInt(5)));
+			list.add(new AttributeDTO(
+					rs.getInt(1), 
+					rs.getInt(2), 
+					rs.getInt(3), 
+					rs.getInt(4), 
+					rs.getInt(5)));
 		}
 
 		close();
@@ -71,7 +76,7 @@ public class WebDAO {
 
 		getConnection();
 
-		pst = con.prepareStatement("select type from analysis");
+		pst = con.prepareStatement("select type1 from analysis");
 		rs = pst.executeQuery();
 
 		ArrayList<String> type_list = new ArrayList<String>();
