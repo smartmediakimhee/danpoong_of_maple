@@ -647,15 +647,15 @@ li.item:LAST-CHILD {
 
 		<!-- Main -->
 		<div class="main">
-			<div class="top";>
+			<div class="top">
 				<div class="topdiv";>
-					<table>
+					<table align="center">
 						<tr>
-							<td colspan="4"><br> <br> <br> <br> <br>
+							<td colspan="4"><br> <br> <br>
 								<br></td>
 						</tr>
 						<tr>
-							<td>
+							<td align="center">
 								<div style="height: 370px; width: 150px;">
 									<button type="button" class="btn btn-info btn-lg"
 										data-toggle="modal" data-target="#myModal"
@@ -665,7 +665,7 @@ li.item:LAST-CHILD {
 									</h4>
 								</div>
 							</td>
-							<td>
+							<td align="center">
 								<div style="height: 370px; width: 150px;">
 									<button type="button" class="btn btn-info btn-lg"
 										data-toggle="modal" data-target="#myModal"
@@ -676,7 +676,7 @@ li.item:LAST-CHILD {
 								</div>
 
 							</td>
-							<td>
+							<td align="center">
 								<div style="height: 370px; width: 150px;">
 									<button type="button" class="btn btn-info btn-lg"
 										data-toggle="modal" data-target="#myModal"
@@ -690,7 +690,7 @@ li.item:LAST-CHILD {
 
 							</td>
 
-							<td>
+							<td align="center">
 								<div style="height: 370px; width: 150px;">
 									<button type="button" class="btn btn-info btn-lg"
 										data-toggle="modal" data-target="#myModal"
