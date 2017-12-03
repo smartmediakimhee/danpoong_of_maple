@@ -323,7 +323,7 @@ body {
 
 #border1 {
 	display: inline-block;
-	background-image: url("images/02_0001.png");
+	background-image: ; 
 	background-repeat: no-repeat;
 	background-size: 100px;
 	background-position: center;
@@ -1539,6 +1539,15 @@ li.item:LAST-CHILD {
 					index += 1;
 				}
 			}
+			
+/* 			var imgurl = document.getElementById("border1"); */
+			imgurl = "url('images/sojuinfo/"+id+".png')"; 
+				
+			
+			document.getElementById("border1").style.backgroundImage = imgurl;
+		
+		/* 	document.imgurl.style.backgroundImage = "url('images/sojuinfo/')"; */
+		
 		}
 	</script>
 </body>
