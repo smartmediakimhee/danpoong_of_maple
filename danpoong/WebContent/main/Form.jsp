@@ -239,7 +239,7 @@ input[type="text"]:focus, input[type="text"]:hover {
 <body>
 	<div class="cardBoard">
 		<center>
-			<form action="UserType" method="post">
+			<form action="UserTypeService?id=${sessionScope.id}" method="post">
 				<div class="titleBoard">
 					<h1>설문지 Title</h1>
 					<p>* 필수항목</p>

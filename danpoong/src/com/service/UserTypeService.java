@@ -18,14 +18,12 @@ public class UserTypeService extends HttpServlet {
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		/* Form.jsp에서 넘어온 유저의 설문 결과값 */
+		String id = request.getParameter("id");
 		double alcohol = Double.parseDouble(request.getParameter("alcohol"));
 		double flavor = Double.parseDouble(request.getParameter("flavor"));
 		double taste = Double.parseDouble(request.getParameter("taste"));
 		double feel = Double.parseDouble(request.getParameter("feel"));
 		double atm = Double.parseDouble(request.getParameter("atm"));
-		
-		/* session에서 id값 가져와야 함 */
-		String id = "smart";
 		
 		WebDAO dao = WebDAO.getInstance();
 		

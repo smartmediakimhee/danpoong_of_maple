@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -14,7 +14,8 @@
 
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower"
 	rel="stylesheet">
-<link href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
+<link
+	href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
 	rel="stylesheet">
 <link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css"
 	rel="stylesheet">
@@ -22,142 +23,147 @@
 <style type="text/css">
 /* 모달 css 코드 시작 */
 .panel {
-    background-color: white;
-    height: 80px;
-    padding: 10px;
+	background-color: white;
+	height: 80px;
+	padding: 10px;
 }
+
 .panel a#login_pop, .panel a#join_pop {
-    border: 2px solid #aaa;
-    color: #fff;
-    display: block;
-    float: left;
-    margin-left: 10px;
-    padding: 5px 10px;
-    text-decoration: none;
-    text-shadow: 1px 1px #000;
-
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-	font-family:'dotum';
+	border: 2px solid #aaa;
+	color: #fff;
+	display: block;
+	float: left;
+	margin-left: 10px;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-shadow: 1px 1px #000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	font-family: 'dotum';
 }
+
 a#login_pop:hover, a#join_pop:hover {
-    border-color: #eee;
+	border-color: #eee;
 }
+
 .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    bottom: 0;
-    cursor: default;
-    left: 0;
-    opacity: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    visibility: hidden;
-    z-index: 1;
-
-    -webkit-transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -ms-transition: opacity .5s;
-    -o-transition: opacity .5s;
-    transition: opacity .5s;
+	background-color: rgba(0, 0, 0, 0.6);
+	bottom: 0;
+	cursor: default;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	z-index: 1;
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-ms-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
 }
+
 .overlay:target {
-    visibility: visible;
-    opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
+
 .popup {
-    background-color: #fff;
-    border: 3px solid #fff;
-    display: inline-block;
-    left: 50%;
-    opacity: 0;
-    padding: 15px;
-    position: fixed;
-    text-align: justify;
-    top: 40%;
-    visibility: hidden;
-    z-index: 10;
-
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-
-    -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-    -moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-    -ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-    -o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-
-    -webkit-transition: opacity .5s, top .5s;
-    -moz-transition: opacity .5s, top .5s;
-    -ms-transition: opacity .5s, top .5s;
-    -o-transition: opacity .5s, top .5s;
-    transition: opacity .5s, top .5s;
+	background-color: #fff;
+	border: 3px solid #fff;
+	display: inline-block;
+	left: 50%;
+	opacity: 0;
+	padding: 15px;
+	position: fixed;
+	text-align: justify;
+	top: 40%;
+	visibility: hidden;
+	z-index: 10;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	-moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	-ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	-o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+	-webkit-transition: opacity .5s, top .5s;
+	-moz-transition: opacity .5s, top .5s;
+	-ms-transition: opacity .5s, top .5s;
+	-o-transition: opacity .5s, top .5s;
+	transition: opacity .5s, top .5s;
 }
+
 .overlay:target+.popup {
-    top: 50%;
-    opacity: 1;
-    visibility: visible;
+	top: 50%;
+	opacity: 1;
+	visibility: visible;
 }
+
 .close {
-    background-color: rgba(0, 0, 0, 0.8);
-    height: 30px;
-    line-height: 30px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    text-decoration: none;
-    top: -15px;
-    width: 30px;
-
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border-radius: 15px;
+	background-color: rgba(0, 0, 0, 0.8);
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-decoration: none;
+	top: -15px;
+	width: 30px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
 }
+
 .close:before {
-    color: rgba(255, 255, 255, 0.9);
-    content: "X";
-    font-size: 24px;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+	color: rgba(255, 255, 255, 0.9);
+	content: "X";
+	font-size: 24px;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
 }
-.close:hover {
-    background-color: rgba(64, 128, 128, 0.8);
-}
-.popup p, .popup div {
-    margin-bottom: 10px;
-}
-.popup label {
-    display: inline-block;
-    text-align: left;
-    width: 120px;
-}
-.popup input[type="text"], .popup input[type="password"] {
-    border: 1px solid;
-    border-color: #999 #ccc #ccc;
-    margin: 0;
-    padding: 2px;
 
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    border-radius: 2px;
+.close:hover {
+	background-color: rgba(64, 128, 128, 0.8);
 }
+
+.popup p, .popup div {
+	margin-bottom: 10px;
+}
+
+.popup label {
+	display: inline-block;
+	text-align: left;
+	width: 120px;
+}
+
+.popup input[type="text"], .popup input[type="password"] {
+	border: 1px solid;
+	border-color: #999 #ccc #ccc;
+	margin: 0;
+	padding: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+}
+
 .popup input[type="text"]:hover, .popup input[type="password"]:hover {
-    border-color: #555 #888 #888;
+	border-color: #555 #888 #888;
 }
 /* 모달 css 코드 끝 */
 .main_common {
@@ -165,25 +171,19 @@ a#login_pop:hover, a#join_pop:hover {
 	border: 1px solid blue;
 }
 
-
 /* <link href="https://fonts.googleapis.com/css?family=Indie+Flower"
 	rel="stylesheet">
 <link href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css"
 	rel="stylesheet"> */
-
-
 body {
 	font-family: 'Indie Flower', cursive;
 }
 
-.korean{
-font-family: 'Nanum Brush Script', cursive;
+.korean {
+	font-family: 'Nanum Brush Script', cursive;
 }
 /* 
 font-family: 'Nanum Brush Script', cursive; */
-
-
-
 #fixed {
 	font-family: 'Indie Flower', cursive;
 }
@@ -192,8 +192,6 @@ font-family: 'Nanum Brush Script', cursive; */
 	margin: 0;
 	padding: 0;
 }
-
-
 
 ul, li {
 	list-style: none;
@@ -402,7 +400,7 @@ h3 {
 	width: 70px;
 	height: 50px;
 	left: -70px;
-	background: #.34495e;.
+	background: #.34495e; .
 	position: absolute;
 	transition: all .5s ease;
 	z-index: 1;
@@ -423,8 +421,7 @@ h3 {
 
 <body class="homepage" style="background-color: white;">
 
-
-<!-- 모달 코드 시작 -->
+	<!-- 모달 코드 시작 -->
 	<c:choose>
 		<c:when test="${empty id }">
 			<div id="container">
@@ -445,60 +442,58 @@ h3 {
 		</c:otherwise>
 	</c:choose>
 
-<form action="../LoginService">
-	<a href="#x" class="overlay" id="login_form"></a>
-        <div class="popup">
-            <h2>Welcome Guest!</h2>
-            <p>Please enter your login and password here</p>
-            <div>
-                <label for="login">Login</label>
-                <input type="text" id="login" name="id" />
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="pw" />
-            </div>
-            <input type="submit" value="Log In" />
+	<form action="../LoginService">
+		<a href="#x" class="overlay" id="login_form"></a>
+		<div class="popup">
+			<h2>Welcome Guest!</h2>
+			<p>Please enter your login and password here</p>
+			<div>
+				<label for="login">Login</label> <input type="text" id="login"
+					name="id" />
+			</div>
+			<div>
+				<label for="password">Password</label> <input type="password"
+					id="password" name="pw" />
+			</div>
+			<input type="submit" value="Log In" /> <a class="close"
+				href="#close"></a>
+		</div>
+	</form>
+	<form action="../JoinService">
+		<a href="#x" class="overlay" id="join_form"></a>
+		<div class="popup">
+			<h2>Sign Up</h2>
+			<p>Please enter your details here</p>
+			<div>
+				<label for="email">ID</label> <input type="text" id="email"
+					name="id" />
+			</div>
+			<div>
+				<label for="pass">Password</label> <input type="password" id="pass"
+					name="pw" />
+			</div>
+			<div>
+				<label for="firstname">Password</label> <input type="password"
+					id="firstname" name="pw2" />
+			</div>
+			<div>
+				<label for="lastname">Nickname</label> <input type="text"
+					id="lastname" name="nick" />
+			</div>
+			<div>
+				<label for="lastname">Age</label> <input type="text" id="lastname"
+					name="age" />
+			</div>
+			<div>
+				<label for="lastname">Location</label> <input type="text"
+					id="lastname" name="location" />
+			</div>
+			<input type="submit" value="Sign Up" /> <a class="close"
+				href="#close"></a>
+		</div>
+	</form>
 
-            <a class="close" href="#close"></a>
-        </div>
- </form>
- <form action="../JoinService">
-        <a href="#x" class="overlay" id="join_form"></a>
-        <div class="popup">
-            <h2>Sign Up</h2>
-            <p>Please enter your details here</p>
-            <div>
-                <label for="email">ID</label>
-                <input type="text" id="email" name="id"/>
-            </div>
-            <div>
-                <label for="pass">Password</label>
-                <input type="password" id="pass" name="pw"/>
-            </div>
-            <div>
-                <label for="firstname">Password</label>
-                <input type="password" id="firstname" name="pw2"/>
-            </div>
-            <div>
-                <label for="lastname">Nickname</label>
-                <input type="text" id="lastname" name="nick"/>
-            </div>
-            <div>
-                <label for="lastname">Age</label>
-                <input type="text" id="lastname" name="age"/>
-            </div>
-            <div>
-                <label for="lastname">Location</label>
-                <input type="text" id="lastname" name="location"/>
-            </div>
-            <input type="submit" value="Sign Up" />
-
-            <a class="close" href="#close"></a>
-        </div>
-        </form>
-
-<!-- 모달 코드 끝 -->
+	<!-- 모달 코드 끝 -->
 
 
 
@@ -514,27 +509,23 @@ h3 {
 
 	</div> -->
 
-
-
-
 	<div id="page-wrapper">
-
-
-
 
 		<!-- Header -->
 		<div id="header-wrapper">
 
-
-
 			<!-- 스크롤 고정 div -->
-			<div
-				style="position: fixed; right: 100px; bottom: 500px; height: 70px; width: 170px;"">
-				<button style="height: 70px; width: 170px; background-color: white;">
-					<h5 style="color: black;"id= "fixed">find out more</h5>
-				</button>
-			</div>
-
+			<c:choose>
+				<c:when test="${not empty sessionScope.id}">
+					<div
+						style="position: fixed; right: 100px; bottom: 500px; height: 70px; width: 170px;"">
+						<button
+							style="height: 70px; width: 170px; background-color: white;">
+							<h5 style="color: black;" id="fixed">find out more</h5>
+						</button>
+					</div>
+				</c:when>
+			</c:choose>
 			<div id="header">
 
 
@@ -578,11 +569,12 @@ h3 {
 							<a href="#" class="image featured"><img src="images/HI1.jpg"
 								alt="" /></a>
 							<header>
-							<h3 class = "korean">하이네켄</h3>
+							<h3 class="korean">하이네켄</h3>
 							</header>
-							<h5 class = "korean">당 신 의&nbsp 취 향 과&nbsp 딱&nbsp 맞 는&nbsp 술 입 니 다 . &nbsp분 명&nbsp 마 음 에&nbsp 드 실&nbsp 겁 니 다 !</h5>
-							<br>
-							<br>alcohol %%%<br>price %%%<br>score @@@
+							<h5 class="korean">당 신 의&nbsp 취 향 과&nbsp 딱&nbsp 맞 는&nbsp 술 입
+								니 다 . &nbsp분 명&nbsp 마 음 에&nbsp 드 실&nbsp 겁 니 다 !</h5>
+							<br> <br>alcohol %%%<br>price %%%<br>score
+							@@@
 							<footer> <a href="#" class="button alt">Find out
 								more</a> </footer>
 						</div>
@@ -590,10 +582,12 @@ h3 {
 							<a href="#" class="image featured"><img src="images/ICE1.jpg"
 								alt="" /></a>
 							<header>
-							<h3 class = "korean">오크에이지드</h3>
+							<h3 class="korean">오크에이지드</h3>
 							</header>
-							<h5 class = "korean">이 번 에&nbsp 새 로&nbsp 나 온&nbsp 술 입 니 다 .&nbsp 맛 이&nbsp 기 대 가&nbsp 됩 니 다 !</h5>
-							<br> <br> alcohol %%%<br> price %%%<br> score @@@
+							<h5 class="korean">이 번 에&nbsp 새 로&nbsp 나 온&nbsp 술 입 니 다
+								.&nbsp 맛 이&nbsp 기 대 가&nbsp 됩 니 다 !</h5>
+							<br> <br> alcohol %%%<br> price %%%<br> score
+							@@@
 							<footer> <a href="#" class="button alt">Find out
 								more</a> </footer>
 						</div>
@@ -601,9 +595,10 @@ h3 {
 							<a href="#" class="image featured"><img
 								src="images/bodka1.jpg" alt="" /></a>
 							<header>
-							<h3 class = "korean">스톨리치나야</h3>
+							<h3 class="korean">스톨리치나야</h3>
 							</header>
-							<h5 class = "korean">당 신 이&nbsp 즐 기 는&nbsp 술 은&nbsp 아 니 지 만&nbsp 새 로 운&nbsp 도 전 을&nbsp 위 한&nbsp 당 신 에 게&nbsp 추 천 드 립 니 다 .</h5>
+							<h5 class="korean">당 신 이&nbsp 즐 기 는&nbsp 술 은&nbsp 아 니 지
+								만&nbsp 새 로 운&nbsp 도 전 을&nbsp 위 한&nbsp 당 신 에 게&nbsp 추 천 드 립 니 다 .</h5>
 							<br> alcohol %%%<br> price %%%<br> score @@@
 							<footer> <a href="#" class="button alt">Find out
 								more</a> </footer>
@@ -650,7 +645,8 @@ h3 {
 									<table>
 										<br>
 										<tr align="right">
-											<td align="center"><h3 style="color: black;" class = "korean">소주</h3></td>
+											<td align="center"><h3 style="color: black;"
+													class="korean">소주</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
@@ -676,7 +672,8 @@ h3 {
 									<table>
 										<br>
 										<tr align="right">
-											<td align="center"><h3 style="color: black;" class = "korean">맥주</h3></td>
+											<td align="center"><h3 style="color: black;"
+													class="korean">맥주</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
@@ -703,7 +700,8 @@ h3 {
 									<table>
 										<br>
 										<tr align="right">
-											<td align="center"><h3 style="color: black;" class = "korean">막걸리</h3></td>
+											<td align="center"><h3 style="color: black;"
+													class="korean">막걸리</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
@@ -729,7 +727,8 @@ h3 {
 									<table>
 										<br>
 										<tr align="right">
-											<td align="center"><h3 style="color: black;" class = "korean">양주</h3></td>
+											<td align="center"><h3 style="color: black;"
+													class="korean">양주</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
@@ -769,7 +768,7 @@ h3 {
 										<br>
 										<tr align="right">
 											<td align="center"><h3 style="color: black;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
-												<h3 style="color: black;" class = "korean">보드카</h3></td>
+												<h3 style="color: black;" class="korean">보드카</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
@@ -797,7 +796,7 @@ h3 {
 										<br>
 										<tr align="right">
 											<td align="center"><h3 style="color: black;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
-												<h3 style="color: black;" class = "korean">전통주</h3></td>
+												<h3 style="color: black;" class="korean">전통주</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
@@ -824,7 +823,7 @@ h3 {
 										<br>
 										<tr align="right">
 											<td align="center"><h3 style="color: black;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
-												<h3 style="color: black;"class = "korean">와인</h3></td>
+												<h3 style="color: black;" class="korean">와인</h3></td>
 										</tr>
 										<tr align="right">
 											<td align="center"><h5>&nbsp</h5></td>
@@ -908,9 +907,9 @@ h3 {
 				<div
 					style="height: 250px; width: 430px; border: 1px solid #EAEAEA; margin-left: 2%; margin-top: 2%;"
 					id="review3";>
-					<h3 class = "korean">혼술하기 딱 좋은 술</h3>
+					<h3 class="korean">혼술하기 딱 좋은 술</h3>
 					<br> <br>
-					<p align="left" class = "korean">
+					<p align="left" class="korean">
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</p>
@@ -920,9 +919,9 @@ h3 {
 				<div
 					style="height: 250px; width: 430px; border: 1px solid #EAEAEA; margin-left: 15.1%; margin-top: 2%;"
 					id="review4">
-					<h3 class = "korean">친구들이랑 마셨어요</h3>
+					<h3 class="korean">친구들이랑 마셨어요</h3>
 					<br> <br>
-					<p align="left" class = "korean">
+					<p align="left" class="korean">
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
 						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
@@ -935,25 +934,24 @@ h3 {
 			<hr>
 			<!-- Footer -->
 			<div id="footer-wrapper">
-			<section id="footer" class="container" style="text-align:center">
-			<div style="display: block; text-align: center;">
-				<h1 style="font-size: 65px">Alvis Bar</h1>
+				<section id="footer" class="container" style="text-align:center">
+				<div style="display: block; text-align: center;">
+					<h1 style="font-size: 65px">Alvis Bar</h1>
+				</div>
+				<br>
+				<div style="display: block; text-align: center;">
+					<font style="font-family: 'Jeju Hallasan', cursive;">광주광역시
+						남구 송암로60 광주CGI센터 203호 (송하동)</font> <br> <font
+						style="font-family: 'Jeju Hallasan', cursive;">김희정 방준영 이도건
+						이현선 전상호</font> <br> <font
+						style="font-family: 'Jeju Hallasan', cursive;">062-655-3509</font>
+					<br> <font style="font-family: 'Jeju Hallasan', cursive;">smhrd@smhrd.or.kr</font>
+				</div>
+				<ul class="links" style="text-algin: center">
+					<li>&copy; danpoong of maple. All rights reserved.</li>
+				</ul>
+				</section>
 			</div>
-			<br>			
-			<div style="display: block; text-align: center;">
-				<font style="font-family: 'Jeju Hallasan', cursive;">광주광역시 남구 송암로60 광주CGI센터 203호 (송하동)</font>
-				<br>
-				<font style="font-family: 'Jeju Hallasan', cursive;">김희정 방준영 이도건 이현선 전상호</font>
-				<br>
-				<font style="font-family: 'Jeju Hallasan', cursive;">062-655-3509</font>
-				<br>
-				<font style="font-family: 'Jeju Hallasan', cursive;">smhrd@smhrd.or.kr</font>
-			</div>
-						<ul class="links" style="text-algin: center">
-							<li>&copy; danpoong of maple. All rights reserved.</li>
-						</ul>
-			</section>
-		</div>
 			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
