@@ -605,7 +605,7 @@ li.item:LAST-CHILD {
 				<nav id="nav">
 				<ul>
 					<li><a href="main.jsp">MAIN</a></li>
-					<li><a href="#">INTRODUCE</a>
+					<li><a href="introduce.jsp">INTRODUCE</a>
 					<li class="current"><a href="Info.jsp">INFO</a></li>
 					<li><a href="Community.jsp">COMMUNITY</a></li>
 					<li><a href="MyPage.jsp">MY PAGE</a></li>

@@ -388,7 +388,7 @@ a#login_pop:hover, a#join_pop:hover {
 				<nav id="nav">
 				<ul>
 					<li><a href="main.jsp">MAIN</a></li>
-					<li><a href="#">INTRODUCE</a></li>
+					<li><a href="introduce.jsp">INTRODUCE</a></li>
 					<li><a href="Info.jsp">INFO</a></li>
 					<li><a href="Community.jsp">COMMUNITY</a></li>
 					<li class="current"><a href="MyPage.jsp">MY PAGE</a></li>

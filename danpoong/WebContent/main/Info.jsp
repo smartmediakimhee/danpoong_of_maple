@@ -1352,7 +1352,7 @@ h3 {
 				<nav id="nav">
 				<ul>
 					<li><a href="main.jsp">MAIN</a></li>
-					<li><a href="#">INTRODUCE</a></li>
+					<li><a href="introduce.jsp">INTRODUCE</a></li>
 					<li class="current" ><a href="Info.jsp">INFO</a></li>
 					<li><a href="Community.jsp">COMMUNITY</a></li>
 					<li><a href="MyPage.jsp">MY PAGE</a></li>

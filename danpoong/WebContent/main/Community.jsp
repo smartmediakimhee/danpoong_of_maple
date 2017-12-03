@@ -371,21 +371,8 @@ a#login_pop:hover, a#join_pop:hover {
 				<nav id="nav">
 				<ul>
 					<li><a href="main.jsp">MAIN</a></li>
-					<li><a href="#">INTRODUCE</a>
-						<ul>
-							<li><a href="#">Lorem ipsum dolor</a></li>
-							<li><a href="#">Magna phasellus</a></li>
-							<li><a href="#">Etiam dolore nisl</a></li>
-							<li><a href="#">Phasellus consequat</a>
-								<ul>
-									<li><a href="#">Magna phasellus</a></li>
-									<li><a href="#">Etiam dolore nisl</a></li>
-									<li><a href="#">Veroeros feugiat</a></li>
-									<li><a href="#">Nisl sed aliquam</a></li>
-									<li><a href="#">Dolore adipiscing</a></li>
-								</ul></li>
-							<li><a href="#">Veroeros feugiat</a></li>
-						</ul></li>
+					<li><a href="introduce.jsp">INTRODUCE</a>
+						</li>
 					<li><a href="Info.jsp">INFO</a></li>
 					<li class="current"><a href="Community.jsp">COMMUNITY</a></li>
 					<li><a href="MyPage.jsp">MY PAGE</a></li>

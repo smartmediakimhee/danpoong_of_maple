@@ -9,7 +9,24 @@
 <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 <link rel="stylesheet" href="assets/css/main.css" />
 <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/kopubbatang.css"
+	rel="stylesheet">
+	
+	
+
 <style type="text/css">
+body {
+	font-family: 'Indie Flower', cursive;
+}
+
+.korean{
+font-family: 'KoPub Batang', serif;
+
+}
+
 h4 {
 	display: inline-block;
 }
@@ -139,17 +156,17 @@ p {
 
 				<!-- Logo -->
 				<h1>
-					<a href="main.jsp">알비스의 바입니다.</a>
+					<a href="main.jsp">ALVIS'S BAR</a>
 				</h1>
 
 				<!-- Nav -->
 				<nav id="nav">
 				<ul>
 					<li><a href="main.jsp">MAIN</a></li>
-					<li><a href="#">INTRODUCE</a></li>
+					<li class="current"><a href="introduce.jsp">INTRODUCE</a></li>
 					<li><a href="Info.jsp">INFO</a></li>
 					<li><a href="Community.jsp">COMMUNITY</a></li>
-					<li class="current"><a href="MyPage.jsp">MY PAGE</a></li>
+					<li><a href="MyPage.jsp">MY PAGE</a></li>
 				</ul>
 				</nav>
 
@@ -160,18 +177,33 @@ p {
 		<div id="main-wrapper">
 			<div class="container">
 
+
+
+
+
+
 				<!-- Content -->
 				<article class="box post"> <header>
-				<h3>알비스의 바에 오신 것을 환영합니다!</h3>
+				<h3 class = "korean">알비스의 바에 오신 것을 환영합니다!</h3>
 
 				</header>
-				<p>알비스는 아이언맨에 나오는 자비스와 알코올의 합성어입니다. 알코올에 있어서만큼은 자비스의 능력과 대등한
-					알비스를 만나실 수 있으실 겁니다. 저희사이트를 이용하는 여러분에게 언제나
+				<p class = "korean" style="font-size: large;">당신의 1대1 바텐더, 알비스 입니다. 
+수십 가지가 넘는 술 코너 앞에서 고민하신 적, 새로 출시된 술이 궁금하지만 무슨 맛인지 알 수 없어 돌아섰던 적은 없으신가요? 
+
+당신은 어떤 술을 살지, 어떤 술을 마실지, 새로 나온 술은 무슨 맛인지 고민할 필요가 없습니다. 단지 알비스에 접속하시기만 하면 됩니다. 
+
+알비스는 당신의 데이터를 분석하여 당신의 취향에 딱 맞는 술뿐만 아니라 신제품 중에 당신이 좋아할만한 술과, 현재 가장 트랜디한 술을 추천해 드립니다. 
+
+그리고 알비스는 당신의 건강정보를 파악하여 음주량과 음주 주기를 제공합니다. 
+
+단순히 마시고 취하는 음주문화에서 벗어나서 당신만의 술을 찾고 술의 맛을 느끼고 즐기고 다른 사람과 나누는 술자리, 알비스가 제공합니다. 
 					
-					</p><h4>행운</h4><p>이 있기를 빌겠습니다!</p>
+					</p> <p class = "korean">알비스를 이용하는 당신에게 언제나 &nbsp</p><h4 class = "korean">행운</h4><p class = "korean">이 있기를 빌겠습니다!</p>
 
 						<section> <header>
-						<h3>Something else</h3>
+						
+						<br><br>
+						<h2>Welcome to alvis's bar!</h2>
 						</header>
 						<p>Elementum odio duis semper risus et lectus commodo
 							fringilla. Maecenas sagittis convallis justo vel mattis.
@@ -188,25 +220,9 @@ p {
 							suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi.
 							Aenean elementum, mi sit amet porttitor lorem ipsum dolor sit
 							amet, consectetur adipiscing elit. Lorem ipsum dolor.</p>
-						<p>Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae
-							porta lobortis, enim neque fringilla nunc, eget faucibus lacus
-							sem quis nunc suspendisse nec lectus sit amet augue rutrum
-							vulputate ut ut mi. Aenean elementum, mi sit amet porttitor lorem
-							ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-							dolor sit amet nullam consequat feugiat dolore tempus.</p>
+						<p>I wish you all the luck of using this site</p>
 						</section>
-						<section> <header>
-						<h3>So in conclusion ...</h3>
-						</header>
-						<p>Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae
-							porta lobortis, enim neque fringilla nunc, eget faucibus lacus
-							sem quis nunc suspendisse nec lectus sit amet augue rutrum
-							vulputate ut ut mi. Aenean elementum, mi sit amet porttitor lorem
-							ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-							dolor sit amet nullam consequat feugiat dolore tempus. Elementum
-							odio duis semper risus et lectus commodo fringilla. Maecenas
-							sagittis convallis justo vel mattis.</p>
-						</section>
+						
 				</article>
 
 			</div>
