@@ -521,7 +521,7 @@ h3 {
 						style="position: fixed; right: 100px; bottom: 500px; height: 70px; width: 170px;"">
 						<button
 							style="height: 70px; width: 170px; background-color: white;">
-							<h5 style="color: black;" id="fixed">find out more</h5>
+							<h5 style="color: black;" id="fixed"><a href="Form.jsp">find out more</a></h5>
 						</button>
 					</div>
 				</c:when>
