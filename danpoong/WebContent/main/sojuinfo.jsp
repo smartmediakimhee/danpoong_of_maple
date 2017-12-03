@@ -1,3 +1,4 @@
+<%@page import="java.util.Random"%>
 <%@page import="com.google.gson.Gson"%>
 <%@page import="com.DAO.ReviewDTO"%>
 <%@page import="com.DAO.DrinkInfoDTO"%>
@@ -214,15 +215,17 @@ body {
 /* 탑3 */
 .top {
 	margin-top: 70px;
-	width: 100%;
+	width: 90%;
 	height: 500px;
-	border: 10px solid green;
+	border-top: 10px solid green;
+	border-bottom: 10px solid green;
 }
 
 .topdiv {
+margin-bottom : 50%;
 	width: 100%;
 	height: 90px;
-	background-color: green;
+	
 }
 
 #container {
@@ -511,6 +514,12 @@ li.item:LAST-CHILD {
 		String review_json = review_gson.toJson(review_list);
 
 		String id = (String) session.getAttribute("id");
+		
+		Random r = new Random();
+		int num1 = r.nextInt(40)+11;
+		int num2 = r.nextInt(40)+11;
+		int num3 = r.nextInt(40)+11;
+		int num4 = r.nextInt(40)+11;
 	%>
 
 
@@ -650,9 +659,9 @@ li.item:LAST-CHILD {
 								<div style="height: 370px; width: 150px;">
 									<button type="button" class="btn btn-info btn-lg"
 										data-toggle="modal" data-target="#myModal"
-										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0001.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_00<%=num1%>.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
 									</button>
-									<h4 style="color: black; margin-left: 1px;" class="korean">참이슬fresh
+									<h4 style="color: black; margin-left: 1px;" class="korean">
 									</h4>
 								</div>
 							</td>
@@ -660,10 +669,10 @@ li.item:LAST-CHILD {
 								<div style="height: 370px; width: 150px;">
 									<button type="button" class="btn btn-info btn-lg"
 										data-toggle="modal" data-target="#myModal"
-										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0002.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_00<%=num2%>.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
 									</button>
-									<h4 style="color: black; margin-left: 1px;" class="korean">참이슬
-										original</h4>
+									<h4 style="color: black; margin-left: 1px;" class="korean">
+										</h4>
 								</div>
 
 							</td>
@@ -671,12 +680,12 @@ li.item:LAST-CHILD {
 								<div style="height: 370px; width: 150px;">
 									<button type="button" class="btn btn-info btn-lg"
 										data-toggle="modal" data-target="#myModal"
-										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0003.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_00<%=num3%>.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
 
 
 									</button>
-									<h4 style="color: black; margin-left: 1px;" class="korean">참이슬
-										16.9도</h4>
+									<h4 style="color: black; margin-left: 1px;" class="korean">
+										</h4>
 								</div>
 
 							</td>
@@ -685,12 +694,12 @@ li.item:LAST-CHILD {
 								<div style="height: 370px; width: 150px;">
 									<button type="button" class="btn btn-info btn-lg"
 										data-toggle="modal" data-target="#myModal"
-										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_0003.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
+										style="height: 83%; width: 83%; background-image: url('images/sojuinfo/02_00<%=num4%>.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;">
 
 
 									</button>
-									<h4 style="color: black; margin-left: 1px;" class="korean">참이슬
-										16.9도</h4>
+									<h4 style="color: black; margin-left: 1px;" class="korean">
+										</h4>
 								</div>
 							</td>
 						</tr>
