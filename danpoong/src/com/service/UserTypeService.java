@@ -41,7 +41,7 @@ public class UserTypeService extends HttpServlet {
 			
 			if(cnt>0) {
 				/* Member 테이블에서 type속성이 정확하게 들어간 후 이동할 페이지 */
-				response.sendRedirect("success.jsp");
+				response.sendRedirect("main/main.jsp");
 			} else {
 				/* 실패한다면 돌아가거나 이동할 페이지 */
 			}

@@ -916,6 +916,8 @@ li.item:LAST-CHILD {
 	</div>
 	<script type="text/javascript">
 		function check(id) {
+			imgurl = "url('images/beerinfo/"+id+".png')"; 
+			document.getElementById("border1").style.backgroundImage = imgurl;
 			var drink_list =
 	<%=drink_json%>
 		;

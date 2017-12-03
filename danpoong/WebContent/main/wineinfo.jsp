@@ -1313,6 +1313,8 @@ li.item:LAST-CHILD {
 
 	<script type="text/javascript">
 		function check(id) {
+			imgurl = "url('images/wineinfo/"+id+".png')"; 
+			document.getElementById("border1").style.backgroundImage = imgurl;
 			var drink_list =
 	<%=drink_json%>
 		;
