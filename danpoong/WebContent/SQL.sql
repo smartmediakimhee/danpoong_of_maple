@@ -60,6 +60,8 @@ drop table member;
 
 update member set member_pw=123, nickname=123, age=123, address=123 where member_id=2;
 
+select * from analysis;
+
 insert into analysis values(1,3.5,5.5,7.5,3.5,'01');
 insert into analysis values(5.5,7.5,10,1,7.5,'02');
 insert into analysis values(10,10,10,1,5.5,'03');

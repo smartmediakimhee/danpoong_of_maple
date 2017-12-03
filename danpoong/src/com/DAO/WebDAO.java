@@ -76,7 +76,7 @@ public class WebDAO {
 
 		getConnection();
 
-		pst = con.prepareStatement("select type1 from analysis");
+		pst = con.prepareStatement("select type from analysis");
 		rs = pst.executeQuery();
 
 		ArrayList<String> type_list = new ArrayList<String>();
