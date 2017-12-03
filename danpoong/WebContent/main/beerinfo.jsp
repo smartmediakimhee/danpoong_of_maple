@@ -341,6 +341,10 @@ li.item:LAST-CHILD {
 		Gson drink_gson = new Gson();
 		String drink_json = drink_gson.toJson(drink_list);
 		ArrayList<ReviewDTO> review_list = (ArrayList<ReviewDTO>) session.getAttribute("review_list");
+		Gson review_gson = new Gson();
+		String review_json = review_gson.toJson(review_list);
+
+		String id = (String) session.getAttribute("id");
 	%>
 	<script type="text/javascript">
 		function win() {
