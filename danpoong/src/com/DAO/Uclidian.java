@@ -67,7 +67,7 @@ public class Uclidian {
 		}
 		
 		
-		return type_array[0];
+		return type_array[type_array.length-1];
 	}
 	
 	public double sim_distance(AttributeDTO user_attr, AttributeDTO db_attr) {
