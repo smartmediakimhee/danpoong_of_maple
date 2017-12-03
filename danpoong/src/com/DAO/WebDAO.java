@@ -186,7 +186,7 @@ public class WebDAO {
 	}
 
 	public int insertReview(ReviewDTO review) throws Exception {
-		/* Post 테이블에 유저가 작성한 댓글을 넣어주는 메소드 */
+		/* Review 테이블에 유저가 작성한 댓글을 넣어주는 메소드 */
 
 		getConnection();
 
@@ -261,6 +261,41 @@ public class WebDAO {
 		close();
 		
 		return result;
+	}
+	
+	public double selectScore(String id) throws Exception {
+		/* Review 테이블에서 해당 술 코드 가지고 있는 리뷰들 중 score2값이 0인 score1만 가져옴 */
+		getConnection();
+
+		pst = con.prepareStatement("select score1 from review where drink_id = ? and score2 = 0");
+		pst.setString(1, id);
+		rs = pst.executeQuery();
+
+		double result = 0;
+		
+		while (rs.next()) {
+			result=rs.getDouble(1);
+		}
+
+		close();
+		
+		return result;
+	}
+
+	public int insertScore2(String drink_id, double score2) throws Exception {
+		/* Review 테이블에 score2속성에 최종 점수를 넣어주는 메소드 */
+
+		getConnection();
+
+		pst = con.prepareStatement("update review set score2 = ? where drink_id = ?");
+		pst.setDouble(1, score2);
+		pst.setString(2, drink_id);
+
+		cnt = pst.executeUpdate();
+
+		close();
+
+		return cnt;
 	}
 
 }

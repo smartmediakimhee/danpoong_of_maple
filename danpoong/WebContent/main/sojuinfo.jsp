@@ -323,7 +323,7 @@ body {
 
 #border1 {
 	display: inline-block;
-	background-image: ; 
+	background-image:;
 	background-repeat: no-repeat;
 	background-size: 100px;
 	background-position: center;
@@ -509,8 +509,8 @@ li.item:LAST-CHILD {
 		ArrayList<ReviewDTO> review_list = (ArrayList<ReviewDTO>) session.getAttribute("review_list");
 		Gson review_gson = new Gson();
 		String review_json = review_gson.toJson(review_list);
-		
-		String id = (String)session.getAttribute("id");
+
+		String id = (String) session.getAttribute("id");
 	%>
 
 
@@ -1287,250 +1287,246 @@ li.item:LAST-CHILD {
 		</div>
 	</div>
 
-		<div class="modal fade" id="myModal" role="dialog">
-			<div class="modal-dialog">
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
 
-				<!-- Modal content-->
+			<!-- Modal content-->
 
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						술이름
-					</div>
-
-
-					<div class="modal-body"></div>
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					술이름
+				</div>
 
 
-					<div style="border: 3px solid black; height: 400px; width: 60%;"
-						id="border1"></div>
-					<div style="border: 3px solid black; height: 400px; width: 38%;"
-						id="border2">
-						<table align="center">
-							<td>&nbsp</td>
-							<tr align="center" style="border-bottom: 1px solid black;">
-								<td style="width: 100px;"><h3>name</h3></td>
-								<td id="modalName" style="width: 100px;"><h3>%%%</h3></td>
+				<div class="modal-body"></div>
+
+
+				<div style="border: 3px solid black; height: 400px; width: 60%;"
+					id="border1"></div>
+				<div style="border: 3px solid black; height: 400px; width: 38%;"
+					id="border2">
+					<table align="center">
+						<td>&nbsp</td>
+						<tr align="center" style="border-bottom: 1px solid black;">
+							<td style="width: 100px;"><h3>name</h3></td>
+							<td id="modalName" style="width: 100px;"><h3>%%%</h3></td>
+						</tr>
+						<tr>
+							<td><h5>&nbsp</h5></td>
+						</tr>
+						<tr align="center" style="border-bottom: 1px solid black">
+							<td style="width: 100px;"><h3>alcohol</h3></td>
+							<td id="modalAl" style="width: 100px;"><h3>%%%</h3></td>
+						</tr>
+						<tr>
+							<td><h5>&nbsp</h5></td>
+						</tr>
+						<tr align="center" style="border-bottom: 1px solid black">
+							<td style="width: 100px;"><h3>price</h3></td>
+							<td id="modalPrice" style="width: 100px;"><h3>%%%</h3></td>
+						</tr>
+						<tr>
+							<td><h5>&nbsp</h5></td>
+						</tr>
+						<tr align="center" style="border-bottom: 1px solid black">
+							<td style="width: 100px;"><h3>SCORE</h3></td>
+							<td id="modalScore" style="width: 100px;"><h3>%%%</h3></td>
+						</tr>
+					</table>
+				</div>
+				<div style="border: 3px solid maroon; height: 150px; width: 100%;"
+					id="modalInfo">
+					<h5>내용내용내용</h5>
+				</div>
+
+				<div style="border: 6px solid black; height: 300px; width: 100%;"
+					id="border3">
+
+
+
+					<!-- 댓글란 별점이 매겨져야됨-->
+
+					<!-- 댓글란 별점이 매겨져야됨-->
+
+					<div style="margin-top: 42px;">
+						<table>
+							<tr>
+								<td id="reviewAuthor1"></td>
+								<td id="reviewScore1"></td>
+								<td id="reviewContent1"></td>
 							</tr>
 							<tr>
-								<td><h5>&nbsp</h5></td>
-							</tr>
-							<tr align="center" style="border-bottom: 1px solid black">
-								<td style="width: 100px;"><h3>alcohol</h3></td>
-								<td id="modalAl" style="width: 100px;"><h3>%%%</h3></td>
+								<td id="reviewAuthor2"></td>
+								<td id="reviewScore2"></td>
+								<td id="reviewContent2"></td>
 							</tr>
 							<tr>
-								<td><h5>&nbsp</h5></td>
-							</tr>
-							<tr align="center" style="border-bottom: 1px solid black">
-								<td style="width: 100px;"><h3>price</h3></td>
-								<td id="modalPrice" style="width: 100px;"><h3>%%%</h3></td>
+								<td id="reviewAuthor3"></td>
+								<td id="reviewScore3"></td>
+								<td id="reviewContent3"></td>
 							</tr>
 							<tr>
-								<td><h5>&nbsp</h5></td>
+								<td id="reviewAuthor4"></td>
+								<td id="reviewScore4"></td>
+								<td id="reviewContent4"></td>
 							</tr>
-							<tr align="center" style="border-bottom: 1px solid black">
-								<td style="width: 100px;"><h3>SCORE</h3></td>
-								<td id="modalScore" style="width: 100px;"><h3>%%%</h3></td>
+							<tr>
+								<td id="reviewAuthor5"></td>
+								<td id="reviewScore5"></td>
+								<td id="reviewContent5"></td>
 							</tr>
 						</table>
 					</div>
-					<div style="border: 3px solid maroon; height: 150px; width: 100%;"
-						id="modalInfo">
-						<h5>내용내용내용</h5>
-					</div>
 
-					<div style="border: 6px solid black; height: 300px; width: 100%;"
-						id="border3">
+					<!--  별점매기는 시스템 -->
 
+					<div>
 
-
-						<!-- 댓글란 별점이 매겨져야됨-->
-
-						<!-- 댓글란 별점이 매겨져야됨-->
-
-						<div style="margin-top: 42px;">
-							<table>
-								<tr>
-									<td id="reviewAuthor1"></td>
-									<td id="reviewScore1"></td>
-									<td id="reviewContent1"></td>
-								</tr>
-								<tr>
-									<td id="reviewAuthor2"></td>
-									<td id="reviewScore2"></td>
-									<td id="reviewContent2"></td>
-								</tr>
-								<tr>
-									<td id="reviewAuthor3"></td>
-									<td id="reviewScore3"></td>
-									<td id="reviewContent3"></td>
-								</tr>
-								<tr>
-									<td id="reviewAuthor4"></td>
-									<td id="reviewScore4"></td>
-									<td id="reviewContent4"></td>
-								</tr>
-								<tr>
-									<td id="reviewAuthor5"></td>
-									<td id="reviewScore5"></td>
-									<td id="reviewContent5"></td>
-								</tr>
-							</table>
-						</div>
-
-						<!--  별점매기는 시스템 -->
-
-						<div>
-						
-							<ul id="myReviews"
-								style="margin: 0px; padding: 0px; list-style-type: none;">
-								<li class="item"></li>
-								<li class="item"><span class="star-input"> <span
-										class="input"> <input type="radio" name="star-input"
-											id="p1" value="1"> <label for="p1">1</label> <input
-											type="radio" name="star-input" id="p2" value="2"> <label
-											for="p2">2</label> <input type="radio" name="star-input"
-											id="p3" value="3"> <label for="p3">3</label> <input
-											type="radio" name="star-input" id="p4" value="4"> <label
-											for="p4">4</label> <input type="radio" name="star-input"
-											id="p5" value="5"> <label for="p5">5</label> <input
-											type="radio" name="star-input" id="p6" value="6"> <label
-											for="p6">6</label> <input type="radio" name="star-input"
-											id="p7" value="7"> <label for="p7">7</label> <input
-											type="radio" name="star-input" id="p8" value="8"> <label
-											for="p8">8</label> <input type="radio" name="star-input"
-											id="p9" value="9"> <label for="p9">9</label> <input
-											type="radio" name="star-input" id="p10" value="10"> <label
-											for="p10">10</label>
-									</span> <output for="star-input"> <b style="opacity: 0;"
-											id="sscore">0</b></output>
-								</span> <script type="text/javascript">
-									var starRating = function() {
-										var $star = $(".star-input"), $result = $star
-												.find("output>b");
-										$(document)
-												.on(
-														"focusin",
-														".star-input>.input",
-														function() {
-															$(this).addClass(
-																	"focus");
-														})
-												.on(
-														"focusout",
-														".star-input>.input",
-														function() {
-															var $this = $(this);
-															setTimeout(
-																	function() {
-																		if ($this
-																				.find(":focus").length === 0) {
-																			$this
-																					.removeClass("focus");
-																		}
-																	}, 100);
-														})
-												.on(
-														"change",
-														".star-input :radio",
-														function() {
+						<ul id="myReviews"
+							style="margin: 0px; padding: 0px; list-style-type: none;">
+							<li class="item"></li>
+							<li class="item"><span class="star-input"> <span
+									class="input"> <input type="radio" name="star-input"
+										id="p1" value="1"> <label for="p1">1</label> <input
+										type="radio" name="star-input" id="p2" value="2"> <label
+										for="p2">2</label> <input type="radio" name="star-input"
+										id="p3" value="3"> <label for="p3">3</label> <input
+										type="radio" name="star-input" id="p4" value="4"> <label
+										for="p4">4</label> <input type="radio" name="star-input"
+										id="p5" value="5"> <label for="p5">5</label> <input
+										type="radio" name="star-input" id="p6" value="6"> <label
+										for="p6">6</label> <input type="radio" name="star-input"
+										id="p7" value="7"> <label for="p7">7</label> <input
+										type="radio" name="star-input" id="p8" value="8"> <label
+										for="p8">8</label> <input type="radio" name="star-input"
+										id="p9" value="9"> <label for="p9">9</label> <input
+										type="radio" name="star-input" id="p10" value="10"> <label
+										for="p10">10</label>
+								</span> <output for="star-input"> <b style="opacity: 0;"
+										id="sscore">0</b></output>
+							</span> <script type="text/javascript">
+								var starRating = function() {
+									var $star = $(".star-input"), $result = $star
+											.find("output>b");
+									$(document)
+											.on(
+													"focusin",
+													".star-input>.input",
+													function() {
+														$(this).addClass(
+																"focus");
+													})
+											.on(
+													"focusout",
+													".star-input>.input",
+													function() {
+														var $this = $(this);
+														setTimeout(
+																function() {
+																	if ($this
+																			.find(":focus").length === 0) {
+																		$this
+																				.removeClass("focus");
+																	}
+																}, 100);
+													})
+											.on(
+													"change",
+													".star-input :radio",
+													function() {
+														$result.text($(this)
+																.next().text());
+													})
+											.on(
+													"mouseover",
+													".star-input label",
+													function() {
+														$result.text($(this)
+																.text());
+													})
+											.on(
+													"mouseleave",
+													".star-input>.input",
+													function() {
+														var $checked = $star
+																.find(":checked");
+														if ($checked.length === 0) {
+															$result.text("0");
+														} else {
 															$result
-																	.text($(
-																			this)
+																	.text($checked
 																			.next()
 																			.text());
-														})
-												.on(
-														"mouseover",
-														".star-input label",
-														function() {
-															$result
-																	.text($(
-																			this)
-																			.text());
-														})
-												.on(
-														"mouseleave",
-														".star-input>.input",
-														function() {
-															var $checked = $star
-																	.find(":checked");
-															if ($checked.length === 0) {
-																$result
-																		.text("0");
-															} else {
-																$result
-																		.text($checked
-																				.next()
-																				.text());
-															}
-														});
-									};
-									starRating();
-								</script></li>
-								
-								<li class="item"><input type="text"
-									style="width: 100%; height: 100%;" id="review_content"></li>
-							</ul>
-						</div>
+														}
+													});
+								};
+								starRating();
+							</script></li>
 
-						<!--  별점매기는 시스템 -->
-
-
-
-
+							<li class="item"><input type="text"
+								style="width: 100%; height: 100%;" id="review_content"></li>
+						</ul>
 					</div>
 
-					<div class="modal-footer">
-						<c:choose>
-						<c:when test="${not empty sessionScope.id}">
-						<button type="button" class="btn btn-default" data-dismiss="modal"
-							style="background-color: black;" onclick="send()">Write</button>
-						<button type="button" class="btn btn-default" data-dismiss="modal"
-							style="background-color: black;">Close</button>
-					</c:when>
-					</c:choose>
-					</div>
+					<!--  별점매기는 시스템 -->
+
+
+
+
 				</div>
 
+				<div class="modal-footer">
+					<c:choose>
+						<c:when test="${not empty sessionScope.id}">
+							<button type="button" class="btn btn-default"
+								data-dismiss="modal" style="background-color: black;"
+								onclick="send()">Write</button>
+							<button type="button" class="btn btn-default"
+								data-dismiss="modal" style="background-color: black;">Close</button>
+						</c:when>
+					</c:choose>
+				</div>
 			</div>
 
 		</div>
 
+	</div>
+
 	<script type="text/javascript">
-		
 		function send() {
 			var drink_name = document.getElementById("modalName").innerHTML;
 			var review_content = document.getElementById("review_content").value;
 			var score = document.getElementById("sscore").innerHTML;
-			var id=<%=id%>
-			
-			$.ajax({
-				url:"../ReviewInsertService",
-				data:"drink_name="+drink_name+"&review_content="+review_content+"&score="+score+"&member_id="+id,
-				success:function(success){
+			var id =
+	<%=id%>
+		$.ajax({
+				url : "../ReviewInsertService",
+				data : "drink_name=" + drink_name + "&review_content="
+						+ review_content + "&score=" + score + "&member_id="
+						+ id,
+				success : function(success) {
 					alert("리뷰작성 성공");
 				},
-				error:function(dd,status,cc){
+				error : function(dd, status, cc) {
 					alert(cc)
 				}
 			});
-			
-			
-			
-			
+
 		}
-		
 	</script>
 
 	<script type="text/javascript">
 		function check(id) {
-			imgurl = "url('images/sojuinfo/"+id+".png')"; 
+			imgurl = "url('images/sojuinfo/" + id + ".png')";
 			document.getElementById("border1").style.backgroundImage = imgurl;
-			
-			var drink_list =<%=drink_json%>;
-			var review_list =<%=review_json%>;
+
+			var drink_list =
+	<%=drink_json%>
+		;
+			var review_list =
+	<%=review_json%>
+		;
 
 			for (var i = 0; i < drink_list.length; i++) {
 				if (id == drink_list[i].drink_id) {
@@ -1544,18 +1540,20 @@ li.item:LAST-CHILD {
 
 			var index = 1;
 
-			for (var i = 0; i < 10; i++) {
-				if (id == review_list[i].drink_id) {
-					document.getElementById("reviewAuthor" + index).innerHTML = review_list[i].author;
-					document.getElementById("reviewScore" + index).innerHTML = review_list[i].score;
-					document.getElementById("reviewContent" + index).innerHTML = review_list[i].review_content;
-					index += 1;
+			if (review_list != null) {
+				for (var i = 0; i < 10; i++) {
+					if (id == review_list[i].drink_id) {
+						document.getElementById("reviewAuthor" + index).innerHTML = review_list[i].author;
+						document.getElementById("reviewScore" + index).innerHTML = review_list[i].score;
+						document.getElementById("reviewContent" + index).innerHTML = review_list[i].review_content;
+						index += 1;
+					}
 				}
 			}
-/* 			var imgurl = document.getElementById("border1"); */
-		
-		/* 	document.imgurl.style.backgroundImage = "url('images/sojuinfo/')"; */
-		
+			/* 			var imgurl = document.getElementById("border1"); */
+
+			/* 	document.imgurl.style.backgroundImage = "url('images/sojuinfo/')"; */
+
 		}
 	</script>
 </body>

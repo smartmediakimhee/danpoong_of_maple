@@ -11,7 +11,7 @@ public class ImotionAnalysis {
 	private String[] cmd = null;
 	
 	private String py = "py";
-	private String url = "C:/Users/pc-18/Desktop/TextAnalysis.py";
+	private String url = "C:/Users/pc-18/Desktop/Untitled5.py";
 	private String function = "print";
 	
 	private String str = null;
@@ -20,6 +20,7 @@ public class ImotionAnalysis {
 	public ArrayList<String> textImotionAnalysis() {
 		/* 리뷰 혹은 포스트의 텍스트 감정분석 코드 */
 		cmd = new String[] {py, url, function};
+		System.out.println(1);
 		
 		try {
 			ps = new ProcessBuilder(cmd).start();
@@ -33,7 +34,7 @@ public class ImotionAnalysis {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+		System.out.println("1_2");
 		return result_list;
 		
 	}

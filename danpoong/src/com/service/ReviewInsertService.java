@@ -24,14 +24,16 @@ public class ReviewInsertService extends HttpServlet {
 		
 		WebDAO dao = WebDAO.getInstance();
 		
+		System.out.println("2-1");
+		
 		try {
 			String author = dao.selectNick(id);
 			String drink_id = dao.selectDrinkId(drink_name);
-			
+			System.out.println("2-2");
 			int cnt = dao.insertReview(new ReviewDTO(drink_id, score, author, review_content));
 			
 			if(cnt > 0) {
-				response.sendRedirect("RankService");
+				response.sendRedirect("RankService?drink_id="+drink_id);
 			}
 			
 		} catch (Exception e) {
