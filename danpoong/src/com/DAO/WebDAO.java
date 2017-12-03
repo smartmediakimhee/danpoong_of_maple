@@ -190,7 +190,7 @@ public class WebDAO {
 
 		getConnection();
 
-		pst = con.prepareStatement("insert into review values(review_num.nextval,?,?,?,?)");
+		pst = con.prepareStatement("insert into review (num, drink_id, score1, author, review_content) values(review_num.nextval,?,?,?,?)");
 		pst.setString(1, review.getDrink_id());
 		pst.setDouble(2, review.getScore());
 		pst.setString(3, review.getAuthor());
@@ -231,6 +231,25 @@ public class WebDAO {
 
 		pst = con.prepareStatement("select nickname from member where member_id = ?");
 		pst.setString(1, id);
+		rs = pst.executeQuery();
+
+		String result = null;
+		
+		while (rs.next()) {
+			result=rs.getString(1);
+		}
+
+		close();
+		
+		return result;
+	}
+
+	public String selectDrinkId(String drink_name) throws Exception {
+		/* 술 아이디를 가져오는 메소드 */
+		getConnection();
+
+		pst = con.prepareStatement("select drink_id from drink where drink_name = ?");
+		pst.setString(1, drink_name);
 		rs = pst.executeQuery();
 
 		String result = null;

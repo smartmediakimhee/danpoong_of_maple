@@ -9,7 +9,7 @@ public class ReviewDTO {
 	private String author;
 	private String review_content;
 	
-	public ReviewDTO(int num, String drink_id, double score1,double score2, String author, String review_content) {
+	public ReviewDTO(int num, String drink_id, double score1, double score2, String author, String review_content) {
 		/* soolInfo.jsp에서 댓글을 불러올 때 정보를 다 담을 수 있는 객체 생성자 */
 		this.num = num;
 		this.drink_id = drink_id;
@@ -19,9 +19,11 @@ public class ReviewDTO {
 		this.review_content = review_content;
 	}
 
-	public ReviewDTO(double score, String review_content) {
-		/* soolInfo.jsp에서 유저가 댓글을 저장할 때 필요한 정보를 담을 객체 생성자 */
+	public ReviewDTO(String drink_id, double score, String author, String review_content) {
+		/* 유저가 작성한 댓글을 저장할 때 담아둘 객체 생성자 */
+		this.drink_id = drink_id;
 		this.score = score;
+		this.author = author;
 		this.review_content = review_content;
 	}
 

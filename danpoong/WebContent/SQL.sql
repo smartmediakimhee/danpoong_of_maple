@@ -49,7 +49,8 @@ create table analysis(
 create table review(
 	num number(10),
 	drink_id varchar2(10),
-	score number(10,1) default 0,
+	score1 number(10,1) default 0,
+	score2 number(10,1) default 0,
 	author varchar2(50),
 	review_content varchar2(200)
 );
