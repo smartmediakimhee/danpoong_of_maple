@@ -638,7 +638,7 @@ li.item:LAST-CHILD {
 
 		<!-- Main -->
 		<div class="main">
-			<div class="top";>
+			<!-- <div class="top";>
 				<div class="topdiv";>
 					<table>
 						<tr>
@@ -696,7 +696,7 @@ li.item:LAST-CHILD {
 						</tr>
 					</table>
 				</div>
-			</div>
+			</div> -->
 			<table>
 				<tr>
 					<td>
@@ -705,7 +705,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0001.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0001')"></button>
-							<h4 style="color: black; margin-left: 1px;" class="korean">참이슬fresh
+							<h4 style="color: black; margin-left: 1px;" class="korean">입장탁주
 							</h4>
 						</div>
 
@@ -717,8 +717,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0002.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0002')"></button>
-							<h4 style="color: black; margin-left: 1px;" class="korean">참이슬
-								original</h4>
+							<h4 style="color: black; margin-left: 1px;" class="korean">설악 옥수수막걸리</h4>
 						</div>
 
 					</td>
@@ -728,8 +727,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0003.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0003')"></button>
-							<h4 style="color: black; margin-left: 1px;" class="korean">참이슬
-								16.9도</h4>
+							<h4 style="color: black; margin-left: 1px;" class="korean">설악 생쌀 막걸리</h4>
 						</div>
 
 					</td>
@@ -739,7 +737,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0004.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0004')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">일품진로
+							<h4 style="color: black; margin-left: 20px;" class="korean">달홀주
 							</h4>
 						</div>
 
@@ -755,7 +753,7 @@ li.item:LAST-CHILD {
 
 
 							</button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">진로골드
+							<h4 style="color: black; margin-left: 20px;" class="korean">메밀 생 막걸리
 							</h4>
 						</div>
 
@@ -767,7 +765,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0006.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0006')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">처음처럼
+							<h4 style="color: black; margin-left: 20px;" class="korean">곤드레 생 막걸리
 							</h4>
 						</div>
 
@@ -778,8 +776,8 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0007.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0007')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">처음처럼
-								순한</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">인천 생 소성주
+								</h4>
 						</div>
 
 					</td>
@@ -789,8 +787,8 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0008.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0008')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">처음처럼
-								진한</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">황기 강냉이술
+								</h4>
 						</div>
 
 					</td>
@@ -803,7 +801,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0009.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0009')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">산처럼
+							<h4 style="color: black; margin-left: 20px;" class="korean">천지인 알밤 동동주
 							</h4>
 						</div>
 
@@ -815,7 +813,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0010.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0010')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">대장부
+							<h4 style="color: black; margin-left: 20px;" class="korean">공주 알밤주
 							</h4>
 						</div>
 
@@ -826,7 +824,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0011.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0011')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">좋은데이
+							<h4 style="color: black; margin-left: 20px;" class="korean">공주 군밤 막걸리
 							</h4>
 						</div>
 
@@ -837,8 +835,8 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0012.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0012')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">잎새주
-								부라더</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">디비져 복숭아 막걸리
+								</h4>
 						</div>
 
 					</td>
@@ -851,7 +849,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0013.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0013')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">부라더#소다
+							<h4 style="color: black; margin-left: 20px;" class="korean">황토방 쌀막걸리
 							</h4>
 						</div>
 
@@ -863,8 +861,8 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0014.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0014')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">복받은
-								부라더</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">상원골 찰옥시기 막걸리
+								</h4>
 						</div>
 
 					</td>
@@ -874,7 +872,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0015.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0015')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">아홉시반
+							<h4 style="color: black; margin-left: 20px;" class="korean">새송이 쌀막걸리 정
 							</h4>
 						</div>
 
@@ -885,7 +883,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0016.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0016')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">잎새주
+							<h4 style="color: black; margin-left: 20px;" class="korean">창원 생탁주
 							</h4>
 						</div>
 
@@ -899,8 +897,8 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0017.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0017')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">보해
-								골드</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">보리향탁주
+								</h4>
 						</div>
 
 					</td>
@@ -911,8 +909,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0018.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0018')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">보해
-								복분자</h4>
+							<h4 style="color: black; margin-left: 20px;" class="korean">제주감귤주 귤로만</h4>
 						</div>
 
 					</td>
@@ -922,7 +919,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0019.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('05_0019')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">매취순
+							<h4 style="color: black; margin-left: 20px;" class="korean">안양 동동주
 							</h4>
 						</div>
 
@@ -933,7 +930,7 @@ li.item:LAST-CHILD {
 								data-toggle="modal" data-target="#myModal"
 								style="height: 83%; width: 83%; background-image: url('images/macinfo/05_0020.png'); background-repeat: no-repeat; background-size: contain; border: 3px solid white; background-color: white;"
 								onclick="check('02_0020')"></button>
-							<h4 style="color: black; margin-left: 20px;" class="korean">O2린
+							<h4 style="color: black; margin-left: 20px;" class="korean">선운산의아침 복분자막걸리
 							</h4>
 						</div>
 
