@@ -638,7 +638,7 @@ li.item:LAST-CHILD {
 
 		<!-- Main -->
 		<div class="main">
-			<div class="top";>
+			<!-- <div class="top";>
 				<div class="topdiv";>
 					<table>
 						<tr>
@@ -696,7 +696,7 @@ li.item:LAST-CHILD {
 						</tr>
 					</table>
 				</div>
-			</div>
+			</div> -->
 			<table>
 				<tr>
 					<td>
