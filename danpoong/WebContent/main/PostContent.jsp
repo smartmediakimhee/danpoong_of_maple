@@ -100,6 +100,7 @@
 		<hr/>
 		<a class="btn btn-default pull-left" href="../PostContentService?num=${sessionScope.post.num-1}">이전글</a>
 		<a class="btn btn-default pull-left" href="../PostContentService?num=${sessionScope.post.num+1}">다음글</a>
+		<a class="btn btn-default pull-left" href="#">좋아요</a>
 		<a class="btn btn-default pull-right" href="PostList.jsp">목록</a>
 	</div>
 </body>
